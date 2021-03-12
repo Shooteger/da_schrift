@@ -1,0 +1,113 @@
+\documentclass[german,oneside,color]{htldipl}
+\usepackage{blindtext}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{biblatex}
+\usepackage{footmisc}
+
+\graphicspath{{images/}}    % Bilderverzeichnis
+\include{Settings}
+\addbibresource{literatur.bib}
+ 
+ \newcommand{\putz}
+ {\marginpar{\scriptsize{\textit{$\rightarrow$Putz}}}}
+ 
+  \newcommand{\strahlhofer}
+ {\marginpar{\scriptsize{\textit{$\rightarrow$Strahlhofer}}}}
+ 
+  \newcommand{\bauer}
+ {\marginpar{\scriptsize{\textit{$\rightarrow$Bauer}}}}
+ 
+  \newcommand{\reiter}
+ {\marginpar{\scriptsize{\textit{$\rightarrow$Reiter}}}}
+
+\begin{document}
+
+\title{EMS - Event Management Software zum Verwalten und Organisieren von Events jeglicher Art und deren Werbetreibender}
+\abteilung{Informatik}
+\schwerpunkt{Ausbildungsschwerpunkt Informatik}
+\studienort{Wiener Neustadt}
+\schule{HTBLuVA Wiener Neustadt}
+\schullogo{htl.jpeg}
+\abgabejahr{2020/21}
+\betreuerA{Dipl.-Ing. Harald Breidler}
+\betreuerB{}
+\betreuerC{}
+\schuelerA{Maurice PUTZ}
+\evidenzA{5AHIF-16}
+\subthemaA{DSGVO konformes Nutzen von Cloud-Diensten und Gegenüberstellung von Cloud-Computing Anbietern}
+\schuelerB{Benjamin STRAHLHOFER}
+\evidenzB{5AHIF-20}
+\subthemaB{Benjamin Strahlhofer - Subthema}
+\schuelerC{Thomas BAUER}
+\evidenzC{5AHIF-2}
+\subthemaC{Thomas Bauer - Subthema}
+\schuelerD{Alexander REITTIER}
+\evidenzD{5AHIF-KA}
+\subthemaD{Alexander Reiter - Subthema}
+\schuelerE{}
+\evidenzE{}
+\subthemaE{}
+
+%%%----------------------------------------------------------
+\frontmatter
+\maketitle
+\tableofcontents
+\listoffigures
+
+%%%----------------------------------------------------------
+
+%Hier kommen die Includes für die Einleitung	
+%\include{Vorwort} 
+
+%\include{dokumentation}
+
+%\include{Kurzfassung}
+%\include{Abstract}
+
+%%%----------------------------------------------------------
+\mainmatter           %Hauptteil (ab hier arab. Seitenzahlen)
+%%%----------------------------------------------------------
+%\appendix
+%Hier kommen die Includes für den Hauptteil
+%\include{Einleitung}
+
+%ZB
+%\include{Grundlagen_Putz}
+%\include{Vergleich_Putz}
+
+%%%----------------------------------------------------------
+%%%Anhang
+%%%----------------------------------------------------------
+%\appendix
+
+%%Hier kommen die Includes für den Anhang
+
+%%%----------------------------------------------------------
+%Ausgabe der automatischen Zusatzdaten: Glossar, Index, Literaturverzeichnis
+%\clearpage
+%\printglossaries
+
+\clearpage
+\chapter*{Index}
+\addcontentsline{toc}{chapter}{Index}
+\printindex[allgemein]
+
+\printindex
+
+\printindex[name]
+
+\printindex[title]
+
+
+%Literaturverzeichnis
+\clearpage
+\addcontentsline{toc}{chapter}{\bibname}
+\printbibliography
+
+\clearpage
+\include{messbox}
+
+%%%----------------------------------------------------------
+\end{document}
