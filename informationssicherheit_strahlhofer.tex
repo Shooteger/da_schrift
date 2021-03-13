@@ -1,0 +1,142 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{graphicx}
+
+\lstset{
+    frame=tb, % draw a frame at the top and bottom of the code block
+    tabsize=4, % tab space width
+    showstringspaces=false, % don't mark spaces in strings
+    numbers=left, % display line numbers on the left
+    commentstyle=\color{darkgray}, % comment color
+    keywordstyle=\color{blue}, % keyword color
+    stringstyle=\color{purple} % string color
+}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\title{Anmeldesysteme und Sicherheit}
+\author{Benjamin Strahlhofer}
+\date{January 2021}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+%Reis seine erster Foliensatz
+\section{Informationssicherheit}
+
+\subsection{Grundlagen der Informationssicherheit}
+Bei der Informationssicherheit geht es grundsätzlich darum Informationen zu schützen. Informationen spielen in der heutigen Welt eine wichtige Rolle. Die zwei Arten Informationen zu verarbeiten sind entweder in einer digitalen oder analogen Form. 
+\\
+Weiters wird überprüft, dass eine fremde, nicht befugte Person oder ein nicht befugtes Unternehmen, auf keinen Fall den Zugriff auf die unternehmensinternen Systeme und Benutzerdaten erhält. Ein Unternehmen muss dafür Maßnahmen setzen, um die Nutzer ihres Services zu schützen. Diese Maßnahmen sollen verschiedenste Bedrohungen vermeiden und zur Datensicherheit, IT-Sicherheit und Datensicherung beitragen.
+\\
+
+
+%Systemplanung und Projekte Entwicklung von Felix Schwab, Ingridschwab-Matkovits
+\subsection{Risikomanagement im Bereich Informationssicherheit}
+Wenn in einem Unternehmen die IT-Infrastruktur ausgebaut wird, müssen Risiken vermieden oder vermindert werden. Wenn ein Unternehmen, das viele private oder sensible Daten verarbeitet, sollte jedenfalls eine Risikoanalyse zu der IT-Sicherheit durch geführt werden. Durch dieses Verfahren kann man zukünftige Bedrohungen abschätzen und sich dazu Bewältigungsstrategien überlegen.
+
+\subsubsection{Risiko}
+Unter dem Begriff Risiko assoziiert man im Bereich IT-Sicherheit die Schadenshöhe, wenn ein bestimmtes Ereignis eintritt und dadurch Schäden auftreten können oder sogar Arbeitsprozesse abstoppt.
+
+\subsubsection{Maßnahme}
+Eine Maßnahme ist eine Handlung, die es ermöglicht ein Risiko zu umgehen oder es einzugrenzen, hier spricht man von der Schadensminimierung. 
+\\
+\\
+\subsection{Ablauf zur Findung von Maßnahmen im Risikomanagement}
+\begin{enumerate}
+    \item Risiken identifizieren
+    \item Risiken analysieren
+    \item Risiken bewerten
+    \item Risiken vermeiden
+\end{enumerate}
+
+%https://www.business-wissen.de/hb/risiken-identifizieren/#:~:text=Insofern%20ist%20die%20Identifikation%20von,Sch%C3%A4den%20unvorhergesehen%20und%20%C3%BCberraschend%20eintreten.
+\subsubsection{Risikoidentifikation}
+Alle Risiken zu identifizieren die möglicherweise auftreten können, kann sich als sehr schwer erweisen. Es können etwaige Risiken auftreten, von denen noch nichts bekannt war oder die man nicht in Betracht gezogen hat. Aus diesen Gründen ist die Identifikationsphase eine sehr wichtige. Sie muss sorgfältig durchgeführt werden und mit verschiedenen Ansätzen abgewickelt werden. Fortlaufend sollte deswegen regelmäßig überprüft werden ob sich Risiken verändern oder hinzukommen.
+\\
+
+%Methoden gefunden: Im BUCH und auf
+%https://de.wikipedia.org/wiki/Risikoidentifikation#:~:text=Als%20Methoden%20kommen%20f%C3%BCr%20bestehende,oder%20die%20Delphi%2DMethode%20ermitteln.
+
+
+\paragraph{Bestehende Risiken und Potentielle Risiken}
+Die Risikoidentifikation beschäftigt sich mit zwei Arten von Risiken einmal die bekannten Risiken und die potenziellen Risiken. Folgende Methoden können zur Bewältigung angewandt werden:
+\begin{enumerate}
+    \item \textbf{Methoden um bestehenden/bekannte Risiken zu identifizieren}
+    \begin{itemize}
+        \item Einsatz von Checklisten
+        \item SWOT-Analyse
+        \item Befragungen von erfahrenen Mitarbeitern
+        \item Befragungen von Experten mit spezifischen Fachwissen
+    \end{itemize}
+    \item \textbf{Methoden um Potenzielle Risiken zu identifizieren}
+    \begin{itemize}
+    	\item Brainstorming
+    	\item Delphi-Methode
+    	\item Mindmapping
+    	\item Morphologischer Kasten
+    	\item Brainwriting (6-3-5 Methode)
+    \end{itemize}
+\end{enumerate}
+
+%https://de.wikipedia.org/wiki/Risikoidentifikation#Checklisten_und_Mitarbeiterbefragungen
+\paragraph{Einsatz von Checklisten}
+Bei dieser Methode werden standardisierte Checklisten verwendet. Diese sollen einem Unternehmen aufzeigen welche Risiken zu beachten sind, wenn es um die Informationssicherheit geht. Es besteht nur ein Nachteil, es werden nicht alle relevanten Risiken genannt.
+
+%https://smallbusiness.chron.com/security-swot-analysis-40526.html
+\paragraph{SWOT-Analyse}
+SWOT(Strengths, Weaknesses, Opportunities, Threats) ist eine Methode verschiedene Faktoren zu analysieren. Durch infrage stellen der Stärken (Strengths) und Schwächen (Weaknesses) kann man unternehmensinterne Faktoren erkennen. Durch hinterfragen von Möglichkeiten (Opportunities) und Bedrohungen (Threats) findet man externe Faktoren die mit einfließen.
+
+%https://de.wikipedia.org/wiki/Risikoidentifikation#Checklisten_und_Mitarbeiterbefragungen
+\paragraph{Befragungen}
+Bei diesen Umfragen werden entweder erfahrene Mitarbeiter oder Experten mit gewissen Fachwissen befragt. Mitarbeiter liefern mehr interne Unternehmensrisiken. Experten finden eher externe unternehmensbedrohliche Risiken. Befragungen können in einer digitalen, schriftlichen oder mündlichen Arten statt finden.
+
+%Buch S. 
+\paragraph{Brainstorming}
+Hier versammeln sich eine Gruppe von unternehmensinternen Personen bestehend aus fünf bis sieben Personen. Beim Brainstorming Prozess werden Vorschläge und Ideen nur verbal geäußert und  danach dokumentiert. Eine Person der sogenannte Moderator leitet diesen Kommunikationsprozess. Vorzugsweise sollte dieser Vorgang nur zehn bis maximal zwanzig Minuten andauern.
+
+Es gibt gewisse Regeln die zu beachten sind:
+\begin{itemize}
+	\item Keine Barrieren, d.h. man kann alles Vorschlagen, auch nicht umsetzbare oder absurde Ideen
+	\item Keine Diskriminierung, damit ist gemeint das kein Teilnehmer für eine Idee kritisiert werden soll
+\end{itemize}
+
+
+\paragraph{Delphi-Methode}
+
+
+\paragraph{Mindmapping}
+
+\paragraph{Morphologischer Kasten}
+
+\paragraph{Brainwriting (6-3-5 Methode)}
+
+
+
+%https://www.projektmagazin.de/methoden/risikomatrix
+
+\newpage
+%https://www.link11.com/de/blog/it-sicherheit/it-risiken-bedrohungen-kennen-bewerten/#:~:text=Zu%20den%20gef%C3%A4hrlichsten%20externen%20Bedrohungen%20z%C3%A4hlen%20gezielte%20oder%20willk%C3%BCrliche%20Cyber%2DAttacken.&text=Die%20h%C3%A4ufigsten%20Bedrohungen%20in%20der,Advanced%20Persistent%20Threats
+%Reis sein erster Foliensatz
+\subsection{Bedrohungen im Bereich IT-Sicherheit}
+\subsubsection{Cyber Angriffe}
+So genannte Cyber Angriffe können für ein Unternehmen zu einem starken Problem führen.
+
+
+
+
+
+\end{document}
