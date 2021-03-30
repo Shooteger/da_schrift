@@ -1,9 +1,7 @@
-\documentclass[12pt, letterpaper, twoside]{article}
-\usepackage[utf8]{inputenc}
+\chapter{Grundlagen vom Datenbanken}
+\bauer
 
-\begin{document}
-	
-	\section{Datenbank}
+	\section{Allgemeines zu Datenbanken}
 	
 	%Quelle: https://www.oracle.com/de/database/what-is-database/)
 	\subsection{Definition}
@@ -133,7 +131,5 @@
 		
 		\subsubsection{Entscheidungsgrundlagen}
 			Einer der Gründe warum wir uns für die MongoDB entscheiden haben war, dass am Anfang niemand vorhersagen konnte wie genau unsere Datenbank aufgebaut sein wird. Während der Entwicklung gab es viele Informationen welche nachträglich in die Struktur eingefügt wurden dies hat uns dieser Anbieter sehr vereinfacht. Ein weiter Grund war, die Möglichkeit ein Array aus Objekten zu speichern was viel Abfragen und logistische Probleme gelöst hat ins besondere da wir in unserem Backend über die Schnittstelle "mongoose" auf die Datenbank zugreifen welche einiges ermöglicht was mit MonogDB alleine nicht realisierbar wäre wie zum Beispiel das Vorgeben einer Struktur welche aber veränderbar ist und auch ohne Update auf veralte Datensätze immer noch funktioniert. Diese Struktur ist hat uns auch ermöglicht das alle Mitglieder des Teams einen Überblick über die Datenbank bekommen und einfach Abfragen, Updates und Inserts schreiben konnten. Dazu kommt, dass durch die Möglichkeit der Arrays aus Objekten nur 2 Tabellen (Kollektion) benötigt werden während in einer normalen SQL Datenbank welche in dritter Normalform ist mindestens 12 Tabellen benötigt werden. Natürlich war uns die Performanz der Abfragen sehr wichtig was ein weiter Grund war warum wir uns für diesen Anbieter entschieden haben da die MongoDB eine sehr hohe Performanz hat und die Auswertungen von JSON ähnlichen Objekten auf dem Server ebenfalls schnell abläuft.
-		
-	
-	
-\end{document}
+
+\newpage
