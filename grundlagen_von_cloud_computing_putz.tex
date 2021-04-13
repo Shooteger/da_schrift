@@ -41,12 +41,20 @@ Nutzung der in Anspruch genommenen Ressourcen oder für eine vorausschauende Ges
 %https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models
 
 \subsection{Servicemodelle}
-Bei Cloud-Computing gibt es vier verschiedene Servicemodelle, die eine Cloud zur Verfügung stellen kann:
+NIST listet drei grundsätzliche Standard-Modelle, in welcher Form Cloud-Computing Dienste angeboten werden können, diese werden oft als Schichten untereinander vereinfacht dargestellt:
 \begin{itemize}
 	\item Infrastructure as a Service (IaaS)
 	\item Platform as a Service (PaaS)
 	\item Software as a Service (Saas)
-	\item Function as a Service (FaaS)
+\end{itemize}
+
+
+Zusätzlich zu den oben genannten standardisierten Modellen, existieren noch einige weitere Modelle auf dem Markt. Prinzipiell
+kann man heutzutage fast jeden nur denkbaren Service über eine Cloud beziehen, mit der Zeit haben sich dafür spezielle Bezeichnungen gebildet. Diese Fachbegriffe können zusammengefasst werden:
+\begin{itemize}
+	\item Function as a Service (FaaS) oder Serverless computing
+	\item Everything as a Service (XaaS)
+
 \end{itemize}
 
 %Quellen: Reis Folien, https://de.wikipedia.org/wiki/Cloud_Computing#Servicemodelle,
@@ -87,6 +95,16 @@ Ein Beispiel für so einen Service wären die meisten Google Services wie Gmail,
 %https://de.wikipedia.org/wiki/Function_as_a_Service
 
 \subsubsection{Function as a Service (FaaS)}
+Prinzipiell ist FaaS von den Angeboten und Leistungen ähnlich wie das vorhin beschriebene Paas-Modell. Es stellt eine Laufzeitumgebung zur Verfügung, worauf Softwareanwendungen erstellt werden könne. Der maßgebende Unterschied zwischen Function und Platform as a Service ist, dass bei PaaS die Skalierung mittels hinzufügen von weiteren Serverprozessen zu den bereits in Anspruch genommenen stattfindet. Dies bewirkt natürlich normalerweise eine Kostenerhöhung auf Seiten des Benutzers, welche direkt Abgebucht oder in Rechnung gestellt wird. Die Skalierung ist dem Benutzer hier dadurch aber auch sehr übersichtlich und man kann die Aus- und Belastung seiner Entwicklerumgebung leicht nachvollziehen.\newline
+Ganz anders im Gegensatz dazu geschieht die Skalierung bei FaaS. Bei diesem Service läuft keine extra Serverinstanz im Hintergrund. Bei FaaS muss der Benutzer die \textbf{Function exceution time} bezahlen. Die Zeit zwischen den Ausführungen von Code wird hierbei nicht in Rechnung gestellt, also lediglich, wenn ein Code zum Beispiel Übersetzt wird oder ein Programm ausgeführt und getestet wird. Somit muss der Benutzer auch nicht mehr an die Skalierung denken, da seine Entwicklerumgebung quasi kostenlos zu Verfügung steht und er nur die Ausführung der Software nach deren Zeitaufwand bezahlen muss. Dies sorgt für geringere Kosten auf Seiten des Kunden, bei gleichzeitig höhere Skalierbarkeit, da diese nicht mehr beachtet werden muss. Einen Nachteil gibt es jedoch und zwar kann die Latenz bei diesem Server höher als bei einer Lösung mit PaaS sein. Dies ist jedoch von vielen Faktoren und nicht zuletzt auch von der Komplexität des kodierten Programmes abhängig.
+
+Dieser Service verfolgt den Ansatz des sogenannten \textbf{"serverless computing"}. Hierbei übernimmt der Cloud-Anbieter die komplette Ressourcenzuweisung, zum Beispiel benötigter Speicher und benötigte Prozessorkernanzahl, für den Kunden. Bei serverless computing wird keine Ressource im volatilen Speicher gehalten. Dies bedeutet, Berechnungen werden in bestimmten Abständen durch bestimmte Events von Seiten des Kunden aus, ausgelöst und die Ergebnisse werden dann in einen persistenten Speicher geschrieben. Wenn eine Anwendung gerade nicht vom Kunden benutzt wird, wird dies auch nicht in Rechnung gestellt wie es bei herkömmlichen Services der Fall ist. Es gibt keinen fixierten Betrag der monatlich oder Quartals mäßig abgebucht wird, sondern nur produktiv genutzte Zeit in der Anwendung wird berechnet.
+
+Das erste offizielle, kommerzielle Angebot eines solchen Services gab es 2006. Seitdem haben viele große Cloud-Anbieter wie zum Beispiel Amazon mit AWS Lambda, Google und Microsoft mit Azure, solche \textbf{pay as you go} Services zu Verfügung gestellt.
+
+\subsubsection{Everything as a Service (XaaS)}
+
+
 
 \newpage
  
