@@ -21,16 +21,16 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Event-Model\relax }}{23}{figure.caption.96}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Event-Model\relax }}{24}{figure.caption.98}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces User-Model\relax }}{24}{figure.caption.98}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.2}{\ignorespaces User-Model\relax }}{25}{figure.caption.100}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces 'add\_event\_to\_user' Funktion\relax }}{31}{figure.caption.137}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces 'create\_user' Funktion\relax }}{32}{figure.caption.139}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces 'add\_event\_to\_user' Funktion\relax }}{32}{figure.caption.139}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.3}{\ignorespaces 'authentication' Middleware\relax }}{32}{figure.caption.141}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces 'create\_user' Funktion\relax }}{33}{figure.caption.141}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces 'authentication' Middleware\relax }}{33}{figure.caption.143}%

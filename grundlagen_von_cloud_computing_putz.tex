@@ -123,8 +123,6 @@ Im Englischen werden sie \textbf{Deployment Models} genannt, die im deutsch gena
 	\item Public cloud
 	\item Hybrid cloud
 	\item Community cloud
-	\item Virtual cloud
-	\item Multi cloud
 \end{itemize}
 
 \begin{center}
@@ -141,19 +139,24 @@ Im Englischen werden sie \textbf{Deployment Models} genannt, die im deutsch gena
 %https://azure.microsoft.com/en-us/overview/what-is-a-private-cloud/
 \subsubsection{Private cloud}
 Private Clouds werden nur von einem einzelnen Unternehmen, einer Organisation oder einem Kunden betrieben oder stehen nur diesen und einem vertrauenswürdigen Dritten zu Verfügung. Diese Cloud-Umgebung wird entweder intern von zum Beispiel in einem firmeneigenen Rechenzentrum gehostet und verwaltet, oder aber der vertrauenswürdige Dritte übernimmt das Hosting. In letzterem Fall liegt das Rechenzentrum extern bei dem Dritten. Nicht zu verwechseln mit einem normalen IT-Betrieb, wie er in fast jedem kleinen bis mittleren Unternehmen betrieben wird. Die Bezeichnung \textbf{Private cloud} ist erst dann zutreffend, wenn alle fünf Charakteristika einer Cloud erfüllt werden (siehe Kapitel 1.1.2).
-Bei einer privaten Cloud gibt es verschiedene Evolutionsstufen, welche die Wichitgkeit 
+Bei einer privaten Cloud gibt es verschiedene Evolutionsstufen, welche die Wichtigkeit beziehungsweise die Verbreitung und den Nutzungsgrad innerhalb der Organisation beschreibt:
+\begin{itemize}
+	\item Exploratory cloud: Hier wird die Private Cloud hauptsächlich als Testumgebung parallel zum Produktivbetrieb genutzt. Oft wird sie auch, falls man sich Know-how im Gebiet des Cloud Computing anschaffen will, für Studien um Potential und Nachteilen einer internen Cloud herauszufinden, benutzt.
+	\item Department cloud: Eine Cloud, die vor allem produktiv und abteilungsintern genutzt wird.
+	\item Enterprise cloud: Diese Form der privaten Cloud wird im gesamten Unternehmen benutzt und ist fest im Produktivbetrieb integriert.
+\end{itemize}
+
 Microsoft bietet mit Azure einen Service an, nämlich \textbf{Azure Express Route}, welcher vor allem auf Ansprüche einer Private cloud angepasst ist.
 Anwendungsfälle für eine Private cloud gibt es vor allem in Unternehmen welche Daten speichert oder verarbeitet welche im Rahmen der DSGVO unter den Begriff \textbf{sensible Daten} fällt.
 
 %Quellen:
 %Reis Folien
-%https://de.wikipedia.org/wiki/Cloud_Computing#Organisatorische_Arten_von_Clouds
-%https://azure.microsoft.com/en-us/overview/what-is-a-private-cloud/
+%https://azure.microsoft.com/en-us/overview/what-are-private-public-hybrid-clouds/
 \subsubsection{Public cloud}
 Eine Public Cloud für die breite Öffentlichkeit und Einzelpersonen einen Zugang zu ihren Services über das Internet. Die Kunden von Anbieter, welche eine Public Cloud betreiben, können somit jeder mit einem Internetzugang sein. Eine öffentliche Cloud kann mit drei weitere Formen genauer aufteilen:
 \begin{itemize}
 	\item Exclusive Cloud: Der Benutzer/Kunde und der Hoster der Cloud kennen sich persönlich durch zum Beispiel Schriftverkehr (E-Mail). Normalerweise besteht zwischen den Parteien ein individueller bilateraler Vertrag
-	\item Open Cloud: In der Regel kennen sich der Benutzer/Kunde und Cloudanbieter nicht. In sogenannten \textbf{"`Service Level Agreements"'}, oder kurz SSL, werden die Leistungen und die Vergütung jeder genauestens beschrieben. Hier laufen Vertragsabschluss und Nutzung voll- oder semiautomatisiert ab, da die Anzahl der Nutzer bei dieser Form der öffentlichen Cloud viel höher als bei allen anderen ist.
+	\item Open Cloud: In der Regel kennen sich der Benutzer/Kunde und Cloudanbieter nicht. In sogenannten \textbf{"`Service Level Agreements"'}, oder kurz SSL, werden die Leistungen und die Vergütung jeder genauestens beschrieben. Hier laufen Vertragsabschluss und Nutzung voll- oder teilautomatisiert ab, da die Anzahl der Nutzer bei dieser Form der öffentlichen Cloud viel höher als bei allen anderen ist.
 	\item Virtual Private Cloud: Ein abgetrennter Bereich in einer öffentlichen Cloud, der für einen bestimmten einzelnen Kunden reserviert wird. Zusätzlich werden durch besondere Sicherheitsmaßnahmen entsprechende Vorkehrungen, für die Integrität des exklusiven Bereichs sorgen, getroffen. Ein Beispiel wäre bei Inanspruchnahme eines IaaS, die physische Trennung der gemieteten Hardware von der restlichen oder bei anderen Services ein spezieller Zugang über einen VPN.
 \end{itemize}
 
@@ -162,16 +165,26 @@ Die bekanntesten öffentlichen Clouds sind Amazon Web Services, Google App Engin
 %Quellen:
 %Reis Folien
 %https://de.wikipedia.org/wiki/Cloud_Computing#Organisatorische_Arten_von_Clouds
-%https://azure.microsoft.com/en-us/overview/what-is-a-private-cloud/
+%https://en.wikipedia.org/wiki/Cloud_computing#Serverless_computing
 \subsubsection{Hybrid cloud}
+Das Konzept einer Hybriden Cloud besteht aus einer Mischung aus privater, öffentlicher und community cloud. Ein Beispiel für die Anwendung einer solchen Form wäre zum Beispiel, ein Unternehmen gat eine private Enterprise cloud, und nutzt aber zusätzlich als Backup falls es zum Beispiel die Belastungsspitze des System erreicht wird, eine öffentliche oder community Cloud.
+
+%Quellen:
+%Reis Folien
+%https://de.wikipedia.org/wiki/Cloud_Computing#Organisatorische_Arten_von_Clouds
+%https://en.wikipedia.org/wiki/Cloud_computing#Serverless_computing
+\subsubsection{Community cloud}
+Eine community Cloud ist ein Zusammenschluss von einigen unter sich bekannter Nutzer. Diese "`verschmolzene"' neue Cloud aus zum Beispiel einiger privaten Clouds welche einen sehr ähnlichen oder gleichen Zweck hatten, kann intern in deren Gebäuden gehostet werden, oder extern von einem Dritten betrieben werden. Die kosten dafür wird unter den ursprünglichen Teilnehmern aufgeteilt.
+Ein Anbieter hierfür wäre zum Beispiel Googele Gov Cloud.
 
 
-%Quelle:
-%https://ourcodeworld.com/articles/read/977/how-to-deploy-a-node-js-application-on-aws-ec2-server
-%https://aws.amazon.com/de/
-%
+\subsection{Cloud Computing bei EMS und Wirtschaftlichkeit}
+
+\textbf{WARTEN AUF BENNI STATISTIKEN}
+
 \subsection{EMS und Deployment mit AWS}
-Das Backend der fertigen Anwendung, besteht aus den Technologien Node.Js und Express und dieses verbindet sich mit einer externen MongoDB Datenbank in der Atlassian Cloud(siehe Kapitel 5.1.4). Grundsätzlich war geplant, dieses in der AWS Cloud unter Amazon Lightsail oder dem EC2 Service zu hosten. 
+Das Backend der fertigen Anwendung besteht aus den Technologien Node.Js und Express. Dieses verbindet sich mit einer externen MongoDB Datenbank in der Atlassian Cloud (siehe Kapitel 5.1.4). Grundsätzlich war geplant, dieses in der AWS Cloud unter Amazon Lightsail oder dem EC2 Service zu hosten. Stand jetzt, wird der AWS EC2 Service verwendet. Für diese Entscheidung gab es mehrere Gründe.
+
 
 \newpage
  
