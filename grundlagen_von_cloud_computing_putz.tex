@@ -41,7 +41,7 @@ Nutzung der in Anspruch genommenen Ressourcen oder für eine vorausschauende Ges
 %https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models
 
 \subsection{Servicemodelle}
-NIST listet drei grundsätzliche Standard-Modelle, in welcher Form Cloud-Computing Dienste angeboten werden können, diese werden oft als Schichten untereinander vereinfacht dargestellt:
+NIST listet drei grundsätzliche Standard-Modelle, in welcher Form Cloud Computing Dienste angeboten werden können, diese werden oft als Schichten untereinander vereinfacht dargestellt:
 \begin{itemize}
 	\item Infrastructure as a Service (IaaS)
 	\item Platform as a Service (PaaS)
@@ -85,7 +85,7 @@ Diese Form des Cloudservices würde sich vor allem an Unternehmen richten, welch
 %https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models,
 %https://de.wikipedia.org/wiki/Software_as_a_Service
 
-\subsubsection{Software as a Service (Saas)}
+\subsubsection{Software as a Service (SaaS)}
 Manchmal auf als Software on Demand beschrieben, was "Software nach Bedarf" übersetzt bedeutet. Hier bietet der Cloudanbieter spezielle Software zur Nutzung an. Der Kunde kann dann diese Software- und Anwendungsprogramme nach belieben benutzen. Die Applikationen werden über das Internet dem Nutzer zur Verfügung gestellt, und dieser kann mittels einer API darauf zugreifen, was meistens über einen Browser oder eine App geschieht. Die Infrastruktur hinter den Anwendungen verwaltet der Anbieter selbst und auch die Angebotene Software könnte nur bis zu einem gewissen Teil vom Kunden konfiguriert werden. Also sämtliche Instandhaltungsarbeiten obliegen dem Cloudanbieter, der Nutzer benutzt lediglich die angebotene Software und kann sich bei Problemen nur an den Support wenden.\newline
 \newline
 Ein Beispiel für so einen Service wären die meisten Google Services wie Gmail, Docs, Drive und Photos. Noch weitere Prominente Beispiele für Software as a Service sind Github, Office 365 und Dropbox.
@@ -102,9 +102,45 @@ Dieser Service verfolgt den Ansatz des sogenannten \textbf{"serverless computing
 
 Das erste offizielle, kommerzielle Angebot eines solchen Services gab es 2006. Seitdem haben viele große Cloud-Anbieter wie zum Beispiel Amazon mit AWS Lambda, Google und Microsoft mit Azure, solche \textbf{pay as you go} Services zu Verfügung gestellt.
 
+% Quellen: https://www.quora.com/What-are-the-Iaas-Paas-and-SaaS-services-in-Amazon-webservices?share=1
+%https://de.wikipedia.org/wiki/Everything_as_a_Service#Weitere_Ans%C3%A4tze_2
+%https://web.archive.org/web/20110728093045/http://www.thecloudcomputing.org/2009/1/panels.html#Panel2
+
 \subsubsection{Everything as a Service (XaaS)}
+XaaS oder auch EaaS, stellt prinzipiell alles zu Verfügung. Also SaaS, Paas sowie auch Iaas. Einige Anbieter spezialisieren sich auf ein bestimmtes Service Modell, manche bieten jedoch prinzipiell alle Services unter der Bezeichnung XaaS an und spalten diese Services in die spezifischere Modelle, wie zum Beispiel SaaS, auf. Dies sorgt vor allem bei Neukunden manchmal für Verwirrung. AWS (Amazon Webservices) ist so ein Service, er bietet prinzipiell jedes Modell unter XaaS an, jedoch sind hunderte weitere Services einzeln spezifiziert Verfügbar. AWS heißt lediglich das Cloud Computing System, ein tatsächlicher Service heißt zum Beispiel AWS EC2, dieser Service ist als IaaS zu spezifizieren. Hierbei kann man einen virtuellen Server mit einem bestimmten Betriebssystem, virtuelle Kernanzahl und Hauptspeicher mieten. Dieser Service kostet stündlich, egal ob er benutzt wird oder nicht. Ein weitere IaaS Service in AWS ist S3, hier kann man Speicher mieten.\newline
+AWS bietet stand April 2021 über 200 verschiedenen Services in allen Servicemodellen Iaas, Paas und SaaS.
+\newline
+Weitere noch spezifischere Servicemodelle wie zum Beispiel High Performance Computing as a Service (HPCaaS), Data Intensive Computing as a Service (DICaaS) oder Humans as a Service (HuaaS). Können unter XaaS übergeordnet zusammengefasst werden. Für HuaaS als Beispiel gibt es den AWS Service Amazon Mechanical Turk, dieser Dienst befindet sich jedoch noch in einer Beta-Phase, hierbei wird menschliche Intelligenz wie ein Webservice genutzt.
+
+\subsection{Liefermodelle}
+Im Kapitel Servicemodelle (Sektion 1.1.3) wurde die verschiedenen Modelle, welche eine Cloud anbieten kann und wie viele gleiche Hardwareeinheiten, beginnend mit der Aufteilung derer Infrastruktur bis zur Verfügungstellung einzelner Endanwendungen, für den Endkunden benutzbar gemacht wird.\newline
+Im Englischen werden sie \textbf{Deployment Models} genannt, die im deutsch genannten Liefermodelle beschreiben nun, wie genau die Services unter Berücksichtigung ihrer Aufteilung in bereits genannte Servicemodelle, einem Benutzer zu Verfügung gestellt werden:
+\begin{itemize}
+	\item Private cloud
+	\item Public cloud
+	\item Hybrid cloud
+	\item Community cloud
+	\item Virtual cloud
+	\item Multi cloud
+\end{itemize}
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{Cloud_computing_types.png}
+    \caption{Liefermodelle von Cloud Computing}
+\end{figure}
+\end{center}
 
 
+\subsubsection{Private cloud}
+Private Clouds werden nur von einem einzelnen Unternehmen, einer Organisation oder einem Kunden betrieben oder stehen nur diesen und einem vertrauenswürdigen Dritten zu Verfügung. Diese Cloud-Umgebung wird entweder intern von zum Beispiel in einem firmeneigenen Rechenzentrum gehostet und verwaltet, oder aber der vertrauenswürdige Dritte übernimmt das Hosting. In letzterem Fall liegt das Rechenzentrum extern bei dem Dritten.
+Microsoft bietet mit Azure einen Service an, nämlich \textbf{Azure Express Route}, welcher vor allem auf Ansprüche einer Private cloud angepasst ist.
+Anwendungsfälle für eine Private cloud gibt es vor allem in Unternehmen welche Daten speichert oder verarbeitet welche im Rahmen der DSGVO unter den Begriff \textbf{sensible Daten} fällt.
+\subsubsection{Public cloud}
+Eine Public Cloud für die breite öffentlichkeit und Einzelpersonen einen Zugang zu ihren Services über das Internet. Die Kunden von Anbieter, welche eine Public Cloud betreiben, können somit jeder mit einem Internetzugang sein. Die bekanntesten öffentlichen Clouds sind Amazon Web Services, Google App Engine, Windows Azure und auch Salesforce.
+
+\subsubsection{Hybrid cloud}
 
 \newpage
  
