@@ -55,36 +55,35 @@
 
 			\subsubsection{Event Aufbau}			
 				\begin{itemize}
-					\item "name" der Name des Events wird vor allem für die Anzeige benutzt
-					\item "creation\_date" das Datum gespeichert zudem ein Event erstellt wurde wird hauptsächlich in der Statistik verwendet
-					\item expire\_date"das Datum gespeichert ab welchen Zeitpunkt es nicht mehr möglich ist Kartenverkäufe über die Applikation einzutragen wird benutzt um den User darin zu hindern Karten zu verkaufen nachdem die Zeit abgelaufen ist
-					\item "description" eine kurze Beschreibung des Events gespeichert um vor allem dem User die Identifikation einfacher zu machen
-					\item "early\_bird\_phase" eine Flagge gesetzt um zu speichern ob bei diesem Event eine Vorverkaufszeit aktiv
-					\item "early\_bird\_close" das Datum gespeichert wann einer der Administratoren die Vorverkaufszeit geschlossen hat
-					\item "cards" besteht aus einem Array aus Objekten
+					\item 'name' der Name des Events wird vor allem für die Anzeige benutzt
+					\item 'creation\_date' das Datum gespeichert zudem ein Event erstellt wurde wird hauptsächlich in der Statistik verwendet
+					\item 'expire\_date' das Datum gespeichert ab welchen Zeitpunkt es nicht mehr möglich ist Kartenverkäufe über die Applikation einzutragen wird benutzt um den User darin zu hindern Karten zu verkaufen nachdem die Zeit abgelaufen ist
+					\item 'description' eine kurze Beschreibung des Events gespeichert um vor allem dem User die Identifikation einfacher zu machen
+					\item 'early\_bird\_phase' eine Flagge gesetzt um zu speichern ob bei diesem Event eine Vorverkaufszeit aktiv
+					\item 'early\_bird\_close' das Datum gespeichert wann einer der Administratoren die Vorverkaufszeit geschlossen hat
+					\item 'cards' besteht aus einem Array aus Objekten
 					\begin{itemize}
-						\item "card\_id" wird benutzt um Karten zu identifizieren (10 stellige zufällig generierte Nummer). 
-						Im Datenfeld "name" der Name der Karte
-						\item "name" der Name der Karte
-						\item "early\_bird" ist eine Flagge welche anzeigt das diese Karte nur als verkauft eingetragen werden kann während die Flagge "early\_bird\_phase" aktiv ist
-						\item "amount" beschreibt die Anzahl an Karten die dieses Event hat
-						\item "price" ist der Preis der spezifischen Karte
+						\item card\_id' wird benutzt um Karten zu identifizieren (10 stellige zufällig generierte Nummer). 
+						\item 'name' der Name der Karte
+						\item "early\_bird" ist eine Flagge welche anzeigt das diese Karte nur als verkauft eingetragen werden kann während die Flagge 'early\_bird\_phase' aktiv ist
+						\item 'amount' beschreibt die Anzahl an Karten die dieses Event hat
+						\item 'price' ist der Preis der spezifischen Karte
 					\end{itemize}
-					\item "packages" besteht aus einem Array aus Objekten
+					\item 'packages' besteht aus einem Array aus Objekten
 					\begin{itemize}
-						\item "package\_id" ist wie "card\_id" ein Identifikator für die Packages (10 stellige zufällige Nummer)
-						\item "price" der Preis der spezifischen Karte
-						\item "name" der Name des Pakets
-						\item "price" der Preis des Pakets
-						\item "people" die Anzahl an Personen für die dieses Paket geplant wurde
-						\item "description" speichert die Details des Pakets
+						\item 'package\_id' ist wie 'card\_id' ein Identifikator für die Packages (10 stellige zufällige Nummer)
+						\item 'price' der Preis der spezifischen Karte
+						\item 'name' der Name des Pakets
+						\item 'price' der Preis des Pakets
+						\item 'people' die Anzahl an Personen für die dieses Paket geplant wurde
+						\item 'description' speichert die Details des Pakets
 					\end{itemize}
-					\item "goodies" besteht aus einem Array aus Objekten
+					\item 'goodies' besteht aus einem Array aus Objekten
 					\begin{itemize}
-						\item "goodie\_id" ist wie "card\_id" und "package\_id" ein Identifikator für die Belohnungen (10 stellige zufällige Nummer)
-						\item "name" der Name der Belohnungen
-						\item "points" die Punkte die benötigt werden um die Belohnung einzulösen
-						\item "description" die genauere Beschreibung der Belohnungen
+						\item 'goodie\_id' ist wie 'card\_id' und 'package\_id' ein Identifikator für die Belohnungen (10 stellige zufällige Nummer)
+						\item 'name' der Name der Belohnungen
+						\item 'points' die Punkte die benötigt werden um die Belohnung einzulösen
+						\item 'description' die genauere Beschreibung der Belohnungen
 					\end{itemize}				
 				\end{itemize}
 		
@@ -92,37 +91,37 @@
 			
 			\subsubsection{User}
 				\begin{itemize}
-					\item "firstname" der Vorname des User wird vor allem für die Anzeige benutzt
-					\item "lastname" der Nachname des User wird vor allem für die Anzeige benutzt
-					\item "username" der Username des User wird für das ein einloggen verwendet
-					\item "password" das Passwort des Users welches verschlüsselt abgespeichert wird
-					\item "email" die Email Adresse eines User wird vor allem zum Passwort zurücksetzen verwendet
-					\item "active" eine Flagge welche angibt ob ein User momentan aktiv seinen Kartenstand verändern kann
-					\item "admin" eine Flagge welche angibt ob dieser User ein Administrator ist
-					\item "description" eine kurze Beschreibung der Person die jeder User selbst verändern kann
-					\item "resetkey" der Schlüssel mit dem das Passwort zurückgesetzt wird wird nur für interne Überprüfungen benutzt
-					\item "request" eine Flagge welche angibt ob ein User eine Passwortzurücksetzung angefordert hat wird ebenfalls nur für interne Überprüfungen verwendet
-					\item "events" besteht aus einem Array von Objekten
+					\item 'firstname' der Vorname des User wird vor allem für die Anzeige benutzt
+					\item 'lastname' der Nachname des User wird vor allem für die Anzeige benutzt
+					\item 'username' der Username des User wird für das ein einloggen verwendet
+					\item 'password' das Passwort des Users welches verschlüsselt abgespeichert wird
+					\item 'email' die Email Adresse eines User wird vor allem zum Passwort zurücksetzen verwendet
+					\item 'active' eine Flagge welche angibt ob ein User momentan aktiv seinen Kartenstand verändern kann
+					\item 'admin' eine Flagge welche angibt ob dieser User ein Administrator ist
+					\item 'description' eine kurze Beschreibung der Person die jeder User selbst verändern kann
+					\item 'resetkey' der Schlüssel mit dem das Passwort zurückgesetzt wird wird nur für interne Überprüfungen benutzt
+					\item 'request' eine Flagge welche angibt ob ein User eine Passwortzurücksetzung angefordert hat wird ebenfalls nur für interne Überprüfungen verwendet
+					\item 'events' besteht aus einem Array von Objekten
 					\begin{itemize}
-						\item "event\_id" ist die Identifikation des Events um welches es sich in diesem Objekt handelt (ObjektId des Events) in einer SQL Architektur würde man dies den Fremdschlüssel nennen
-						\item "active" eine Flagge welche angibt ob dieser User momentan bei diesem Event seinen Kartenstand verändern darf
-						\item "promotion\_start" das Datum an dem dieser User das Event das erste mal zugeteilt wurde wird für die Statistik verwendet
-						\item "points" der momentane Punktestand des User
-						\item "last\_changed" das Datum an dem der User das letzte mal seinen Kartenstand zu diesem Event aktualisiert hat
-						\item "mone\_submitted" der Betrag den der User bisher von den verkaufen Karten und Paket abgegeben hat
-						\item "cards" ist ein weiteres Array von Objekten
+						\item 'event\_id' ist die Identifikation des Events um welches es sich in diesem Objekt handelt (ObjektId des Events) in einer SQL Architektur würde man dies den Fremdschlüssel nennen
+						\item 'active' eine Flagge welche angibt ob dieser User momentan bei diesem Event seinen Kartenstand verändern darf
+						\item 'promotion\_start' das Datum an dem dieser User das Event das erste mal zugeteilt wurde wird für die Statistik verwendet
+						\item 'points' der momentane Punktestand des User
+						\item 'last\_changed' das Datum an dem der User das letzte mal seinen Kartenstand zu diesem Event aktualisiert hat
+						\item 'mone\_submitted' der Betrag den der User bisher von den verkaufen Karten und Paket abgegeben hat
+						\item 'cards' ist ein weiteres Array von Objekten
 						\begin{itemize}
-							\item "card\_id" die Identifikationsnummer dieses Kartentyp
-							\item "amount" die Menge an Karten die ein User von diesem Kartentyp insgesamt bekommen hat
-							\item "sold" die Anzahl an Karten die der User von diesem Kartentyp verkauft hat
-							\item "submitted" die Anzahl an Karten die der User von diesem Kartentyp zurückgegeben hat
-							\item "available" die Anzahl an Karten von diesem Kartentyp welche der User noch im besitzt hat
+							\item 'card\_id' die Identifikationsnummer dieses Kartentyp
+							\item 'amount' die Menge an Karten die ein User von diesem Kartentyp insgesamt bekommen hat
+							\item 'sold' die Anzahl an Karten die der User von diesem Kartentyp verkauft hat
+							\item 'submitted' die Anzahl an Karten die der User von diesem Kartentyp zurückgegeben hat
+							\item 'available' die Anzahl an Karten von diesem Kartentyp welche der User noch im besitzt hat
 						\end{itemize}
-						\item "goodies" ist ein weiteres Array von Objekten
+						\item 'goodies' ist ein weiteres Array von Objekten
 						\begin{itemize}
-							\item "goodie\_id" die Identifikationsnummer dieses Belohnungstyp
-							\item "date\_of\_redeem" das Datum an welchem diese Belohnung das letzte mal verändert wurde
-							\item "amount" wie viele dieser Belohnungen eingelöst wurden
+							\item 'goodie\_id' die Identifikationsnummer dieses Belohnungstyp
+							\item 'date\_of\_redeem' das Datum an welchem diese Belohnung das letzte mal verändert wurde
+							\item 'amount' wie viele dieser Belohnungen eingelöst wurden
 						\end{itemize}
 					\end{itemize}
 				\end{itemize}
