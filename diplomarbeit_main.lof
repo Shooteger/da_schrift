@@ -53,20 +53,20 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Liefermodelle von Cloud Computing\relax }}{24}{figure.caption.107}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Liefermodelle von Cloud Computing\relax }}{25}{figure.caption.110}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Event-Model\relax }}{35}{figure.caption.159}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Event-Model\relax }}{36}{figure.caption.162}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces User-Model\relax }}{36}{figure.caption.161}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.2}{\ignorespaces User-Model\relax }}{37}{figure.caption.164}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces 'add\_event\_to\_user' Funktion\relax }}{43}{figure.caption.200}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces 'create\_user' Funktion\relax }}{44}{figure.caption.202}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces 'add\_event\_to\_user' Funktion\relax }}{44}{figure.caption.203}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.3}{\ignorespaces 'authentication' Middleware\relax }}{44}{figure.caption.204}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces 'create\_user' Funktion\relax }}{45}{figure.caption.205}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces 'authentication' Middleware\relax }}{45}{figure.caption.207}%
