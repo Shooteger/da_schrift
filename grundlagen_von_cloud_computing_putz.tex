@@ -207,8 +207,8 @@ Bei einer in-haus Lösung wie vorhin beschrieben, wäre dies nicht so einfach m�
 \end{center}
 \break
 %https://ourcodeworld.com/articles/read/977/how-to-deploy-a-node-js-application-on-aws-ec2-server
-\section{Cloud Anbieter Wahl}
-Bei EMS wurde sich nach einigen Abwägungen für das Cloud Computing System von Amazon, AWS, entschieden. Neben der einhergehenden Popularität des Anbieters spielten auch vor allem die Preise, einfache automatisierte Skalierbarkeit und bereits vorhandenes Know-how im Deployen von Full-Stack Anwendungen auf den Service EC2, eine Rolle bei der Wahl.
+\section{Cloud Anbieter AWS}
+Bei EMS wurde sich nach einigen Abwägungen für das Cloud Computing System von Amazon, AWS, entschieden. Neben der einhergehenden Popularität des Anbieters spielten auch vor allem die Preise, einfache automatisierte Skalierbarkeit und bereits vorhandenes Know-how im deployen von Full-Stack Anwendungen auf den Service EC2, eine Rolle bei der Wahl.
 
 \subsection{Erstellen einer EC2 Instanz}
 Nachdem auf der Webseite von Aamzon Web Services ein Account erstellt worden ist, gelangt man auf die Homepage für verifizierte Benutzer. Auf der linken oberen Ecke unter Services (Abb. XX), findet man sämtliche Cloud Lösungen welche AWS bietet, stand bei Verfassung dieser Schrift, über 200. Im rechten roten Kreis, sieht man zugleich den Servce "´EC2"', welcher hierfür relevant ist, falls dieser nicht angezeigt wird, kann man oben in der Suchleiste den Namen des gesuchten AWS Services eingeben.
@@ -286,7 +286,7 @@ Das hier ein Backend gehostet wird, werden Port 80 (HTTP) und Port 443 (HTTPS) f
 
 Nach der Auswahl der Zugriffspunkte und Ports, gelangt man auf eine Übersichtsseite. Hier kann man seine Angaben noch einmal überprüfen, sind alle Angaben korrekt, klickt man auf Start und in ein paar Minuten, die Zeit hängt von gewählter Option in Schritt zwei ab, ist die neue Instanz einsatzbereit und man kann sich zum Beispiel per SSH mit einer Shell (Putty) verbinden und zu arbeiten beginnen. 
 
-\section{Deployment einer Node.js Anwendung auf einer EC2 Instanz}
+\subsection{Backend deployment auf einer EC2 Instanz}
 Nach der ersten Verbindung, müssen alle notwendigen Pakete und Anwendungen installiert werden, in unserem Fall Node.js und Express. Man kann direkt von Github ein Repository auf eine EC2 Instanz klonen. Sicherheitskritische Details wie IP-Adressen werden geschwärzt und zensiert.
 
 \begin{center}
