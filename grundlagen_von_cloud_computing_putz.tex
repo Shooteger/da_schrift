@@ -177,13 +177,268 @@ Das Konzept einer Hybriden Cloud besteht aus einer Mischung aus privater, öffen
 Eine community Cloud ist ein Zusammenschluss von einigen unter sich bekannter Nutzer. Diese "`verschmolzene"' neue Cloud aus zum Beispiel einiger privaten Clouds welche einen sehr ähnlichen oder gleichen Zweck hatten, kann intern in deren Gebäuden gehostet werden, oder extern von einem Dritten betrieben werden. Die kosten dafür wird unter den ursprünglichen Teilnehmern aufgeteilt.
 Ein Anbieter hierfür wäre zum Beispiel Googele Gov Cloud.
 
+\section{Cloud Computing Wirtschaftlichkeit}
+Cloud Computing bietet generell viele Möglichkeiten und bringt viele Vorteile mit sich, welche mit einer klassischen Unternehmes-IT von mittlere bis großen Betrieben nicht möglich sind. Vor allem auch die Analyse von Big Data und die exponentiell Ansteigende Menge an zu verarbeitenden Daten wären ohne Cloud Lösung nicht in diesem Umfang wie er im Momentanen Stand stattfindet, möglich.
+Eine Cloud Lösung bietet aber nicht immer einen Mehrwert viele kleine und mittleren Betriebe müssen genau abwiegen, ob in ihrem speziellen Fall eine Lösung mittels Cloud Computing, wirtschaftlich und ressourcentechnisch sinnvoll wäre.
+Um die Vorteile, Nachteile und Möglichkeiten bei der Nutzung von Cloud Computing abzuwiegen, kann man eine sogenannte SWOT-Analyse
+durchführen:
+\begin{itemize}
+	\item \textbf{S}trength
+	\item \textbf{W}eakness
+	\item \textbf{O}pportunity
+	\item \textbf{T}ransition
+\end{itemize}
 
-\subsection{Cloud Computing bei EMS und Wirtschaftlichkeit}
+\paragraph{Strength (Stärken):} In diesem Teil der Analyse werden die Stärken/Vorteile einer Cloud Lösung im Gegensatz zu einer internen IT-Lösung betrachtet. Hier sticht vor allem heraus, das eine die Stärken einr Cloud in der Verfügbarkeit, Stabilität, Performance und letzten Endes vor allem in der Skalierbarkeit liegen. Zum Beispiel, falls bei einer intern gewählten Hardwarelöung, die maximale Nutzlast der Server ständig erreicht wird, kann sich das negativ auf die Performance und somit die Kundenzufriedenheit, und der Lebensdauer der Hardwareteile auswirken. Bei einer Cloud-Lösung kann hier einfach per Knopfdruck im Notfall manuell, oder auch vollautomatisiert auf zum Beispiel prozentualer Auslastung, einfach nach oben skaliert werden. Ist der Ansturm vorbei, können nicht benötigte Ressourcen wieder freigegeben werden.
+Bei einer in-haus Lösung wie vorhin beschrieben, wäre dies nicht so einfach möglich, da zuerst teure Hardware eingekauft, geliefert und auch installiert werden müsste. 
 
-\textbf{WARTEN AUF BENNI STATISTIKEN}
+\paragraph{Weakness (Schwächen):} Außer die Nachteile in bestimmten Use-Cases, hat Cloud Computing außerdem ein paar andere Schwächen im Gegensatz zu einer internen Lösung. Einerseits kauft man sich die IT-Kompetenz ein, dies kann gleichzeitig zwar auch ein Vorteil sein, da man sich in erster Linie Geld und Zeit spart im Falle einer Anschaffung, jedoch entsteht eine gewisse Abhängigkeit zum Anbieter des in Anspruch genommenen Services. Bei Cloud Computing werden noch weitere Freiheiten im Gegensatz für Kostenreduzierung aufgegeben. Der Kunde muss sich auf die Zuverlässigkeit der Kommunikation und der durchgehenden Verfügbarkeit seines Services verlassen. Weiters differenziert man sich weniger von der Konkurrenz, welche den gleichen Anbieter nutzen, da dieselbe Software und/oder Infrastruktur verwendet wird, da gleicher Cloud Anbieter.
 
-\subsection{EMS und Deployment mit AWS}
-Das Backend der fertigen Anwendung besteht aus den Technologien Node.Js und Express. Dieses verbindet sich mit einer externen MongoDB Datenbank in der Atlassian Cloud (siehe Kapitel 5.1.4). Grundsätzlich war geplant, dieses in der AWS Cloud unter Amazon Lightsail oder dem EC2 Service zu hosten. Stand jetzt, wird der AWS EC2 Service verwendet. Für diese Entscheidung gab es mehrere Gründe.
+\paragraph{Opportunity (Gelegenheiten):} Außer den bei Stärken genannten positiven Eigenschaften, bringen Cloud Lösungen einige neue und innovative Gelegenheiten mit sich. Einerseits verkürzt sich die time-to-market, da in einer Cloud Umgebung schneller entwickelt werden kann und die Services untereinander sehr gut auf einander abgestimmt sind, um möglichst kurze Entwicklungszeiten einzelner Releases zu unterstützen. Ein weiterer wirtschatlicher Aspekt ist das Economies of scale. Die Lizenzkosten für Betriebssystem, Hardware und andere Software, sind bei Einzelanschaffung recht hoch. Die Kosten für Wartung und Instandhaltung müssen von jedem selbst getragen werden, sowie Updates im Bezug auf Sicherheit. Diese Kosten sind redundant, legt man jedoch viele Rechenzentren zu einem einzelnen zusammen, schafft eine Cloud und lässt mehr Benutzer auf das gleiche System zugreifen, senkt dies Anschaffungs- und Erhaltungskosten drastisch nach dem Prinzip "´buy more pay less"'. Dies ist in Abb. XX gut veranschaulicht, hier sieht man die Benutzerzahlen einer Cloud im Verhältnis zu den Kosten pro Person für die Anschaffung.
+
+\paragraph{Transition (Risiken):} Cloud Computing bringt vor allem im Bezug auf den Datenschutz ein großes Risiko auf. Viele Daten werden nicht in der EU gelagert. Sieben von Zehn kommerziellen Rechenzentren haben ihren Standort in den USA und unterliegen somit auch den Datenschutzrichtlinien in diesem Land. Für sämtliche Daten welche in der EU gesammelt und/oder Verarbeitet werden gibt es bestimmte Richtlinien und Gesetzte, vor allem für die Übertragung ins Ausland (Kapitel 2). Dies bewirkt einen großen Aufwand und benötigt bei manchen Unternehmen, ausgehend vom Ort der Sammlung der zu verarbeitenden Daten, Individuallösungen. Ein weiteres Risiko ist die Abhängigkeit die zum Anbieter entsteht, ständig Systeme von einem zu einem anderen zu migrieren ist aufwändig und auf lange Sicht nicht wirtschaftlich, dies sollte man vermeiden. Ein weiterer Punkt welcher unbedingt auch festegelegt werden muss ist, welche Seite für Backups verantwortlich ist, deren Zeitspannen, Häufigkeit, Integrität und Aufbewahrungsdauer. Auch hier spielt der Datenschutz eine wichtige zu beachtende Rolle.
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{eos.png}
+    \caption{Economies of Scale}
+\end{figure}
+\end{center}
+\break
+%https://ourcodeworld.com/articles/read/977/how-to-deploy-a-node-js-application-on-aws-ec2-server
+\section{Cloud Anbieter Wahl}
+Bei EMS wurde sich nach einigen Abwägungen für das Cloud Computing System von Amazon, AWS, entschieden. Neben der einhergehenden Popularität des Anbieters spielten auch vor allem die Preise, einfache automatisierte Skalierbarkeit und bereits vorhandenes Know-how im Deployen von Full-Stack Anwendungen auf den Service EC2, eine Rolle bei der Wahl.
+
+\subsection{Erstellen einer EC2 Instanz}
+Nachdem auf der Webseite von Aamzon Web Services ein Account erstellt worden ist, gelangt man auf die Homepage für verifizierte Benutzer. Auf der linken oberen Ecke unter Services (Abb. XX), findet man sämtliche Cloud Lösungen welche AWS bietet, stand bei Verfassung dieser Schrift, über 200. Im rechten roten Kreis, sieht man zugleich den Servce "´EC2"', welcher hierfür relevant ist, falls dieser nicht angezeigt wird, kann man oben in der Suchleiste den Namen des gesuchten AWS Services eingeben.
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws1.png}
+    \caption{AWS Services Auflistung}
+\end{figure}
+\end{center}
+
+Nachdem man die den EC2 Service ausgewählt hat, landet man auf dem EC2-Dashboard. Hier erhält man einen Überblick über alle laufenden Instanzen falls man schon bestehende hat, Load Balancer und weitere Services. Bevor man unten auf "´Instanz starten"' klickt, muss Sichergestellt sein, dass man die richtige Region oben rechts ausgewählt hat, dies hat vor allem Datenschutzrechtliche Gründe, grundsätzlich gilt, man wählt am besten das Land aus, aus welchem vor allem die Kunden daraus zugreifen. Man sollte, wenn man in einem Land, welches Mitglied in der EU ist, oder Daten von Benutzer aus der EU bei dem zu deployenden Programm anfallen, ein Land in der EU wählen. Zu sehen auf Abb. XX.
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws2.png}
+    \caption{AWS Region ändern}
+\end{figure}
+\end{center}
+
+Nach der Regionswahl, wird eine neue Instanz erstellt, nach entsprechendem Klick, startet der erste Schritt im Prozess. Zuerst wählt man ein Betriebssystem, worauf unser virtueller Server laufen wird. In unserem Fall war dies Ubuntu 20, da dies einen großen Marktanteil hat, alle Funktionen bietet welche wir benötigen und das OS gratis und uns bereits bekannt ist.
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws3.png}
+    \caption{AWS OS auswählen}
+\end{figure}
+\end{center}
+
+Der nächste Schritt beinhaltet das selektieren des Instanz Typs. Wie viel virtuelle CPU's, wie viel RAM, wie viel Speicherplatz ohne zusätzliche Services wie zum Beispiel Amazon S3, der Serverinstanz später zu Verfügung steht. Wie gut die Netzwerkleistung ist und noch einige andere Details. Hier gibt es hunderte Instanzen welche von zum Beispiel 1 Gigabyte RAM bis zu 3 Terrabyte RAM reichen. Für EMS reicht die gratis t2.micro Instanz. Die Spezifikationen dieser Instanz können aus Abb. XX entnommen werden. Diese Instanz kann jederzeit innerhalb von Minuten nach oben, beziehungsweise auch nach unten im Bezug auf Leistung, skaliert werden.
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws4.png}
+    \caption{AWS Instanzspezifikationen}
+\end{figure}
+\end{center}
+
+Im dritte Schritt werden die Anzahl der konfigurierten Anzahl eingeben und einige andere weitere Optionen, welche eine sehr feine Detailreiche und perfekt abgestimmte Instanz auf unterschiedlichste Use-Cases bietet. Für EMS sind auf dieser Seite keine weiteren Eingaben zum jetzigen Zeitpunkt nötig, da diese jederzeit im Nachhinein getroffen werden können und nicht alle auf der zuvor gewählten Instanz verfügbar sind. Auf dieser Seite kann man schon eine IAM-Rolle hinzufügen, dies sind die Benutzer in AWS, um auf eine EC2 Instanz über zum Beispiel SSH zuzugreifen oder Änderungen an der Instanz selbst vorzunehmen, muss man eine Rolle mit Berechtigungen erstellen, diese können dann später auch an andere Benutzer und AWS-Konten vergeben werden.
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws5.png}
+    \caption{AWS Partitionierung}
+\end{figure}
+\end{center}
+
+Im vierten Schritt wird die Größe des Speichers festgelegt, optional kann dieser auf verschiedene Volumen verteilt werden und je nachdem, welchen Instanz Typ man in Schritt zwei ausgewählt hat, auch diese Verschlüsseln lassen. Sowie auch den Typ des Volumen, worauf alles gespeichert wird, läuft.
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws_tags.png}
+    \caption{AWS Tags}
+\end{figure}
+\end{center}
+
+Schritt Nummer fünf beinhaltet die Setzung von Tags für die Instanz, diese werden in Key-Value Paaren angegeben. In Abb. XX ist aus Sicherheitsgründen der Schlüssel und der Wert zensiert, diese können komplett individuell und auf den Zweck der Instanz personalisiert sein.
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws_security_group.png}
+    \caption{AWS Sicherheit und Zugriff}
+\end{figure}
+\end{center}
+
+Im sechsten und letzten aktiven Schritt zur Erstellung einer neue EC2 Instanz, fügt man Ports und Protokolle hinzu, welche für die Instanz geöffnet werden. Über diese Ports, kann dann direkt auf die Instanz zugegriffen werden, dies ist, damit das Backend von EMS mit der App oder der Webapp kommunizieren kann, essentiell. Die Protokolle wurde jeweils auf ihren Standardports laut IANA (Internet Assigned Numbers Authority). Wenn die zum Zugriff berechtigte Quelle auf den Standardwert \textbf{0.0.0.0/0} belassen wird, kann sich jede Quelle mit der Instanz verbinden.
+Das hier ein Backend gehostet wird, werden Port 80 (HTTP) und Port 443 (HTTPS) für Anfragen aus allen Quellen offen sein. Zugriff mittels SSH auf Port 22 wird auf eine aus Sicherheitsgründen zensierte IP-Adresse beschränkt.
+
+Nach der Auswahl der Zugriffspunkte und Ports, gelangt man auf eine Übersichtsseite. Hier kann man seine Angaben noch einmal überprüfen, sind alle Angaben korrekt, klickt man auf Start und in ein paar Minuten, die Zeit hängt von gewählter Option in Schritt zwei ab, ist die neue Instanz einsatzbereit und man kann sich zum Beispiel per SSH mit einer Shell (Putty) verbinden und zu arbeiten beginnen. 
+
+\section{Deployment einer Node.js Anwendung auf einer EC2 Instanz}
+Nach der ersten Verbindung, müssen alle notwendigen Pakete und Anwendungen installiert werden, in unserem Fall Node.js und Express. Man kann direkt von Github ein Repository auf eine EC2 Instanz klonen. Sicherheitskritische Details wie IP-Adressen werden geschwärzt und zensiert.
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws_verbinden.png}
+    \caption{AWS Instanz Übersicht}
+\end{figure}
+\end{center}
+
+In Abb. XInstanzÜX werden sämtliche Details der nun voll einsatzbereiten Instanz dargestellt, vorerst ist nur der Verbinden-Knopf rechts oben wichtig, hiermit kann man direkt eine SSH Verbindung mit seiner Instanz herstellen, ohne seinen .pem Schlüssel, welchen man bei erstellen der Instanz am Ende herunterladen musste, zu nutzen. Eine einfache, sichere und schnelle Methode um über eine Shell auf der Instanz zu arbeiten.
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws_verbinden.png}
+    \caption{AWS SSH Verbindung}
+\end{figure}
+\end{center}
+
+Nun mit der Instanz verbunden, muss, um einen Node.Js Server zu hosten, zuerst Node.Js und installiert werden, da in dem Beispiel hier ein komplettes Backend mit Express gehostet wird, muss dies auch installiert werden. Dies kann unter Ubuntu 20 mit den folgenden Befehlen in angegebener Reihenfolge gemacht werden:
+
+\begin{lstlisting}[language=bash]
+# Using Ubuntu and Node.js Version 15+
+curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+#For newest Express version
+sudo npm install -g express-generator
+
+#For nodemon
+sudo npm i -g nodemon
+\end{lstlisting}
+
+Nach erfolgreicher Installation sollte mit mit in Abb. XX zu sehendem Kommando, die aktuelle Node.Js Version Installation überprüfen können. (Falls die Installation nicht erfolgte, überprüfen ob man den Befehl sudo benutzt hat.)
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws_nodejs_v.png}
+    \caption{AWS Node.js Version}
+\end{figure}
+\end{center}
+
+Unter Ubuntu musst Git nicht installieren werden, da es mitausgeliefert wird. Falls dies aber doch der Fall sein sollte, kannst man es mit folgendem Befehl installieren;
+
+\begin{lstlisting}[language=bash]
+sudo apt-get install git
+\end{lstlisting}
+
+Danach klont man das Git-Repository mit dem Backend oder der Node.js Anwendung auf die AWS Instanz.
+
+
+\begin{lstlisting}[language=bash]
+git clone https://github.com/[PATH_TO:REPOSITORY]
+\end{lstlisting}
+
+Nach sämtlichen Installationen und wechseln in das Verzeichnis des Repositories, wird das Backend gestartet, dies geschieht mit folgenden Befehlen:
+
+\begin{lstlisting}[language=bash]
+npm install
+
+nodemon start
+\end{lstlisting}
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws_nodejs_s.png}
+    \caption{AWS Backend running}
+\end{figure}
+\end{center}
+
+Abb. zeigt einen Node.js und Express Server auf einer AWS EC2 Instanz laufend. Der Server läuft jetzt auf Port 3000. Wenn man nun aber die öffentliche DNS Adresse der Instanz in die Suchleiste eines Webbrowser einfügt und den Port des Server noch dazu angibt, passiert noch nichts, obwohl die Instanz und Node.js online sind. Damit der Server auch von außerhalb der Instanz erreicht werden kann, muss entsprechender Port geöffnet werden.
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws_nodejs_sicherheitsgruppe.png}
+    \caption{AWS Dashboard Sicherheitsgruppe auswählen}
+\end{figure}
+\end{center}
+
+Dies geschieht in dem man auf de, EC2 Dashboard auf "`Sicherheitsgruppen"' geklickt hat, wie in Abb. XX zu sehen ist. 
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws_launch_wizard.png}
+    \caption{AWS Dashboard Sicherheitsgruppe auswählen}
+\end{figure}
+\end{center}
+
+Bei der Erstellung der Instanz, hat man gleichzeitig auch eine Sicherheitsgruppe erstellt, unter Schritt sechs. Diese wird nun ausgewählt und im unteren Fenster der Reiter "´Regeln für eingehenden Datenverkehr"' ausgewählt und dort auf Bearbeiten geklickt.
+
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws_ports_ende.png}
+    \caption{AWS Dashboard Sicherheitsgruppe auswählen}
+\end{figure}
+\end{center}
+
+Eine Neue Regeln hinzufügen und den Port des Node.js/Express Servers eingeben, plus als Quelle die Sicherheitsgruppen ID der gewählten Sicherheitsgruppe eintragen, dies bewirkt dass alles Instanzen mit dieser Sicherheitsgruppe Port 3000 frei haben.
+
+Indem man nun maximal eine Minute wartet, damit alle Änderungen übernommen worden sind, kann der Server über Port 3000 aufgerufen werden und Funktionen ausgeführt werden zum Beispiel:
+
+\begin{lstlisting}[language=bash]
+http://[Oeffentlicher-IPv4-DNS-DER-INSTANZ].compute.amazonaws.com:[PORTNUMMER]/[FUNKTIONS_NAME]
+\end{lstlisting}
+
+Die Ausgabe erscheint dann im unteren Bereich, falls die Funktion einen Rückgabewert besitzt, wie in Abb. zu sehen.
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws_functionsaufruf.png}
+    \caption{AWS Instanz Port geöffnet}
+\end{figure}
+\end{center}
+
+Einen letzten Schritt gibt es noch. Der Server läuft in einem SSH Fenster im Vordergrund und kann mit Strg+C abgebrochen werden. Um den Prozess nun im Hintergrund laufen zu lassen, gibt man folgenden Befehl ein:
+
+\begin{lstlisting}[language=bash]
+#Installieren von pm2
+sudo npm install pm2 -g
+
+#Zum starten im Hintergrund, in bin Ordner wechseln und
+sudo pm2 start www
+
+#Zum anzeigen aller Prozesse in pm2
+sudo pm2 list
+\end{lstlisting}
+
+Die Ausgabe wie in Abb. XX zu sehen ist, zeigt den Prozess in pm2 unter der OS - Prozess ID 4165 und pm2 ID 1 laufen. Er ist online und einige weitere Details zur Analyse und Fehlerbehandlung werden angezeigt. Sollte man am Server im Code ändern, muss man den Hintergrundprozess neu starten. Dies geht mit:
+
+\begin{lstlisting}[language=bash]
+#Neustart von pm2 Prozess mit ID 1
+sudo pm2 restart 1
+
+#Stoppe Prozess
+sudo pm2 stop 1
+\end{lstlisting}
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{aws_om2.png}
+    \caption{AWS Node.js Server im Hintergrund}
+\end{figure}
+\end{center}
 
 
 \newpage
