@@ -53,28 +53,30 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Liefermodelle von Cloud Computing\relax }}{30}{figure.caption.130}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Ablauf des Risikomanagements (in Anlehnung auf die Darstellung des BVA)\relax }}{30}{figure.caption.130}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 4-Felder-Methode (in Anlehnung an die Abbildung im Buch Systemplanung und Projektentwicklung von Felix Schwab und Ingrid Schwab-Matkovits)\relax }}{36}{figure.caption.170}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Event-Model\relax }}{41}{figure.caption.190}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Event-Model\relax }}{43}{figure.caption.199}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces User-Model\relax }}{43}{figure.caption.192}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces 'add\_event\_to\_user' Funktion\relax }}{52}{figure.caption.235}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces 'create\_user' Funktion\relax }}{53}{figure.caption.237}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.3}{\ignorespaces 'authentication' Middleware\relax }}{53}{figure.caption.239}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces User-Model\relax }}{45}{figure.caption.201}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Kontingenzschemata\relax }}{58}{figure.caption.251}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces 'add\_event\_to\_user' Funktion\relax }}{54}{figure.caption.244}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces 'create\_user' Funktion\relax }}{55}{figure.caption.246}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces 'authentication' Middleware\relax }}{55}{figure.caption.248}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Kontingenzschemata\relax }}{60}{figure.caption.260}%
