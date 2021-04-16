@@ -47,32 +47,34 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Big Data Informationsaustausch vor und nach DSGVO-Pflicht\relax }}{22}{figure.caption.100}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Big Data Informationsaustausch vor und nach DSGVO-Pflicht\relax }}{22}{figure.caption.101}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Liefermodelle von Cloud Computing\relax }}{28}{figure.caption.127}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Event-Model\relax }}{40}{figure.caption.178}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces User-Model\relax }}{41}{figure.caption.180}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Liefermodelle von Cloud Computing\relax }}{30}{figure.caption.130}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces 'add\_event\_to\_user' Funktion\relax }}{48}{figure.caption.219}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Event-Model\relax }}{41}{figure.caption.190}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces 'create\_user' Funktion\relax }}{49}{figure.caption.221}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces 'authentication' Middleware\relax }}{49}{figure.caption.223}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces User-Model\relax }}{43}{figure.caption.192}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Kontingenzschemata\relax }}{54}{figure.caption.235}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces 'add\_event\_to\_user' Funktion\relax }}{52}{figure.caption.235}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces 'create\_user' Funktion\relax }}{53}{figure.caption.237}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces 'authentication' Middleware\relax }}{53}{figure.caption.239}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Kontingenzschemata\relax }}{58}{figure.caption.251}%
