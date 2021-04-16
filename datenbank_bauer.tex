@@ -45,13 +45,15 @@
 		In diesem Bereich wird auf den Datenbankaufbau in unseren Diplomarbeitsprojekt genauer eingegangen und die Gründe für unsere Entscheidungen sowohl den Aufbau betreffend als auch den Anbieter.
 		
 		%Quellen: https://www.mongodb.com/company#:~:text=MongoDB%20was%20founded%20in%202007,the%20shortcomings%20of%20existing%20databases.
-		\subsubsection{Anbieter}
-			Für die Software EMS hat sich unser Team für den Anbieter MongoDB entschieden. Dieser Anbieter betreut auch Großkunden wie Adobe oder Google. MongoDB wurde im Jahre 2007 von Dwight Merriman, Eliot Horowitz und Kevin Ryan gegründet welche auch die Entwickler hinter der Firma DoubleClick sind. Die Datenbank speichert die Informationen in JSON ähnlichen Objekten welche auch Dokumente genant werden. Jedes Dokument repräsentiert einen Datensatz, mehrere Dokumente sind zusammengefasst in einer Kollektion. Jedes Dokument hat beim erstellen eine Objekt Identifikation welcher in diesem System als "\_id" abgekürzt wird. Bei diesem Anbieter kann sich jeder eine gratis Datenbank erstellen welche über eine geteilte Cloud läuft. Für Geld kann die Datenbank auch direkt über MongoDB auf einem dedizierten Server laufen, der Anbieter hat sowohl eine Auswahl von Cloud Anbietern als auch eine große Auswahl von Tarifen zwischen 5€ und mehreren 1000€ pro Tag. Theoretisch könnten man eine MongoDB auch auf seinem eigenen Rechner laufen lassen allerdings hat sich unser Team dagegen entschieden da die Administration von 4 nicht zentralen Datenbank während der Entwicklung ein zu großer Aufwand gewesen wäre.
+		\subsubsection{Technologie}
+			Für die EMS-Software hat sich unser Team für die MongoDB entschieden. Diese Datenbank baut auf JSON ähnliche Objekte auf welche Dokumente genannt werden. Jedes Dokumenten repräsentiert einen Datensatz, mehrere Dokumente sind in einer Kollektion zusammengefasst. Jedes Dokumenten hat beim erstellen einen Identifikator welche bei MongoDB mit '\_id' abgekürzt wird. Dieser Identifikator ist in der gesamten Datenbanken eindeutig, dass ist möglich da es sich um eine hexadezimal 12-Byte Zahl handelt. 
 		
-		\newpage
+		\subsection{Anbieter}
+			Unser Team hat sich für den Anbieter Atlas entschieden welcher Großkunden wie Adobe und Google. Die Firma wurde im Jahr 2007 von Dwight Merriman, Eliot Horowitz und Keyvin Ryan gegründet welche auch die Entwickler der Firma DoubleClick sind. Bei diesem Anbieter kann sich jeder eine gratis Datenbank erstellen welche über eine geteilte Cloud zur verfügbar gestellt wird. Für Geld kann die Datenbank auch direkt über Atlas auf einem dediziertem Server aufgesetzt werden welche zwischen 5€ und 1000€ pro Tag kosten können. Theoretisch könnte MongoDB auch auf seinem eigenen Rechner laufen lassen allerdings hat sich unser Team dagegen entschieden da die Administration von 4 nicht zentralen Datenbank während der Entwicklung ein zu großer Aufwand gewesen wäre
 		
+		\newpage		
 		\subsubsection{Aufbau}
-			Die Datenbank selbst ist in 2 Kollektionen aufgeteilt die Kollektion "events" und die Kollektion "users". In der Kollektion "events" werden alle Informationen zu einem spezifischen Event gespeichert und in der Kollektion "users" werden die individuelle User der Applikation gespeichert sowohl Administratoren so wie die Promoter. 
+			Die Datenbank selbst ist in 2 Kollektionen aufgeteilt die Kollektion 'events' und die Kollektion 'users'. In der Kollektion 'events' werden alle Informationen zu einem spezifischen Event gespeichert und in der Kollektion 'users' werden die individuelle User der Applikation gespeichert sowohl Administratoren so wie die Promoter. Im nächsten Abschnitt werden die einzelnen Datenfelder der Dokumente benannt und der Verwendungszweck beschrieben.
 
 			\subsubsection{Event Aufbau}			
 				\begin{itemize}
@@ -89,12 +91,12 @@
 			
 			\begin{figure}[h]
 				\centering
-				\includegraphics[width=\textwidth]{events_models.png}
+				\includegraphics[width=\textwidth,height=\textwidth,keepaspectratio]{events_models.png}
 				\caption{Event-Model}
-			\end{figure}
-		
-			\newpage
+			\end{figure}	
 			
+			\newpage		
+				
 			\subsubsection{User}
 				\begin{itemize}
 					\item 'firstname' der Vorname des User wird vor allem für die Anzeige benutzt
@@ -107,7 +109,7 @@
 					\item 'description' eine kurze Beschreibung der Person die jeder User selbst verändern kann
 					\item 'resetkey' der Schlüssel mit dem das Passwort zurückgesetzt wird wird nur für interne Überprüfungen benutzt
 					\item 'request' eine Flagge welche angibt ob ein User eine Passwortzurücksetzung angefordert hat wird ebenfalls nur für interne Überprüfungen verwendet
-					\item 'events' besteht aus einem Array von Objekten
+					\item 'events' besteht aus einem Array von Objekten indem alle Events des Users gespeichert werden
 					\begin{itemize}
 						\item 'event\_id' ist die Identifikation des Events um welches es sich in diesem Objekt handelt (ObjektId des Events) in einer SQL Architektur würde man dies den Fremdschlüssel nennen
 						\item 'active' eine Flagge welche angibt ob dieser User momentan bei diesem Event seinen Kartenstand verändern darf
@@ -123,25 +125,23 @@
 							\item 'submitted' die Anzahl an Karten die der User von diesem Kartentyp zurückgegeben hat
 							\item 'available' die Anzahl an Karten von diesem Kartentyp welche der User noch im besitzt hat
 						\end{itemize}
-						\item 'goodies' ist ein weiteres Array von Objekten
+						\item 'goodies' ist ein weiteres Array von Objekten indem die eingelösten Goodies gespeichert werden
 						\begin{itemize}
 							\item 'goodie\_id' die Identifikationsnummer dieses Belohnungstyp
 							\item 'date\_of\_redeem' das Datum an welchem diese Belohnung das letzte mal verändert wurde
-							\item 'amount' wie viele dieser Belohnungen eingelöst wurden
+							\item 'amount' Anzahl an Einlösung für diese Belohnung
 						\end{itemize}
 					\end{itemize}
 				\end{itemize}
-			
+
 			\begin{figure}[h]
 				\centering
-				\includegraphics[width=\textwidth]{user_model.png}
+				\includegraphics[width=\textwidth,height=\textwidth,keepaspectratio]{user_model.png}
 				\caption{User-Model}
 			\end{figure}
-			
-			
-		\newpage
 		
+		\newpage
 		\subsubsection{Entscheidungsgrundlagen}
-			Einer der Gründe warum wir uns für die MongoDB entscheiden haben war, dass am Anfang niemand vorhersagen konnte wie genau unsere Datenbank aufgebaut sein wird. Während der Entwicklung gab es viele Informationen welche nachträglich in die Struktur eingefügt wurden dies hat uns dieser Anbieter sehr vereinfacht. Ein weiter Grund war, die Möglichkeit ein Array aus Objekten zu speichern was viel Abfragen und logistische Probleme gelöst hat ins besondere da wir in unserem Backend über die Schnittstelle "mongoose" auf die Datenbank zugreifen welche einiges ermöglicht was mit MonogDB alleine nicht realisierbar wäre wie zum Beispiel das Vorgeben einer Struktur welche aber veränderbar ist und auch ohne Update auf veralte Datensätze immer noch funktioniert. Diese Struktur ist hat uns auch ermöglicht das alle Mitglieder des Teams einen Überblick über die Datenbank bekommen und einfach Abfragen, Updates und Inserts schreiben konnten. Dazu kommt, dass durch die Möglichkeit der Arrays aus Objekten nur 2 Tabellen (Kollektion) benötigt werden während in einer normalen SQL Datenbank welche in dritter Normalform ist mindestens 12 Tabellen benötigt werden. Natürlich war uns die Performanz der Abfragen sehr wichtig was ein weiter Grund war warum wir uns für diesen Anbieter entschieden haben da die MongoDB eine sehr hohe Performanz hat und die Auswertungen von JSON ähnlichen Objekten auf dem Server ebenfalls schnell abläuft.
+			Einer der Gründe warum wir uns für die MongoDB entscheiden haben war, dass am Anfang niemand vorhersagen konnte wie genau unsere Datenbank aufgebaut sein wird. Während der Entwicklung gab es viele Informationen welche nachträglich in die Struktur eingefügt wurden dies hat uns dieser Anbieter sehr vereinfacht. Ein weiter Grund war, die Möglichkeit ein Array aus Objekten zu speichern was viel Abfragen und logistische Probleme gelöst hat ins besondere da wir in unserem Backend über die Schnittstelle "mongoose" auf die Datenbank zugreifen welche einiges ermöglicht was mit MonogDB alleine nicht realisierbar wäre wie zum Beispiel das Vorgeben einer Struktur welche aber veränderbar ist und auch ohne Update auf veralte Datensätze immer noch funktioniert. Diese Struktur ist hat uns auch ermöglicht das alle Mitglieder des Teams einen Überblick über die Datenbank bekommen und einfach Abfragen, Updates und Inserts schreiben konnten. Dazu kommt, dass durch die Möglichkeit der Arrays aus Objekten nur 2 Tabellen (Kollektion) benötigt werden während in einer normalen SQL Datenbank welche in dritter Normalform ist mindestens 12 Tabellen benötigt werden. Natürlich war uns die Performanz der Abfragen sehr wichtig was ein weiter Grund war warum wir uns für diese Technologie entschieden haben da die MongoDB eine sehr hohe Performanz hat selbst beim Abfragen von großen Dokumenten wie sie in unsere Datenbank gespeichert sind. Da die Objekte der MongoDB wie JSON Objekte aufgebaut sind hat das die Auswertung am Backend ebenfalls erleichtert.
 
 \newpage
