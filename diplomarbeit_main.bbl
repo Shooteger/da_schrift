@@ -19,19 +19,68 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{OSI-Modell}{online}{}
-      \field{sortinit}{O}
-      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+    \entry{aws-dsgvo}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labeltitlesource}{title}
-      \field{title}{OSI-Modell}
+      \field{title}{AWS DSGVO Compliance}
       \verb{urlraw}
-      \verb https://wiki.selfhtml.org/wiki/OSI-Schichtenmodell
+      \verb https://aws.amazon.com/de/compliance/gdpr-center/
       \endverb
       \verb{url}
-      \verb https://wiki.selfhtml.org/wiki/OSI-Schichtenmodell
+      \verb https://aws.amazon.com/de/compliance/gdpr-center/
+      \endverb
+    \endentry
+    \entry{AWS-DSGVO-Tabelle}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{AWS DSGVO Tabelle}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/de/compliance/data-privacy/service-capabilities/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/de/compliance/data-privacy/service-capabilities/
+      \endverb
+    \endentry
+    \entry{aws-ec2-dsgvo-alles}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{AWS EC2 Datenschutzmaßnahmen}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/de/blogs/security/how-to-protect-data-at-rest-with-amazon-ec2-instance-store-encryption/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/de/blogs/security/how-to-protect-data-at-rest-with-amazon-ec2-instance-store-encryption/
+      \endverb
+    \endentry
+    \entry{Capgemini-Studie}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Capgemini-Studie}
+      \verb{urlraw}
+      \verb https://www.capgemini.com/at-de/wp-content/uploads/sites/25/2019/02/IT-Trends-Studie-2019-1.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.capgemini.com/at-de/wp-content/uploads/sites/25/2019/02/IT-Trends-Studie-2019-1.pdf
+      \endverb
+    \endentry
+    \entry{dsgvo-wiki}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{title}{DSGVO}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung
       \endverb
     \endentry
   \enddatalist
+  \missing{aes256}
 \endrefsection
 \endinput
 
