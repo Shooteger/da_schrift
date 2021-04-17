@@ -10,3 +10,8 @@
 *.toc
 *.fls
 *.fdb_latexmk
+*.ind
+*.blg
+*.bcf
+*.toc
+*.bbl
