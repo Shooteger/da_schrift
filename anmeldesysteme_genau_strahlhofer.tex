@@ -1,10 +1,54 @@
-\chapter{Anmeldesysteme}
+\chapter{Aspekte eines Anmeldesystemes & Biometrie}
 
-%https://en.wikipedia.org/wiki/Authorization
-\section{Authorization}
-Authorization hat als Funktionalität die Vergabe von bestimmten Rechten und Rollen zu bestimmten Ressourcen. Dieses Thema gehört der Informationssicherheit an und befasst sich mit der Zugriffskontrolle. Bei der Authorization wird ein für das Unternehmen ein Zugriffsmechanismus implementiert. Wenn z.B. Mitarbeiter sich in einem von der Firma erstellten System anmeldet, werden diesem / dieser Mitarbeiter / in bestimmte Rollen und Rechte zugewiesen. Dies kann bedeuten das der Mitarbeiter gewissen Zugriff besitzt eine Datei im System zu erstellen, diese zu verändern oder möglicherweise diese zu löschen.
+\section{Anmeldeprozesse}
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm]{Risikomanagement_zyklus.png}
+    \caption{Ablauf des Risikomanagements (in Anlehnung auf die Darstellung des BVA)}
+\end{figure}
+\end{center}
+
+%https://www.dr-datenschutz.de/authentisierung-authentifizierung-und-autorisierung/
+\subsection{Authentisierung}
+Bei der Authentisierung muss von einer Person ein Nachweis gegeben werden, dass sie die Person ist die sie behauptet zu sein. Dieser Nachweis kann durch drei verschiedene Methoden nachgewiesen werden, diese sind:
+\begin{itemize}
+	\item Die Person besitzt Wissen über eine Information, die nur der Kontoinhaber wissen kann, z.B. das Passwort oder Sicherheitsfragen sein.
+	\item Das Individuum das sich versucht anzumelden und sendet beispielsweise einen Reisepass oder Führerschein als Konformation.
+	\item Es wird vom Nutzer eine Information mitgesendet die er oder sie nur von sich selbst senden kann. Ein Beispiel wäre die Sendung von einem biometrischen Nachweis, dass kann entweder ein Fingerabdruck oder ein Gesichtsscan sein.
+\end{itemize}
+
+%https://www.dr-datenschutz.de/authentisierung-authentifizierung-und-autorisierung/
+\subsection{Authentifizierung}
+Bei diesem Schritt des Anmeldeablaufs, wird eine Überprüfung durchgeführt. Diese Prüfung soll analysiert die Informationen, die bei der Authentisierung erfasst worden sind. Können diese dem Zielkonto zugewiesen werden, dann ist der Nutzer die Person die er angibt zu sein.
+
+%https://www.dr-datenschutz.de/authentisierung-authentifizierung-und-autorisierung/
+\subsection{Autorisierung}
+Die Autorisierung hat als Funktionalität die Bestätigung von bestimmten Rechten und Rollen zu bestimmten Ressourcen. Dieses Thema gehört der Informationssicherheit an und befasst sich mit der Zugriffskontrolle. Bei der Autorisierung wird für das Unternehmen ein Zugriffsmechanismus implementiert. Wenn z.B. ein Promoter sich in einem von der Firma erstellten System anmeldet, werden bestimmte Rollen und Rechte zugewiesen. Dies bedeutet das der Mitarbeiter nur einen bestimmten Zugriff auf gewisse Funktionalität besitzt.
 
 \subsubsection{Rollen}
+Bei der Anmeldung in die EMS-Software soll zwischen den Rollen Promoter und Administrator unterschieden werden. 
 \begin{itemize}
-	\item \textbf{Administratoren:} Diese Rolle ist eine der wichtigsten in einem System. Dieser kann Mitarbeiter-Konten in einem System erstellen, falls diese neu in der Firma sind. Er kann eine Löschung durchführen, wenn ein Angestellter kündigt oder gekündigt wird. Diese Tätigkeit ist unbedingt notwendig und muss sofort passieren. Es kann sonst ein Risiko darstellen, da der ehemalige Mitarbeiter / in sonst weiter im System Informationen manipulieren könnte. Des weiteren kann er Details von einem Benutzer verändern, wenn beispielsweise diese / r heiratet und einen neuen Nachnamen besitzt. 
+	\item \textbf{Administratoren:} Die Rolle ist eine der wichtigsten in der Software. Dieser kann Benutzer und Events in einem System erstellen, verändern und löschen. Benutzer können zusätzlich deaktiviert werden, da diese entweder zu häufig falsche Anmeldeinformationen eingegeben haben oder weil die Person eine Anfrage darauf gestellt hat.
+	\item \textbf{Promoter:} Diese Rolle sind Benutzer der Software, die Karten anfordern und verkaufen können. Sie können, beispielsweise die Funktionalitäten wie die Benutzer- und Eventverwaltung nicht bedienen.
 \end{itemize}
+
+%https://en.wikipedia.org/wiki/Authentication
+%https://de.wikipedia.org/wiki/Authentifizierung
+\subsection{Arten der Autorisierung}
+Die Autorisierung kann in verschiedene Arten stattfinden. Ein Person kann sich auf viele unterschiedliche Weisen verifizieren.
+
+\subsubsection{}
+
+
+%https://www.kaspersky.de/resource-center/definitions/biometrics
+%Biometrie
+\section{Biometrie}
+
+
+%iOS - Touchid
+%Android - Fingerprint
+%Sicherheit
+%Genauigkeit
+%Kosten
+%Akzeptanz

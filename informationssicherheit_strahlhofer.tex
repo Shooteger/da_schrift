@@ -10,9 +10,9 @@ Weiters wird überprüft, dass eine fremde, nicht befugte Person oder ein nicht 
 \\
 
 %Reis Folie
-\section{Relevante Standards und Norme}
+\section{Relevante Standards und Normen}
 
-\subsection{Länder spezifische Standards und Norme}
+\subsection{Länder spezifische Standards und Normen}
 Viele verschiedene Länder haben ihre eigenen Standards oder Nachschlagewerke, in denen Sie verschiedensten Unternehmen versuchen eine Hilfe zu bieten, zum Thema Management der Informationssicherheit.
 Deutschland besitzt das BSI(Bundesamt für Sicherheit in der Informationstechnik) in dem man sich als Firma auch zertifizieren kann. Österreich stellt das Österreichische Informationssicherheithandbuch zu Verfügung. Die Schweiz verwendet hingegen MELANI (Melde- und Anlaufsstelle für Informationssicherheit).
 
@@ -32,11 +32,11 @@ Der neuste Stand dieser Praktik ist ITILv4, die am 18. Februar 2019 publiziert w
 
 %https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Kompendium/Elementare_Gefaehrdungen.pdf?__blob=publicationFile&v=4
 %Reis Foliensatz 1
-\section{Bedrohungen für Informationssicherheit}
+\section{Bedrohungen im Bereich Informationssicherheit}
 In der Informationssicherheit gibt es viel verschiedene Arten von Bedrohungen die sich laufend verändern. Im BSI IT-Grundschutz sind 47 unterschiedliche Arten von Bedrohungen der Informationssicherheit aufgelistet.
 
 %bsi und folien von reis
-\paragraph{Wichtige Bedrohungen in der Informationssicherheit}
+\paragraph{Wichtige Bedrohungen in der Informationssicherheit bezogen auf die EMS-Software}
 \begin{itemize}
 	\item \textbf{Gefährdungen durch natürliche Ereignisse:} Darunter fallen Naturkatastrophen, Feuer, Wasser, Verschmutzungen durch Staub, Korrosion und ungünstige klimatische Bedingungen die zur Zerstörung der IT-Infrastruktur führen.
 	\item \textbf{Ausfälle oder Störungen:} Diese können von der Stromversorgung, Kommunikationsnetzen, Versorgungsnetzen oder Dienstleistern kommen.
@@ -53,10 +53,11 @@ In der Informationssicherheit gibt es viel verschiedene Arten von Bedrohungen di
 Es liegt eine gesetzliche Notwendigkeit im Sinne des Treffens der geeigneten technischen und organisatorischen Maßnahmen vor. Beispielsweise die EU-DSGVO, das Telekommunikationsgesetz, das Urheberrechtsgesetz.
 
 \subsubsection{Wettbewerbsvorteil}
-Wenn eine Firma einen hohen Stand an Informationssicherheit besitzt, kann sie konkurrenzfähig bleiben. Zusätzlich kann das eigene Unternehmen mit Partnerunternehmen ins Geschäft kommen, die einen hohen Wert auf Informationssicherheit setzen. Durch Zertifikate kann nachgewiesen werden, dass der Betrieb über ein hohes Sicherheitsniveau verfügt.
+Wenn eine Firma einen hohen Stand an Informationssicherheit besitzt, indiziert es damit das das Datensicherheitsniveau sehr gut gepflegt ist. Das Unternehmen kann deswegen konkurrenzfähig bleiben. Zusätzlich kann das eigene Unternehmen mit Kunden ins Geschäft kommen, die einen hohen Wert auf Informationssicherheit setzen. Diese können z.B. Banken sein die bestimmte Zertifikate voraussetzen.
+Durch Zertifikate kann nachgewiesen werden, dass der Betrieb über ein hohes Sicherheitsniveau verfügt.
 
 \subsubsection{Risiken identifizieren}
-Ein Vorteil für ein Unternehmen ist, dass Risiken die mit den Bedrohungen der Informationssicherheit zu tun haben, eher erkannt werden und infolgedessen auch Schäden umgangen werden können.
+Ein Vorteil für ein Unternehmen ist, dass Risiken die mit den Bedrohungen der Informationssicherheit zu tun haben, eher erkannt werden und infolgedessen auch Schäden verhindert werden können.
 
 %https://wotan-monitoring.com/de/news/news-detail/die-schutzziele-der-informationssicherheit-verfuegbarkeit-integritaet-und-vertraulichkeit.html#:~:text=Informationssicherheit%20und%20ISO%2FIEC%2027001&text=Und%20im%20Hauptdokument%2C%20der%20ISO,Vertraulichkeit%E2%80%9C%20und%20deren%20Aufrechterhaltung%20definiert.
 %Folien reis
@@ -71,7 +72,7 @@ Die Vertraulichkeit beschreibt die Eigenschaft, dass eine Information für eine 
 
 \subsubsection{Integrität}
 Die Integrität laut dem BSI beschäftigt sich mit der Korrektheit von Informationen. In der Informationssicherheit wird damit assoziiert, dass eine unbefugte Person keine Daten manipulieren kann und darf. Darunter wird verstanden, dass Veränderungen wie Datensätze einfügen, verändern oder löschen nicht möglich ist.
-Im Rahmen von Integrationstest kann überprüft werden ob Daten von befugten Individuen manipuliert werden. Dieser Aspekt kann beispielsweise mittels Hashfunktion überprüft werden.
+Im Rahmen von Softwaretests kann überprüft werden ob Daten von befugten Individuen manipuliert werden. Dieser Aspekt kann beispielsweise mittels Hashfunktion gewährleistet werden.
 
 
 \subsubsection{Verfügbarkeit}
@@ -79,7 +80,7 @@ Unter Verfügbarkeit wird in diesem Schutzziel verstanden, dass ein IT-System od
 
 %https://en.wikipedia.org/wiki/Man-in-the-middle_attack
 \subsubsection{Authentizität}
-Bei diesem Schutzziel geht es darum, dass ein System gewährleistet, das ein Kommunikationspartner wirklich die Person ist, die er vorgibt zu sein. Bei der Überprüfung der Authentizität muss ein Benutzer seine Identität vorerst bestätigen. Das kann durch viel verschiedene Methoden erfolgen, wie die Eingabe von Benutzername und Passwort oder die Sendung des Reisepasses oder eine Anmeldung via Fingerabdruck oder Gesichtserkennung. Danach kann durch ein Kontrollmodul die Identitätskontrolle an der Person durchgeführt werden und dadurch authentifiziert werden. Am Ende dieses Vorgangs ist eine Person im System angemeldet und es werden im Rahmen der Autorisierung bestimmte Rollen oder Rechte zugewiesen.
+Bei diesem Schutzziel geht es darum, dass ein System gewährleistet, das ein Kommunikationspartner wirklich die Person ist, die er vorgibt zu sein. Bei der Überprüfung der Authentizität muss ein Benutzer seine Identität vorerst bestätigen. Das kann durch verschiedene Methoden erfolgen, wie die Eingabe von Benutzername und Passwort oder die Sendung des Reisepasses oder eine Anmeldung via Fingerabdruck oder Gesichtserkennung. Danach kann durch ein Kontrollmodul die Identitätskontrolle an der Person durchgeführt werden und dadurch authentifiziert werden. Am Ende dieses Vorgangs ist eine Person im System angemeldet und es werden im Rahmen der Autorisierung bestimmte Rollen oder Rechte zugewiesen.
 Dieses Schutzziel kann \textbf{Man-in-the-Middle-Angriffe} verhindern. Bei dieser Cyberattacke setzt sich eine Person zwischen die Kommunikation zweier verschiedener Parteien und kann damit Transaktionen manipulieren. 
 
 %https://de.wikipedia.org/wiki/Informationssicherheit#Zugangskontrolle
