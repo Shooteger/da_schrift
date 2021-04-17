@@ -24,8 +24,6 @@ Für die Verordnung gibt es gewisse Ausnahmen (Artikel 1, Abs. 2):
 	\item durch die zuständigen Behörden zum Zwecke der Verhütung, Ermittlung, Aufdeckung oder Verfolgung von Straftaten oder der Strafvollstreckung, einschließlich des Schutzes vor und der Abwehr von Gefahren für die öffentliche Sicherheit
 \end{itemize}
 
-
-
 \subsection{Kapitel und Aufbau der DSGVO}
 Die Datenschuttgrundverordnung ist in 11 Kapitel unterteilt. Diese Kapitel sind wiederum in einzelne Artikel unterteile, 99 an der Zahl. Eine Übersicht:
 
@@ -113,10 +111,11 @@ genaue Überwachung der Daten bieten. Als Beispiel wird hier ein für EMS releva
 
 Amazon Elastic Compute Cloud (Amazon EC2), bietet vom Anbieter selbst aus eine Verschlüsselung, Löschung und auch Überwachung der Daten\footcite{aws-ec2-dsgvo-alles}. Eine der wichtigsten Tools zur generellen Sicherung von Daten ist es, diese zu
 Verschlüsseln. Bei diesem Service, auf welchem das Backend von EMS läuft, ist auch in der gratis Variante eine Verschlüsselung der virtuellen Festplatte geboten. Dies kann man bei der Erstellung einer EC2 Instanz auswählen
-(Kapitel 1.3.3, Abb. 1.7). Das sicherste Verschlüsselungsverfahren was auf diesem Service oder generell angeboten wird ist AES256\footcite{aes256}. AES steht für \textbf{Advanced Encryption Standardnpg} und die Zahl nach AES, in dem
+(Kapitel 1.3.3, Abb. 1.7). Das sicherste Verschlüsselungsverfahren was auf diesem Service oder generell angeboten wird ist AES256\footcite{aes256}. AES steht für \textbf{Advanced Encryption Standard} und die Zahl nach AES, in dem
 Fall hier 256, steht für die Schlüsselänge in Bit. Es ist eines der sichersten Verschlüsselungsverfahren was es Stand bei Verfassung dieser Schrift gab. Es ist von der NSA als sicher genug zur Verschlüsselung von als Top-Secret
 eingstuften Dokumenten ausgezeichnet.
 Eine EC2 Instanz kann auf zwei verschiedene Arten verschlüsselt werden:
+%\footnote{https://de.wikipedia.org/wiki/Advanced_Encryption_Standard}
 
 \begin{enumerate}
 	\item mit \textbf{disk encryption}
@@ -128,19 +127,47 @@ verschlüsselt eine Datei oder einen Ordner in dem Dateisystem direkt. Also disk
 
 In EMS wird all dies aber nicht benötigt. Auf der EC2 Instanz läuft das Background, der Node.js/Express Server, mit welchem die App kommuniziert und Funktionen aufruft. Auf der EC2 Instanz werden keine Datenschutzrechtlich
 relevanten Daten gespeichert. Diese Funktionen erhalten entweder pseudonymisierten Kürzel oder komplett nicht personenbezogene Daten als Funktionsparameter mit und machen bei Bedarf eine Abfrage auf die MongoDB Datenbank,
-welche den Klarnamen eines Benutzers gespeichert hat. Mehr dazu bei Kapiteln 8.1.5 und 8.1.6.
+welche den Klarnamen eines Benutzers gespeichert hat. Dies bedeutet, dass sämtliche datenschutzrelevanten Informationen in der MongoDB Datenbank, in der Atlas Cloud gespeichert sind.
+%\footnote{https://aws.amazon.com/de/compliance/gdpr-center/}
+%\footnote{https://aws.amazon.com/de/compliance/data-privacy/service-capabilities/}
+%\footnote{https://aws.amazon.com/de/blogs/security/how-to-protect-data-at-rest-with-amazon-ec2-instance-store-encryption/}
+%\footnote{https://en.wikipedia.org/wiki/Advanced_Encryption_Standard}
 
 Personenbezogene Daten werden nur einmal zur Anlegung eines neuen Benutzers benötigt. Hier müssen alle in folgender Abbildung gezeigten Felder mit den entsprechenden Daten gefüllt werden um einen neuen Benutzer, einen Promoter, anzulegen.
 \begin{center}
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=\textwidth]{benutzer_anlegen.png}
-		\caption{Benutzerinformationen}
+		\includegraphics[width=\textwidth,height=\textwidth,keepaspectratio]{benutzer_anlegen.png}
+		\caption{Benutzererstellung (Kapitel 8.1.6)}
 	\end{figure}
 \end{center}
 
-%\footnote{https://aws.amazon.com/de/compliance/gdpr-center/}
-%\footnote{https://aws.amazon.com/de/compliance/data-privacy/service-capabilities/}
-%\footnote{https://aws.amazon.com/de/blogs/security/how-to-protect-data-at-rest-with-amazon-ec2-instance-store-encryption/}
-%\footnote{https://en.wikipedia.org/wiki/Advanced_Encryption_Standard}
+Von MongoDB Atlas werden Dokumente\footcite{atlas-doku-aws} zur sicheren Übertragung von Daten zwischen AWS Services und einer Datenbank in der Atlas Cloud zu Verfügung gestellt. Diese Dokumente basieren auf Best-practises und sollen einen Leitfaden zur
+sicheren Übertragung von Daten von einem AWS Endpunkt zu Atlas dokumentieren.
+%\footnote{https://webassets.mongodb.com/_com_assets/cms/MongoDB_Atlas_Security_Controls-v7k3rbhi3p.pdf}
+
+\subsection{MongoDB Atlas Datenschutzgrundverordnung}
+Wie in Kapitel 2.3.1 erwähnt, werden sämtliche datenschutzrelevanten Daten in der Datenbank abgespeichert. Diese gefindet sich in der MongoDB Atlas Cloud, welche ebenfalls eine eigene DSGVO Compliace\footcite{atlas-dsgvo-com} bieten.
+%\footnote{https://www.mongodb.com/cloud/trust/compliance/gdpr}
+Das Unternehmen bietet einige Services und Strategien für ihre Kunden zu Verfügung, um diese im Bereich des Datenschutzen mit Fachwissen zu unterstützen oder zu sensibilisieren. Einer dieser Services heißt SOC 2\footcite{atlas-soc2}.
+%\footnote{https://www.mongodb.com/cloud/trust/compliance/soc}
+Dieser Service ist eine Prüdungsverfahren um sicherzustellen, dass ein Kunde alle für ihn relevanten Aspekte der DSGVO implementiert hat und auch die Interessen seiner eigenen Kunden vertritt. Der Service hat fünf verschiedene
+Vertrauensgrundsätze\footcite{atlas-soc2} die da wären:
+
+\begin{enumerate}
+	\item Sicherheit: das System ist ausreichend gegen unbefugten Zugriff gesichert, sowohl physisch auf Hardwareebene als auch logisch
+	\item Verfügbarkeit: das System ist durchgehend erreichbar
+	\item Integrität der Verarbeitungsprozesses: Die Richtigkeit des verarbeiteten Daten ist gewähleistet, die Verarbeitung ist Zweckgerichtet
+	\item Vertraulichkeit: Die Informationen werden mit hoher Vertraulichkeit behandelt und geschützt
+	\item Geheimhaltung und Privatsphäre: Alle personenbezogenen Daten werden hinsichtlich der Grundsätze der DSGVO behandelt und nach Verarbeitung oder der vereinbarten Zeit zu Ausbewahrung unwiederruflich gelöscht
+\end{enumerate}
+
+SOC 2 von MongoDB Atlas wird in zwei verschiedenen Formaten angeboten:
+
+\begin{enumerate}
+	\item \textbf{Type I}: Bewertet DSGVO Umsetzung und Stand des Datenschutzen zum angegebenen Zeitpunkt 
+	\item \textbf{Type II}: Bewertet DSGVO Umsetzung und Stand des Datenschutzen in einer angegebenen zeitlichen Periode, jedoch mindestens sechs Monate
+\end{enumerate}
+
+Das Angebot \textbf{Type II} unter SOC 2 in Atlas wird von einem externen Unternehmen\footcite{atlas-soc2}, Schellman and Company LLC durchgeführt.
 \newpage

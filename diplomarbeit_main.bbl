@@ -19,6 +19,18 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{aes256}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{AES Encryption}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Advanced_Encryption_Standard
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Advanced_Encryption_Standard
+      \endverb
+    \endentry
     \entry{aws-dsgvo}{online}{}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
@@ -79,8 +91,43 @@
       \verb https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung
       \endverb
     \endentry
+    \entry{atlas-soc2}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{title}{MongoDB Atlas SOC2}
+      \verb{urlraw}
+      \verb https://www.mongodb.com/cloud/trust/compliance/soc
+      \endverb
+      \verb{url}
+      \verb https://www.mongodb.com/cloud/trust/compliance/soc
+      \endverb
+    \endentry
+    \entry{atlas-doku-aws}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{title}{MongoDB Atlas und AWS Security Leitfaden}
+      \verb{urlraw}
+      \verb https://webassets.mongodb.com/_com_assets/cms/MongoDB_Atlas_Security_Controls-v7k3rbhi3p.pdf
+      \endverb
+      \verb{url}
+      \verb https://webassets.mongodb.com/_com_assets/cms/MongoDB_Atlas_Security_Controls-v7k3rbhi3p.pdf
+      \endverb
+    \endentry
+    \entry{atlas-dsgvo-com}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{title}{MongoDB DSGVO Compliance}
+      \verb{urlraw}
+      \verb https://www.mongodb.com/cloud/trust/compliance/gdpr
+      \endverb
+      \verb{url}
+      \verb https://www.mongodb.com/cloud/trust/compliance/gdpr
+      \endverb
+    \endentry
   \enddatalist
-  \missing{aes256}
 \endrefsection
 \endinput
 
