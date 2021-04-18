@@ -47,36 +47,62 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Big Data Informationsaustausch vor und nach DSGVO-Pflicht\relax }}{22}{figure.caption.101}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Big Data Informationsaustausch vor und nach DSGVO-Pflicht\relax }}{22}{figure.caption.102}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Benutzererstellung (Kapitel 8.1.6)\relax }}{24}{figure.caption.112}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Datenbank erstellen\relax }}{28}{figure.caption.147}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Datenbank erstellen\relax }}{28}{figure.caption.148}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Datenbank Standort\relax }}{29}{figure.caption.149}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Datenbank Modus\relax }}{29}{figure.caption.150}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Datenbank Regeln bearbeiten\relax }}{30}{figure.caption.151}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Firebase Web-API-Schlüssel\relax }}{31}{figure.caption.162}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Ablauf des Risikomanagements (in Anlehnung auf die Darstellung des BVA)\relax }}{30}{figure.caption.130}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Ablauf des Risikomanagements (in Anlehnung auf die Darstellung des BVA)\relax }}{40}{figure.caption.283}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 4-Felder-Methode (in Anlehnung an die Abbildung im Buch Systemplanung und Projektentwicklung von Felix Schwab und Ingrid Schwab-Matkovits)\relax }}{36}{figure.caption.170}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces 4-Felder-Methode (in Anlehnung an die Abbildung im Buch Systemplanung und Projektentwicklung von Felix Schwab und Ingrid Schwab-Matkovits)\relax }}{46}{figure.caption.322}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Risiken zum Thema Anmeldesysteme\relax }}{48}{figure.caption.337}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Ablauf eines Anmeldevorgangs (Abbildung von wikipedia)\relax }}{49}{figure.caption.340}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Passwortzurücksetzungsanfrage\relax }}{54}{figure.caption.364}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Passwortzurücksetzung\relax }}{55}{figure.caption.366}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Event-Model\relax }}{61}{figure.caption.388}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces User-Model\relax }}{63}{figure.caption.390}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Event-Model\relax }}{43}{figure.caption.199}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces 'add\_event\_to\_user' Funktion\relax }}{72}{figure.caption.434}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces User-Model\relax }}{45}{figure.caption.201}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces 'create\_user' Funktion\relax }}{73}{figure.caption.436}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces 'add\_event\_to\_user' Funktion\relax }}{54}{figure.caption.245}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces 'create\_user' Funktion\relax }}{55}{figure.caption.247}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.3}{\ignorespaces 'authentication' Middleware\relax }}{55}{figure.caption.249}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces 'authentication' Middleware\relax }}{73}{figure.caption.438}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Ticketsystem-Marktverteilung\relax }}{77}{figure.caption.444}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Kontingenzschemata\relax }}{60}{figure.caption.261}%
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Kontingenzschemata\relax }}{81}{figure.caption.452}%
