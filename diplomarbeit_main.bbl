@@ -31,6 +31,30 @@
       \verb https://de.wikipedia.org/wiki/Advanced_Encryption_Standard
       \endverb
     \endentry
+    \entry{materials}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{Angular Materials}
+      \verb{urlraw}
+      \verb https://material.angular.io/
+      \endverb
+      \verb{url}
+      \verb https://material.angular.io/
+      \endverb
+    \endentry
+    \entry{matierials-componenten}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{Angular Materials Komponenten}
+      \verb{urlraw}
+      \verb https://material.angular.io/components/categories
+      \endverb
+      \verb{url}
+      \verb https://material.angular.io/components/categories
+      \endverb
+    \endentry
     \entry{aws-dsgvo}{online}{}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
@@ -67,6 +91,18 @@
       \verb https://aws.amazon.com/de/blogs/security/how-to-protect-data-at-rest-with-amazon-ec2-instance-store-encryption/
       \endverb
     \endentry
+    \entry{aws-s3}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{title}{AWS S3 Service}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/de/s3/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/de/s3/
+      \endverb
+    \endentry
     \entry{Capgemini-Studie}{online}{}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
@@ -89,6 +125,42 @@
       \endverb
       \verb{url}
       \verb https://github.com/didinj/angular-9-firebase-chat-example
+      \endverb
+    \endentry
+    \entry{firebase-yt-tut}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Chatapp Tutorial YouTube}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=cibWNf4IVws
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=cibWNf4IVws
+      \endverb
+    \endentry
+    \entry{firebase-tut1}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Chatapp Tutorial YouTube}
+      \verb{urlraw}
+      \verb https://devdactic.com/ionic-firebase-chat/
+      \endverb
+      \verb{url}
+      \verb https://devdactic.com/ionic-firebase-chat/
+      \endverb
+    \endentry
+    \entry{udemy-course}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Chatapp Udemy Kurs}
+      \verb{urlraw}
+      \verb https://www.udemy.com/course/the-ultimate-angular-11-ionic-5-firebase-chat-app-course/
+      \endverb
+      \verb{url}
+      \verb https://www.udemy.com/course/the-ultimate-angular-11-ionic-5-firebase-chat-app-course/
       \endverb
     \endentry
     \entry{dsgvo-wiki}{online}{}
