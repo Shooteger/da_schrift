@@ -249,12 +249,25 @@ Diese Methode wurde im Unterricht den Gruppenmitgliedern beigebracht. Des weiter
 \end{center}
 
 \subsection{Umsetzung der Inhalte der Mindmaps}
-\subsubsection{Notwendige Software Lösungen um Risiken abuzdecken}
 \subsubsection{Verlässlicher Regestrierungsprozess}
+Der Registrierungsprozess wurde vom Endnutzer entkoppelt. Der Endnutzer gibt seine Daten per e-mail ab und die Registrierung am System wird durch einen Administrator durchgeführt. Somit kann das Riskio von Cyberangriffen minimiert werden und die Qualität der eingegeben Daten optimiert werden.
 \subsubsection{Rollenkonzept}
+Durch das Rollenkonzept wird sichergestellt, dass nur berechtigte Personen Änderungen am System oder den Daten durchführen können. Folgende Rollen und Berechtiungen wurden definert: 
+\begin{itemize}
+	\item \textbf{Administratoren:} Der Administator kann Benutzer und Events im System erstellen, verändern und löschen. Benutzer können zusätzlich deaktiviert werden, da diese entweder zu häufig falsche Anmeldeinformationen eingegeben haben oder weil die Person eine Anfrage darauf gestellt hat.
+	\item \textbf{Promoter:} Diese Rolle sind die Benutzer der Software, die Karten anfordern und verkaufen können. Es wird ebenfalls sichergestellt, dass die Promoter nur Zugriff auf von ihnen erstellte Geschäftsfälle hat.
+\end{itemize}
 \subsubsection{Passwortzurücksetzungsprozess}
+Es ist sichergestellt, dass nur der User sein Passwort vergeben kann. Hat er dieses vergessen, kann er mit der Eingabe seiner e-mail Adresse (diese muss mit der Adresse in seinen Stammdaten zusammenpassen) einen Token anfordern. Mit Eingabe des Token wird die Identität verifiziert und der User kann ein neues Passwort vergeben.
 \subsubsection{Anmeldeprozess}
+Durch Verifikation des Users per Username und Passwort authentifiziert der Anwender sich im System. Hierbei wurde noch die Möglichkeit eines Single-Sign-On implementiert in der User durch einen vom System vergebenen Token identifiziert wird. Um das Risiko von Brute-Force oder DoS/DDoS Angriffen zu minimieren wurde zum Einen die Passwortsicherheit durch die Vorgabe von Minimalattributen (Mindestens 8Zeichen, Alphanumerisch, Numerisch und Sonderzeichen) sichergestellt. Zum Weiteren wird der Anmeldeversuch nach dem 5 Mal abgebrochen und der User muss durch einen Administrator wieder aktiviert werden.
 \subsubsection{Lauffähigkeit}
+Durch die Verwendung des Ionic Frameworks wird die Lauffähigkeit auf Android und iOS Systemen sichergestellt.
 \subsubsection{Phising}
+Die User werden darauf aufmerksam gemacht, dass nur von einer Stelle Nachrichten an sie versendet werden. 
 \subsubsection{Passworthashing}
+Im System werden alle Passwörter per Geheimschlüssel verschlüsselt verarbeitet und gespeichert.
 \subsubsection{Performance}
+Bei der Programmierung wurde darauf geachtet nur die notwendigsten Datenmengen zu übertragen. Bei manuellen Tests wurde die Performance entsprechend überprüft. Das Budget lässt keine automatisierten Performance Tests im Projekt zu.
+\subsubsection{Durch AWS abgedeckte Risiken}
+Risiken wie Datenverlust, veraltete Softwarekomponenten und auch zum Teil DoS/DDoS Angriffe werden durch die Verwendung des Cloud Dienstes AWS ausgeschlossen oder zumindest verringert.
