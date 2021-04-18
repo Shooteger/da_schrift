@@ -1,12 +1,12 @@
 \chapter{Aspekte eines Anmeldesystemes und Biometrie}
 \strahlhofer
 
-\section{Prozesse eines Anmeldevorgangs}
+\section{Prozesse des Anmeldevorgangs}
 \begin{center}
 \begin{figure}[h]
     \centering
     \includegraphics[width=9cm]{authentisieren-authentifizieren.png}
-    \caption{Ablauf eines Anmeldevorgangs}
+    \caption{Ablauf eines Anmeldevorgangs (Abbildung von wikipedia)}
 \end{figure}
 \end{center}
 
@@ -46,7 +46,7 @@ Bei der Anmeldung in die EMS-Software soll zwischen den Rollen Promoter und Admi
 Bei dieser Wissenschaft, schließt eine biometrische Identifikation nur auf eine bestimmte Person.
 Durch diesen Aspekt ist die Biometrie eine sehr angesehne Technik in der Identifikation von Menschen.
 
-\subsection{Methoden in der Biometrie}
+\subsection{Methoden der Biometrie}
 Eine biometrische Information kann durch viele unterschiedliche Methoden erhoben werden.
 \begin{itemize}
 	%https://www.livescience.com/62690-how-dna-ancestry-23andme-tests-work.html
@@ -69,7 +69,7 @@ Eine biometrische Information kann durch viele unterschiedliche Methoden erhoben
 	\end{itemize}
 	\paragraph{Nachteile}
 	\begin{itemize}
-		\item In dem Fall das einer Person sich auf dem Finger verletzt, kann es dazu führen das der Fingerabdruck sich verändert. Aus diesem Grund kann sich die Person möglicherweise nicht mehr identifizieren.
+		\item In dem Fall, dass scih eine Person auf dem Finger verletzt, kann es dazu führen das der Fingerabdruck sich verändert. Aus diesem Grund kann sich die Person möglicherweise nicht mehr identifizieren.
 	\end{itemize}
 	%https://en.wikipedia.org/wiki/Facial_recognition_system
 	%https://www.pcs.com/wissens-werte/biometrie/gesichtserkennung-von-angesicht-zu-angesicht#:~:text=Hohe%20Sicherheit%20ist%20mit%20Gesichtserkennung,in%20der%20Regel%20nicht%20erkannt.
@@ -85,18 +85,83 @@ Eine biometrische Information kann durch viele unterschiedliche Methoden erhoben
 	\end{itemize}
 \end{itemize}
 
+%https://candytech.in/10-worthy-fingerprint-scanner-smartphones-in-india/#:~:text=Motorola%20was%20the%20first%20company,fingerprint%20scanner%20at%20the%20top.
+%https://en.wikipedia.org/wiki/Android_(operating_system)
+\subsection{Biometrie auf Android Geräten}
+Android ist eine Betriebssystem für Smartphones und Tablets. Der Erfolg des Betriebssystems, zeichnet sich damit aus, dass es Open Source ist. Das bedeutet ein Unternehmen kann Android frei und ohne Kosten nutzen.
+\paragraph{Fingerabdruckssensoren}
+Motorola hatte im Jahre 2011 das Motorola Atrix veröffentlicht. Dies war das erste Smartphone auf dem Weltmarkt, dass einen Fingerabdruckssensor eingebaut hatte.
+Dieses Gerät bekam durch dieses Feature einen sehr hohen Bekanntheitsgrad und löste damit gleichzeitig einen Technologie Trend aus.
+Im laufe der danachfolgenden Jahre baute Apple dann auch einen Fingerprintsensor in ihre Geräte ein. Des weiteren begannen dann andere Android Smartphone Hersteller auch diesen Sensor zu integrieren.
+Über die Jahre sind viele verschiedene Arten von Sensoren entwicklet worden. Wie z.B.
+\begin{itemize}
+	\item Berühren eines Knopfes auf dem Gerät (z.B. Apple Geräte).
+	\item Wischen über einen Knopf (z.B. Samsung S7 Edge).
+	\item In-Display, den Finger auf das Display legen (z.B. Oneplus 8). 
+\end{itemize}
+\paragraph{Gesichtserkennung}
+Die Gesichtserkennung gibt es schon für die meisten Android Geräte. Diese sind häufig sehr unsicher, es exisitieren viel Fälle wo das Feature geknackt worden ist. Aus diesem Grund kennzeichnen die meisten Hersteller diese Methode als unsicher. 
+\\
+%https://www.kiroku-just-write.de/2020/09/01/gesichtserkennung/#:~:text=Die%20grunds%C3%A4tzliche%20Voraussetzung%20f%C3%BCr%20funktionierende,f%C3%BCr%20jeden%20Menschen%20einzigartig%20sind.
+%https://www.consumentenbond.nl/veilig-internetten/gezichtsherkenning-te-hacken
+\paragraph{consumentenbond}
+Im Jahre 2019 wurde eine Studie von einer niederländischen Organisation zu dem Thema Gesichtserkennung bei Smartphones, durchgeführt. 
+Diese haben 60 Smartphones von unterschiedlichen Herstellern getestet. 26 dieser Handys konnten mittels eines Portraits des Telefonbesitzers entsperrt werden.
+
 %https://en.wikipedia.org/wiki/Touch_ID
-\subsection{Biometrie bei iOS Geräten}
+\subsection{Biometrie auf iOS Geräten}
+Apple Inc. ist eine Technologie Firma aus den Vereinigten Staaten, die durch den Verkauf von Computern in den siebziger Jahren. Das Unternehmen bringt jährlich Smartphones(iPhones), Tablets(iPads), Laptops(MacBooks) auf den weltweiten Markt.
+\paragraph{Touch ID}
+Nachdem 
+Im Jahre 2012 kaufte Apple die Firma AuthenTec. Dieses Unternehmen spezialisierte sich auf das Lesen von Fingerabdrücken.
+Im darauffolgendem Jahr brachte das Unternehmen dann das iPhone 5s heraus. Dieses Gerät hatte einen Fingerabdruckssensor im "Home-Button" eingebaut. Ab diesem Zeitpunkt konnten alle Benutzer zusätzlich zu ihrem Passwort eine sogenannte Touch ID zur Identifikation benutzen.
+Die Fingerabdrücke wurde auf den Chips des Geräts gespeichert, anstatt in der Cloud. Das macht Angreifern es unmöglich die biometirschen Infomrationen abzufangen.
+%https://www.pcwelt.de/international/Gesichtserkennung-auf-Android-Smartphones-einrichten-10824319.html
+\paragraph{Face ID}
+Das erste Smartphone von Apple, dass Gesichstserkennung besitzte, war das iPhone X(2017). Dieses Feature trug den Namen Face ID und löste größtenteils damit die Touch ID ab.
+Alle Geräte die Face ID verwenden haben eine 3D-Sensoren die mehr Gesichtsmerkmale erkennen, als wie bei Android Geräten.
 
 
-\subsection{Biometrie bei Android Geräten}
+\subsection{Biometrie bei EMS}
+Bei der Plannung der Software von EMS wurde ein Framework namens Ionic, das auf Angular aufbaut, verwendet. Dieses kann ein Projekt in zwei fast identisch aussehende Applikationen umwandeln, die auf Android und iOS laufen.
+In der Dokumentation wurde Fingerprint AIO vorgestellt. Dieses Tool ist eine von Cordova bereitgestelltes Plugin, um einen Fingerabdruck auf iOS und Android zu verwenden.
+Dieses Feature kann auch beispielsweise mit Face ID bei iOS Geräten verwendet werden.
 
-%iOS - Touchid
-%Android - Fingerprint
-%iOS - Face id
-%Anroid - Facial Regcognition
+\paragraph{Umfrage} Die Gruppe hatte zwei Ideen biometrische Identifikation in die Applikation zu integrieren. Ein Vorschlag war nach dem der Benutzer sich eingeloggt und SSO ausgewählt hat, kann der Fingerabdruck zur Anmeldung verwendet werden.
+Eine andere Idee war vor jeder Anfrage die gestellt wurde die biometrischen Daten überprüft werden.
+\\
+Es wurden dafür 10 verschiedene Personen im Alter von 16 bis 20 Jahren befragt. Das Resultat hatte ergeben, dass 8 von 10 Personen bei jeder Ticketanfrage einen Identifikationsprozess durchführen.
+Des weiteren wurde gefragt ob beide Vorschläge realisiert werden sollen. Hier haben 10/10 darauf eingestimmt das nur eines dieser Vorhaben realisiert werden soll. Der Grund war zu meist, dass eine zu häufige Abfrage störrend sein kann.
 
-%Sicherheit
-%Genauigkeit
-%Kosten
-%Akzeptanz
+\paragraph{Umsetzung} Die Biometrie wurde jetzt so umgesetzt, dass vor einer Anfragenstellung der Fingerabdruck überprüft wird.
+
+\section{Passwortzurücksetzung}
+Auf fast jeder Website, ist es ein Standard eine Passwortzurücksetzung anfordern zu können. In den meisten Fällen wird diese mittels Link unter der Anmeldung gekennzeichnet, beispielsweise mit der Bezeichnung "Passwort vergessen?".
+In diesem Projekt haben wir das Versenden einer Zurücksetzungsmail mit SendGrid. Dies ist ein Anbieter dieser Anbieter macht es möglich leicht E-Mails mittels Node.js zu versenden.
+Für das EMS Projekt wurde der kostenlose Tarif gewählt. Dieser kann bis zu 100 Mails an einem Tag automatisiert versenden.
+
+\subsection{Anfrage}
+Wenn die Person das Passwort zu ihrem/seinem Account vergessen hat, kann diese durch Eingabe der E-Mail-Adresse eine Passwortzurücksetzungscode erhalten. Wenn auf den Knopf "Senden" gedrückt wird.
+Diese Information wird an das Backend weitergegeben und eine E-Mail wird dann mit einem Zurücksetzungscode versandt. 
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm]{pw_anfrage.PNG}
+    \caption{Passwortzurücksetzungsanfrage}
+\end{figure}
+\end{center}
+\newpage
+
+\subsection{Zurücksetzung}
+Zum Navigieren auf diese Seite muss bei der Anfrageseite "Code erhalten" gedrückt werden. Bei der Zurücksetzung muss die Person vorerst den versendeten Code erfassen. Wenn kein Code erhalten wurde kann man über den Link "Keine E-Mail bekommen" zurück zur Anfrageseite. Als nächstes werden Daten erfasst, wie E-Mail-Adresse, Zurücksetzungscode und zweimal das neue Passwort.
+Mittels drücken des "Zurücksetzen" Knopfes wird dann das neue Passwort auf gewisse Faktoren, wie Länge von mindestens 8 Zeichen und Verwendung von einem Großbuchstaben, einem Sonderzeichen und einer Zahl geprüft.
+Wenn eine gültige Eingabe getätigt wurde, werden die Daten an das Backend versendet, wo Zurücksetzungscode und E-Mail-Adresse geprüft werden. Wenn ein User mittles diesen Aspekten gefunden wurde, wird das Passwort geändert.
+
+\begin{center}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=7cm]{pw_eingabe.PNG}
+	\caption{Passwortzurücksetzung}
+\end{figure}
+\end{center}
