@@ -21,51 +21,49 @@
 	In einer NoSQL Datenbank können Daten auf verschieden Arten organisiert und abgespeichert werden. Aber sämtliche dieser Methoden Unterscheiden sich vor allem auf eine Art von einer normalen SQL Datenbank. Dieser Unterschied liegt darin, dass die Datenbank nicht in konstanten Tabellen aufgebaut ist und dadurch eine höhere Flexibilität in den Daten ermöglicht. Ein Beispiel für eine solche Flexibilität ist die Speicherlösung welche die Firma "MongoDB" anbietet. In einer NoSQL Datenbank von diesem Anbieter werden die Daten in einzelnen JSON-Dateien geschrieben. Dies ermöglicht das jedes Element wenn benötigt eine eigene Struktur hat ohne das ein Schema vorgegeben oder angepasst werden muss. Eine weitere Sache welche in NoSQL Datenbank möglich ist die in SQL Datenbanken nicht so einfach realisierbar wäre ist die möglich in einem Datenobjekt ein Array von weiteren Datenobjekten zu speichern. Dies ermöglicht eine sehr hohe Flexibilität und war einer der Gründe warum wir uns bei unserem EMS Projekt auch für eine MongoDataBase entschieden haben.
 	
 	%Quelle: https://www.mongodb.com/nosql-explained/nosql-vs-sql
-	\subsection{SQL vs NoSQL}
+	\section{SQL vs NoSQL}
 		Wie bereits vorher Beschrieben gibt es schon im Aufbau und in der Funktionsweise der Datenbank große Unterschiede in diesem Bereich werden die Vorteile und Nachteile der Datenbank Architekturen genauer beschrieben und gegenüber gestellt.
 	
 	%Quelle: https://becksche.de/Meldung/24-01-2014-sql-oder-nosql
-	\subsubsection{SQL Vorteile}
+	\subsection{SQL Vorteile}
 		Um in einer SQL Datenbank etwas zu speichern muss immer ein Schema für die Datenbank vorher entwickelt und implementiert werden. Dieses Schema hat den Vorteil das direkt vom Anfang an bekannt ist welche Daten in der Datenbank gespeichert werden und wie die Datenbank aufgebaut wird. 
 		Ein weiterer an dem Tabellen Aufbau ist die Einfachheit der Darstellung da die Daten ähnlich wie in einer Excel Tabelle angezeigt werden. Die Administration in einer SQL Datenbank ist ebenfalls einfacher da ins besondere für die weiter verbreitenden Datenbanksysteme wie Oracle oder Microsoft SQL Server viele Administrationstools existieren.
 		
-	\subsubsection{SQL Nachteile}
+	\subsection{SQL Nachteile}
 		Einer der Vorteile der SQL Datenbank ist gleichzeitig einer der Nachteile da ein Schema immer entworfen sein muss bevor die Datenbank befüllt werden kann, dies sorgt dafür, dass nachträgliche Änderungen der Struktur schwer zu bewerkstelligen sind da die alten Datensätze entweder aktualisiert oder teilweise mit dem Wert "Null" aufgefüllt werden müssen. Ein weiter Nachteil den viele Entwickler in einer SQL Datenbank sehen ist, dass aufteilen von Informationen über mehrere Tabellen. Wenn eine Datenmodellierung nach dem Lehrbuch durchgeführt wird muss die Datenbank am Ende der Modellierung in der dritten Normalform bestehen was in den meisten Fällen dafür sorgt, dass Daten auf mehreren Tabellen aufgeteilt sind um redundante Daten zu vermeiden. Diese Normalform verkompliziert allerdings oft die Abfragen da Joins benötigt werden um sämtliche Daten zu erhalten. Dazu kommt das diese Abfragen weniger Performant sind da mehrere Tabellen nach Informationen durchsucht werden müssen. 
 		
 	%Quelle: https://www.mongodb.com/nosql-explained/nosql-vs-sql
-	\subsubsection{NoSQL Vorteile}
+	\subsection{NoSQL Vorteile}
 		Einer der größten Vorteile einer NoSQL Datenbank liegt in der Flexibilität des Datenmodels. Dieses Datenmodel hilft vor allem bei der Entwicklung einer Software wo die Anforderungen an die Datenbank nicht von Anfang an genau bekannt sind. Dies liegt daran, dass nicht von Anfang an ein Schema zum speichern der Daten benötigt wird da die einzelnen Objekte nicht in einer gewöhnlichen Tabelle gespeichert werden. Statt dessen werden die Daten in Objekte gespeichert welche nicht konsistent mit den anderen Objekten sein müssen. Dies bedeutet das es ein Objekt existieren kann welches Attribute besitzt die in den anderen Objekten nicht existieren. Ein weiterer Vorteil einer NoSQL Datenbank liegt darin, dass in einem Objekt ein Array von weiter Objekten gespeichert werden können dies wird in der Fachsprache als verschachteltes Array bezeichnet dies sorgt dafür das eine NoSQL fast nie Beziehungstabellen benötigt was Abfragen oft schneller macht da keine Joins benötigt werden. 
 	
 	%Quelle: https://www.mongodb.com/nosql-explained/nosql-vs-sql
 	%Quelle: https://www.dnsstuff.com/de/nosql-datenbankvergleich#:~:text=Nachteile%20von%20NoSQL%2DDatenbanken&text=Erstens%20bieten%20NoSQL%2DDatenbanken%20nicht,wodurch%20ihre%20Systeme%20komplexer%20werden.
-	\subsubsection{NoSQL Nachteile}
+	\subsection{NoSQL Nachteile}
 		Einer der Nachteile einer NoSQL Datenbank liegt darin das diese Datenbanken meist das ACID-Prinzip (Atomarität, Konsistenz, Isolation , Dauerhaftigkeit) nicht einhaltet was in manchen Fällen zu einer inkonsistent führen könnte. Allerdings gibt es die Möglichkeiten das die Entwickler ihren eigenen Code implementieren welcher das ACID-Prinzip einhält dies führt aber oft zu einem komplexeren Datenbanksystem. Ein weitere Nachteil der NoSQL Datenbank besteht darin, dass diese nicht mit der SQL-Sprache kompatible sind was die Lernkurve vor allem bei Entwicklern welche bis jetzt SQL verwendet haben erheblich anheben kann. Dazu kommt das Abfragen insbesondere wenn diese komplexer werden manchmal Performanceeinbußen entstehen können.
 		
 
-	\subsection{Datenbankentwurf}
-		Der Datenbankentwurf umfasst alle alle Aufgaben zur Ermittlung der Struktur einer Datenbank. Das Entwerfen dieses Modell wird in 4 Phasen Unterteilt.
+	\section{Datenbankentwurf}
+		Der Datenbankentwurf umfasst alle Aufgaben zur Ermittlung der Struktur einer Datenbank. Der Entwurfsprozess unterscheidet sich stark zwischen einer gewöhnlichen SQL Datenbank und einer NoSQL Datenbank wie sie bei diesem Projekt verwendet wird.
 		
-		\subsubsection*{Zweckbestimmung}
+		%Quellen: https://support.microsoft.com/de-de/office/grundlagen-des-datenbankentwurfs-eb2159cf-1e30-401a-8084-bd4f9c9ca1f5
+		\subsection{SQL Datenbankentwurf}
 
-		\subsubsection*{Konzeptionelles Modell}
-
-		\subsubsection*{Logisches Modell}
-
-		\subsubsection*{Physisches Modell}
+		%Quellen: 
+		\subsection{NoSQL Datenbankentwurf}
 
 
-	\subsection{EMS Datenbank}
+	\section{EMS Datenbank}
 		In diesem Bereich wird auf den Datenbankaufbau in unseren Diplomarbeitsprojekt genauer eingegangen und die Gründe für unsere Entscheidungen sowohl den Aufbau betreffend als auch den Anbieter.
 		
 		%Quellen: https://www.mongodb.com/company#:~:text=MongoDB%20was%20founded%20in%202007,the%20shortcomings%20of%20existing%20databases.
-		\subsubsection{Technologie}
+		\subsection{Technologie}
 			Für die EMS-Software hat sich unser Team für die MongoDB entschieden. Diese Datenbank baut auf JSON ähnliche Objekte auf welche Dokumente genannt werden. Jedes Dokumenten repräsentiert einen Datensatz, mehrere Dokumente sind in einer Kollektion zusammengefasst. Jedes Dokumenten hat beim erstellen einen Identifikator welche bei MongoDB mit '\_id' abgekürzt wird. Dieser Identifikator ist in der gesamten Datenbanken eindeutig, dass ist möglich da es sich um eine hexadezimal 12-Byte Zahl handelt. 
 		
 		\subsection{Anbieter}
 			Unser Team hat sich für den Anbieter Atlas entschieden welcher Großkunden wie Adobe und Google. Die Firma wurde im Jahr 2007 von Dwight Merriman, Eliot Horowitz und Keyvin Ryan gegründet welche auch die Entwickler der Firma DoubleClick sind. Bei diesem Anbieter kann sich jeder eine gratis Datenbank erstellen welche über eine geteilte Cloud zur verfügbar gestellt wird. Für Geld kann die Datenbank auch direkt über Atlas auf einem dediziertem Server aufgesetzt werden welche zwischen 5€ und 1000€ pro Tag kosten können. Theoretisch könnte MongoDB auch auf seinem eigenen Rechner laufen lassen allerdings hat sich unser Team dagegen entschieden da die Administration von 4 nicht zentralen Datenbank während der Entwicklung ein zu großer Aufwand gewesen wäre
 		
 		\newpage		
-		\subsubsection{Aufbau}
+		\subsection{Aufbau}
 			Die Datenbank selbst ist in 2 Kollektionen aufgeteilt die Kollektion 'events' und die Kollektion 'users'. In der Kollektion 'events' werden alle Informationen zu einem spezifischen Event gespeichert und in der Kollektion 'users' werden die individuelle User der Applikation gespeichert sowohl Administratoren so wie die Promoter. Im nächsten Abschnitt werden die einzelnen Datenfelder der Dokumente benannt und der Verwendungszweck beschrieben.
 
 			\subsubsection{Event Aufbau}			
