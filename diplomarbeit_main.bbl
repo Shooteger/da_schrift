@@ -163,6 +163,78 @@
       \verb https://www.udemy.com/course/the-ultimate-angular-11-ionic-5-firebase-chat-app-course/
       \endverb
     \endentry
+    \entry{cloud-eaas}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Cloud Computing Everything as a Service}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Everything_as_a_Service
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Everything_as_a_Service
+      \endverb
+    \endentry
+    \entry{cloud-ms}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Cloud Computing Microsoft}
+      \verb{urlraw}
+      \verb https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models
+      \endverb
+      \verb{url}
+      \verb https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models
+      \endverb
+    \endentry
+    \entry{cloud-servicemodelle}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Cloud Computing Servicemodelle}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Cloud_Computing#Servicemodelle
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Cloud_Computing#Servicemodelle
+      \endverb
+    \endentry
+    \entry{cloud-computing}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Cloud Computing Wikipedia}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Cloud_Computing
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Cloud_Computing
+      \endverb
+    \endentry
+    \entry{cloud-types-pic}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Cloud Typen}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Cloud_Computing#/media/Datei:Cloud_computing_types.svg
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Cloud_Computing#/media/Datei:Cloud_computing_types.svg
+      \endverb
+    \endentry
+    \entry{deploy-nodejs1}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{title}{Deploy of NodeJS application}
+      \verb{urlraw}
+      \verb https://ourcodeworld.com/articles/read/977/how-to-deploy-a-node-js-application-on-aws-ec2-server
+      \endverb
+      \verb{url}
+      \verb https://ourcodeworld.com/articles/read/977/how-to-deploy-a-node-js-application-on-aws-ec2-server
+      \endverb
+    \endentry
     \entry{dsgvo-wiki}{online}{}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
@@ -173,6 +245,18 @@
       \endverb
       \verb{url}
       \verb https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung
+      \endverb
+    \endentry
+    \entry{eos}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeltitlesource}{title}
+      \field{title}{Economies of Scale}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/figure/Cloud-Computing-Economies-of-Scale-16_fig2_330596073
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/figure/Cloud-Computing-Economies-of-Scale-16_fig2_330596073
       \endverb
     \endentry
     \entry{firebase-site}{online}{}
@@ -223,6 +307,51 @@
       \verb https://www.mongodb.com/cloud/trust/compliance/gdpr
       \endverb
     \endentry
+    \entry{cloud-ms-privat}{online}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{Private Cloud Microsoft}
+      \verb{urlraw}
+      \verb https://azure.microsoft.com/en-us/overview/what-is-a-private-cloud/
+      \endverb
+      \verb{url}
+      \verb https://azure.microsoft.com/en-us/overview/what-is-a-private-cloud/
+      \endverb
+    \endentry
+    \entry{cloud-ms-ph}{online}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{Public und Hybrid Cloud Microsoft}
+      \verb{urlraw}
+      \verb https://azure.microsoft.com/en-us/overview/what-are-private-public-hybrid-clouds/
+      \endverb
+      \verb{url}
+      \verb https://azure.microsoft.com/en-us/overview/what-are-private-public-hybrid-clouds/
+      \endverb
+    \endentry
+    \entry{Lehrunterlagen-HTL-cloud}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=70998ef4cfacb41fb6e27f5b8209d04f}{%
+           family={Reis},
+           familyi={R\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{70998ef4cfacb41fb6e27f5b8209d04f}
+      \strng{fullhash}{70998ef4cfacb41fb6e27f5b8209d04f}
+      \strng{bibnamehash}{70998ef4cfacb41fb6e27f5b8209d04f}
+      \strng{authorbibnamehash}{70998ef4cfacb41fb6e27f5b8209d04f}
+      \strng{authornamehash}{70998ef4cfacb41fb6e27f5b8209d04f}
+      \strng{authorfullhash}{70998ef4cfacb41fb6e27f5b8209d04f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lehrunterlagen der HTL Wiener Neustadt}
+    \endentry
     \entry{socket-io}{online}{}
       \field{sortinit}{s}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
@@ -236,6 +365,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{Lehrunterlagen-HTL}
 \endrefsection
 \endinput
 
