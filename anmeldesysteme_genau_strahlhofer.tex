@@ -141,7 +141,27 @@ In diesem Projekt haben wir das Versenden einer Zurücksetzungsmail mit SendGrid
 Für das EMS Projekt wurde der kostenlose Tarif gewählt. Dieser kann bis zu 100 Mails an einem Tag automatisiert versenden.
 
 \subsection{Anfrage}
-Wenn die Person das Passwort zu ihrem/seinem Account vergessen hat, kann diese die E-Mail Adresse eingeben. Wenn auf den Knopf ""
+Wenn die Person das Passwort zu ihrem/seinem Account vergessen hat, kann diese durch Eingabe der E-Mail-Adresse eine Passwortzurücksetzungscode erhalten. Wenn auf den Knopf "Senden" gedrückt wird.
+Diese Information wird an das Backend weitergegeben und eine E-Mail wird dann mit einem Zurücksetzungscode versandt. 
+
+\begin{center}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm]{pw_anfrage.PNG}
+    \caption{Passwortzurücksetzungsanfrage}
+\end{figure}
+\end{center}
+\newpage
 
 \subsection{Zurücksetzung}
+Zum Navigieren auf diese Seite muss bei der Anfrageseite "Code erhalten" gedrückt werden. Bei der Zurücksetzung muss die Person vorerst den versendeten Code erfassen. Wenn kein Code erhalten wurde kann man über den Link "Keine E-Mail bekommen" zurück zur Anfrageseite. Als nächstes werden Daten erfasst, wie E-Mail-Adresse, Zurücksetzungscode und zweimal das neue Passwort.
+Mittels drücken des "Zurücksetzen" Knopfes wird dann das neue Passwort auf gewisse Faktoren, wie Länge von mindestens 8 Zeichen und Verwendung von einem Großbuchstaben, einem Sonderzeichen und einer Zahl geprüft.
+Wenn eine gültige Eingabe getätigt wurde, werden die Daten an das Backend versendet, wo Zurücksetzungscode und E-Mail-Adresse geprüft werden. Wenn ein User mittles diesen Aspekten gefunden wurde, wird das Passwort geändert.
 
+\begin{center}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=7cm]{pw_eingabe.PNG}
+	\caption{Passwortzurücksetzung}
+\end{figure}
+\end{center}
