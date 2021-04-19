@@ -25,9 +25,9 @@ Jede Cloud hat bestimmte spezielle Charakteristiken\footcite{cloud-computing}. D
 momentan fünf essenzielle Eigenschaften, die da wären:
 \begin{enumerate}
 	\item \textbf{On-demand self-service: } Bedeutet, dass Ressourcen, wie etwa Speicher und Rechenleistung der Cloud, vom Nutzer selbstständig oder automatisiert 
-ohne persöhnliche Interaktion mit dem Serviceprovider in Anpsruch genommen werden können
-	\item \textbf{Broad network access: } Services aus der Cloud sind über das Internet und durch Standardmechanismen, mithilfe von verschiedenen Plattformen wie einem Smartphone, einem Laptop, einem Stand-PC oder Tablet, erreichbar
-	\item \textbf{Resource pooling: } Die in generell in einer Cloud zur Verfügung stehenden Ressourcen wie zum Beispiel Speicher und Rechenleistung, sind für alle Kunden gebündelt von einem Pool aus verfügbar und werden geteilt. Dabei ist der physische Standort der Server für den Klienten in der Regel unbekannt.
+ohne persönliche Interaktion mit dem Serviceprovider in Anpsruch genommen werden können.
+	\item \textbf{Broad network access: } Services aus der Cloud sind über das Internet und durch Standardmechanismen, mithilfe von verschiedenen Plattformen wie einem Smartphone, einem Laptop, einem Stand-PC oder einem Tablet, erreichbar.
+	\item \textbf{Resource pooling: } Die generell in einer Cloud zur Verfügung stehenden Ressourcen wie zum Beispiel dem Speicher und der Rechenleistung, sind für alle Kunden gebündelt von einem Pool aus verfügbar und werden geteilt. Dabei ist der physische Standort der Server für den Klienten in der Regel unbekannt.
 	\item \textbf{Rapid elasticity: } Die durch den Kunden in Anspruch genommenen Ressourcen können aus dessen Sicht schnell ins beinahe unendliche skaliert werden. Die Lastenänderung
 kann ebenfalls automatisiert angepasst werden, sodass keine menschliche Interaktion notwendig ist.
 	\item \textbf{Measured Service: } Die Ressourcennutzung der Kunden kann durch den Anbieter gemessen, überwacht und analysiert werden. Zum Zwecke von Abrechnungen, einer effektiveren
@@ -37,7 +37,7 @@ Nutzung der in Anspruch genommenen Ressourcen oder für eine vorausschauende Ges
 %Quellen: Reis Folien, https://de.wikipedia.org/wiki/Cloud_Computing#Servicemodelle,
 %https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models
 \subsection{Servicemodelle}
-NIST listet drei grundsätzliche Standard-Modelle\footcite{cloud-servicemodelle}, in welcher Form Cloud Computing Dienste angeboten werden können. Diese werden oft als Schichten untereinander vereinfacht dargestellt:
+Das NIST listet drei grundsätzliche Standard-Modelle\footcite{cloud-servicemodelle}, in welcher Form Cloud Computing Dienste angeboten werden können. Diese werden oft als Schichten untereinander vereinfacht dargestellt:
 \begin{itemize}
 	\item Infrastructure as a Service (IaaS)
 	\item Platform as a Service (PaaS)
@@ -49,12 +49,13 @@ NIST listet drei grundsätzliche Standard-Modelle\footcite{cloud-servicemodelle}
 %https://de.wikipedia.org/wiki/Everything_as_a_Service,
 \subsubsection{Infrastructure as  a Service (IaaS)}
 Bei IaaS\footcite{cloud-ms} nimmt der Kunde IT-Infrastruktur wie Server, Speicher oder Virtuelle Computer von einem Cloudanbieter in Anspruch. In diesem Fall gestaltet der Kunde seine eigene Infrastruktur in der Cloud selbst und kümmert sich um die Installation von Software und den laufenden Betrieb derer selbst.
-Der Anbieter ist lediglich für die genutzten physischen Hardware Elemente verantwortlich und wartet diese. Alles andere fällt in den Zuständigkeitsbereich des Kunden. Kurz zusammengefasst ist IaaS die Bereitstellung von Infrastruktur über das Internet, welche vom Nutzer bedingt kontrolliert wird.
+Der Anbieter ist lediglich für die genutzten physischen Hardware Elemente verantwortlich und wartet diese.
+Alles andere fällt in den Zuständigkeitsbereich des Kunden. Kurz zusammengefasst ist IaaS die Bereitstellung von Infrastruktur über das Internet, welche vom Nutzer bedingt kontrolliert wird.
 
 Infrastructure as a Service kann auch als Everything as a Service bezeichnet werden, da in diesem Geschäftsmodell alles vom Kunden selbst verwaltet wird. Einige Charakteristiken von IaaS:
 \begin{itemize}
 	\item Nur einmalig genutzte Anwendungen werden einmal bezahlt und wieder freigegeben
-	\item Im Falle eines explosionsartigen Wachstums und ein Erreichen der Belastungsspitze, können die Services skaliert werden. So können die bestehenden Ressourcen innerhalb von Minuten zum Beispiel um viel Speicher erweitert werden oder auch im Gegenteil nicht genutzte Kapazitäten frei gegeben werden, welche dann nicht mehr bezahlt werden müssen.
+	\item Im Falle eines explosionsartigen Wachstums und ein Erreichen der Belastungsspitze, können die Services skaliert werden. So können die bestehenden Ressourcen innerhalb von Minuten beispielweise um viel Speicher erweitert werden oder auch im Gegenteil nicht genutzte Kapazitäten frei gegeben werden, welche dann nicht mehr bezahlt werden müssen.
 \end{itemize}
 
 Ein Beispiel zu letzterem Punkt wäre das Mieten eines VPS-Servers (Virtual Private Server) um das Backend einer App wie EMS darauf aufzusetzen.
@@ -68,26 +69,31 @@ Klassische Anbieter welche IaaS anbieten wären Amazon mit Amazon Web Services (
 %https://de.wikipedia.org/wiki/Platform_as_a_Service
 \subsubsection{Platform as a Service (PaaS)}
 PaaS\footcite{cloud-ms} stellt dem Kunden eine Programmier- und Laufzeitumgebung zur Verfügung. Hier stellt der Cloudanbieter eine Softwareumgebung, fertig
-aufgesetzt für den Nutzer, zu Verfügung. Die Daten- und Rechenkapazitäten
+aufgesetzt für den Nutzer, zur Verfügung. Die Daten- und Rechenkapazitäten
 der Umgebungen sind dabei flexibel und können somit dynamisch angepasst werden.
 
-Diese Form des Cloudservices würde sich vor allem an Unternehmen richten, welche eine große Anzahl an Mitarbeiter beschäftigt und an vielen Applikationen gleichzeitig arbeitet und diese schnell entwickeln muss. 
+Diese Form des Cloudservices würde sich vor allem an Unternehmen richten, welche eine große Anzahl an Mitarbeitern beschäftigt und an vielen Applikationen gleichzeitig arbeitet und diese schnell entwickeln muss. 
 Dieses Unternehmen müsste jeden Arbeitsplatz mit einem entsprechend Leistungsstarken Computer ausrüsten, was viel Kapital erfordert. Stattdessen könnte solch eine Firma auf PaaS zurückgreifen und für einen geringen Betrag monatlich diese Umgebungen in einer Cloud mieten und spart sich so viel Kapital und bleibt bei den benötigten
-Rechenleistungen flexibel, da die Umgebungen eben auf die benötigten Performanceansprüche skaliert werden kann. Dies wäre bei eingekaufter Hardware in einem Büro nicht so leicht, was dieses Servicemodell den Kunden auch schnell und einfach auf neue Technologien und neue Anforderungen am Markt reagieren lässt.
+Rechenleistungen flexibel, da die Umgebungen auf die benötigten Performanceansprüche skaliert werden kann. Dies wäre bei eingekaufter Hardware in einem Büro nicht so leicht, was dieses Servicemodell den Kunden auch schnell und einfach auf neue Technologien und neue Anforderungen am Markt reagieren lässt.
 
 %Quellen: Reis Folien, https://de.wikipedia.org/wiki/Cloud_Computing#Servicemodelle,
 %https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models,
 %https://de.wikipedia.org/wiki/Software_as_a_Service
 
 \subsubsection{Software as a Service (SaaS)}
-Manchmal auch als Software on Demand\footcite{cloud-computing} beschrieben, was \textbf{Software nach Bedarf} übersetzt bedeutet. Hier bietet der Cloudanbieter spezielle Software zur Nutzung an. Der Kunde kann dann diese Software- und Anwendungsprogramme nach belieben benutzen. Die Applikationen werden über das Internet dem Nutzer zu Verfügung gestellt, 
-und dieser kann mittels einer API darauf zugreifen, was meistens über einen Browser oder eine App geschieht. Die Infrastruktur hinter den Anwendungen verwaltet der Anbieter selbst, und auch die angebotene Software kann nur bis zu einem gewissen Teil vom Kunden konfiguriert werden. Also sämtliche Instandhaltungsarbeiten obliegen dem Cloudanbieter.
-Der Nutzer verwendet lediglich die angebotene Software und kann sich bei Problemen nur an den Support wenden.
+Manchmal auch als Software on Demand\footcite{cloud-computing} beschrieben, was übersetzt, \textbf{Software nach Bedarf}, bedeutet.
+Hier bietet der Cloudanbieter spezielle Software zur Nutzung an. Der Kunde kann dann diese Software- und Anwendungsprogramme nach belieben nutzen.
+Die Applikationen werden dem Nutzer über das Internet zu Verfügung gestellt, 
+und dieser kann mittels einer API darauf zugreifen was meistens über einen Browser oder eine App geschieht.
+Die Infrastruktur hinter den Anwendungen verwaltet der Anbieter selbst, und auch die angebotene Software kann nur bis zu einem gewissen Teil vom Kunden konfiguriert werden.
+Also obliegen sämtliche Instandhaltungsarbeiten dem Cloudanbieter.
+Der User verwendet lediglich die angebotene Software und kann sich bei Problemen nur an den Support wenden.
 
 Beispiele für so ein Service, wären die meisten Google Services wie Gmail, Docs, Drive und Photos. Noch weitere prominente Beispiele für Software as a Service, sind Github, Office 365 und Dropbox.
 
 Zusätzlich zu den oben genannten standardisierten Modellen, existieren noch einige weitere Modelle auf dem Markt. Prinzipiell
-kann man heutzutage fast jeden nur denkbaren Service über eine Cloud beziehen. Mit der Zeit haben sich dafür auch spezielle Bezeichnungen gebildet. Diese Fachbegriffe können groß zusammengefasst werden:
+kann man heutzutage fast jeden nur denkbaren Service über eine Cloud beziehen.
+Mit der Zeit haben sich dafür auch spezielle Bezeichnungen gebildet. Diese Fachbegriffe können übergeordnet zusammengefasst werden:
 \begin{itemize}
 	\item Function as a Service (FaaS)
 	\item Everything as a Service (XaaS)
@@ -97,9 +103,10 @@ kann man heutzutage fast jeden nur denkbaren Service über eine Cloud beziehen. 
 %https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models,
 %https://de.wikipedia.org/wiki/Function_as_a_Service
 \subsubsection{Function as a Service (FaaS)}
-Prinzipiell ist FaaS\footcite{cloud-ms} von den Angeboten und Leistungen ähnlich wie das vorhin beschriebene PaaS-Modell. Es stellt eine Laufzeitumgebung zur Verfügung in der Softwareanwendungen erstellt werden können.
+Prinzipiell ist FaaS\footcite{cloud-ms} von den Angeboten und Leistungen ähnlich wie das vorhin beschriebene PaaS-Modell.
+Es stellt eine Laufzeitumgebung zur Verfügung in der Softwareanwendungen erstellt werden können.
 Der maßgebende Unterschied zwischen Function- und Platform as a Service ist, dass bei PaaS die Skalierung mittels Hinzufügen von weiteren Serverprozessen zu den bereits in Anspruch genommenen stattfindet.
-Dies bewirkt natürlich normalerweise eine Kostenerhöhung auf Seiten des Benutzers, welche direkt abgebucht oder in Rechnung gestellt wird.
+Dies bewirkt normalerweise eine Kostenerhöhung auf Seiten des Nutzers, welche direkt abgebucht oder in Rechnung gestellt wird.
 Die Skalierung ist hier gut dokumentiert und übersichtlich und man kann die Auslastung und Belastung der Entwicklerumgebung leicht nachvollziehen.
 
 Ganz anders im Gegensatz dazu geschieht die Skalierung bei FaaS. Bei diesem Service läuft keine extra Serverinstanz im Hintergrund. Bei FaaS muss der Benutzer die \textbf{Function execution time} bezahlen. Die Zeit zwischen den Ausführungen von Code wird hierbei nicht in Rechnung gestellt, also lediglich, wenn ein Code zum Beispiel übersetzt oder ein Programm ausgeführt und getestet wird. Somit muss der Benutzer auch nicht mehr an die Skalierung denken, da seine Entwicklerumgebung quasi kostenlos zu Verfügung steht und er nur die Ausführung der Software nach deren Zeitaufwand bezahlen muss.
