@@ -62,10 +62,10 @@ Der Entwurfsprozess unterscheidet sich stark zwischen einer gewöhnlichen SQL Da
 \subsection{SQL Datenbankentwurf} 
 Es gibt vier Bedingungen welche für einen guten Datenbankentwurf\footcite{microsoftsql} eingehalten werden sollten.
 \begin{itemize}
-\item Informationen sollten in themenbasierten Tabellen aufgeteilt werden und wenn möglich sollen redundante Daten vermieden werden. In speziellen Fällen könnte es von Vorteil sein, redundante Daten zu speichern, um die Performance zu erhöhen.
-\item Durch den Entwurf sollte die Genauigkeit und die Integrität der Informationen sichergestellt werden.
-\item Die Anforderungen an das System in Hinsicht auf Berichterstellung und Verarbeitung sollten unterstützt sein.
-\item Es werden durch diesen Entwurf alle erforderlichen Informationen bereitgestellt. 
+	\item Informationen sollten in themenbasierten Tabellen aufgeteilt werden und wenn möglich sollen redundante Daten vermieden werden. In speziellen Fällen könnte es von Vorteil sein, redundante Daten zu speichern, um die Performance zu erhöhen.
+	\item Durch den Entwurf sollte die Genauigkeit und die Integrität der Informationen sichergestellt werden.
+	\item Die Anforderungen an das System in Hinsicht auf Berichterstellung und Verarbeitung sollten unterstützt sein.
+	\item Es werden durch diesen Entwurf alle erforderlichen Informationen bereitgestellt. 
 \end{itemize}
 \subsubsection{Prozess}
 Der Entwurfprozess kann in mehrere Schritte unterteilt werden.
@@ -209,7 +209,8 @@ In diesem Bereich wird der finale Entwurf so wie Verwendung der einzelnen Attrib
 	\centering
 	\includegraphics[width=\textwidth,height=\textwidth,keepaspectratio]{user_model.png}
 	\caption{User-Model}
-\end{figure}		
+\end{figure}	
+\newpage	
 \subsubsection{Entscheidungsgrundlagen}
 Einer der Gründe warum wir uns für die MongoDB entscheiden haben war, dass am Anfang niemand vorhersagen konnte wie genau unsere Datenbank aufgebaut sein wird. 
 Während der Entwicklung gab es viele Informationen, welche nachträglich in die Struktur eingefügt wurden, dies hat uns dieser Anbieter sehr vereinfacht. 
