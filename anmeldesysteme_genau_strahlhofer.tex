@@ -1,7 +1,8 @@
 \chapter{Aspekte eines Anmeldesystemes und Biometrie}
 \strahlhofer
 
-\section{Prozesse des Anmeldevorgangs}
+%https://de.wikipedia.org/wiki/Authentifizierung
+\section{Prozesse des Anmeldevorgangs}\footcite{authentifizierung}
 \begin{center}
 \begin{figure}[h]
     \centering
@@ -11,51 +12,42 @@
 \end{center}
 
 %https://www.dr-datenschutz.de/authentisierung-authentifizierung-und-autorisierung/
-\subsection{Authentisierung}
+\subsection{Authentisierung} 
 Bei der Authentisierung muss von einer Person ein Nachweis gegeben werden, dass sie die Person ist, die sie behauptet zu sein. Dieser Nachweis kann durch drei verschiedene Methoden nachgewiesen werden, diese sind:
 \begin{itemize}
 	\item Die Person besitzt Wissen über eine Information, die nur der Kontoinhaber wissen kann, z.B. das Passwort oder Sicherheitsfragen sein.
 	\item Das Individuum, das sich versucht anzumelden und sendet beispielsweise einen Reisepass oder Führerschein als Konformation.
-	\item Es wird vom Nutzer eine Information mitgesendet, die er oder sie nur von sich selbst senden kann. Ein Beispiel wäre die Sendung eines biometrischen Nachweises, dass kann entweder ein Fingerabdruck oder ein Gesichtsscan sein.
+	\item Es wird vom Nutzer eine Information mitgesendet, die er oder sie nur von sich selbst senden kann. Ein Beispiel wäre die Sendung eines biometrischen Nachweises, dass kann entweder ein Fingerabdruck oder ein Gesichtsscan sein\footcite{anmeldevorgangs}.
 \end{itemize}
 
 %https://www.dr-datenschutz.de/authentisierung-authentifizierung-und-autorisierung/
 \subsection{Authentifizierung}
-Bei diesem Schritt des Anmeldeablaufs, wird eine Überprüfung durchgeführt. Diese Prüfung soll analysiert die Informationen, die bei der Authentisierung erfasst worden sind. Können diese dem Zielkonto zugewiesen werden, dann ist der Nutzer die Person, die er angibt zu sein.
+Bei diesem Schritt des Anmeldeablaufs, wird eine Überprüfung durchgeführt. Diese Prüfung soll analysiert die Informationen, die bei der Authentisierung erfasst worden sind. Können diese dem Zielkonto zugewiesen werden, dann ist der Nutzer die Person, die er angibt zu sein\footcite{anmeldevorgangs}.
 
 %https://www.dr-datenschutz.de/authentisierung-authentifizierung-und-autorisierung/
 \subsection{Autorisierung}
-Die Autorisierung hat als Funktionalität die Bestätigung von bestimmten Rechten und Rollen zu bestimmten Ressourcen. Dieses Thema gehört der Informationssicherheit an und befasst sich mit der Zugriffskontrolle. Bei der Autorisierung wird für das Unternehmen ein Zugriffsmechanismus implementiert. Wenn z.B. ein Promoter sich in einem von der Firma erstellten System anmeldet, werden bestimmte Rollen und Rechte zugewiesen. Dies bedeutet das der Mitarbeiter nur einen bestimmten Zugriff auf gewisse Funktionalität besitzt.
+Die Autorisierung hat als Funktionalität die Bestätigung von bestimmten Rechten und Rollen zu bestimmten Ressourcen. Dieses Thema gehört der Informationssicherheit an und befasst sich mit der Zugriffskontrolle. Bei der Autorisierung wird für das Unternehmen ein Zugriffsmechanismus implementiert. Wenn z.B. ein Promoter sich in einem von der Firma erstellten System anmeldet, werden bestimmte Rollen und Rechte zugewiesen. Dies bedeutet das der Mitarbeiter nur einen bestimmten Zugriff auf gewisse Funktionalität besitzt\footcite{anmeldevorgangs}.
 
-\subsubsection{Rollen}
-Bei der Anmeldung in die EMS-Software soll zwischen den Rollen Promoter und Administrator unterschieden werden. 
-\begin{itemize}
-	\item \textbf{Administratoren:} Die Rolle ist eine der wichtigsten in der Software. Dieser kann Benutzer und Events in einem System erstellen, verändern und löschen. Benutzer können zusätzlich deaktiviert werden, da diese entweder zu häufig falsche Anmeldeinformationen eingegeben haben oder weil die Person eine Anfrage daraufgestellt hat.
-	\item \textbf{Promoter:} Diese Rolle sind Benutzer der Software, die Karten anfordern und verkaufen können. Sie können, beispielsweise die Funktionalitäten wie die Benutzer- und Eventverwaltung nicht bedienen.
-\end{itemize}
 
-%https://www.kaspersky.de/resource-center/definitions/biometrics
-%Biometrie
 \section{Biometrie}
 %https://en.wikipedia.org/wiki/Biometrics
 \subsection{Definition}
 \begin{center}
-	\textit{Biometrics are body measurements and calculations related to human characteristics}
+	\textit{Biometrics are body measurements and calculations related to human characteristics\footcite{biometrie}.}
 \end{center}
 
-Bei dieser Wissenschaft schließt eine biometrische Identifikation nur auf eine bestimmte Person.
-Durch diesen Aspekt ist die Biometrie eine sehr angesehne Technik in der Identifikation von Menschen.
+Bei diesem Vorgang schließt eine biometrische Identifikation nur auf eine bestimmte Person und ist gleichzeitig sehr schwer zu fälschen.
+Durch diesen Aspekt ist die Biometrie eine sehr angesehne Technik in der Identifikation von Menschen\footcite{biometrie}.
 
 \subsection{Methoden der Biometrie}
-Eine biometrische Information kann durch viele unterschiedliche Methoden erhoben werden.
+Eine biometrische Information kann durch unterschiedliche Methoden erhoben werden.
 \begin{itemize}
-	%https://www.livescience.com/62690-how-dna-ancestry-23andme-tests-work.html
 	%https://www.ibia.org/biometrics-and-identity/biometric-technologies/dna#:~:text=DNA%20Biometrics,often%20in%20forensics%20and%20healthcare.&text=A%20feature%20of%20DNA%20identification,familial%20relationships%20via%20DNA%20testing.
 	\item \textbf{DNA-Tests:} Ein DNA-Test wird in den unterschiedlichsten Arbeitsbereichen verwendet, z.B. in der Fornesik oder von der Polizei.
 	Vorteile die DNA als biometrisches Mittel zu erwägen:
 	\begin{itemize}
 		\item Mit der DNA kann von einer unbekannten Person auf dessen Verwandten schließen. Dies ist die einzige biometrische Methode, die diese Möglichkeit bietet.
-		\item-DNA Spuren und Fingerabdrücke können bei Tatorten gefunden werden. Diese Methode hilft Ermittlern schneller die Identität einer Person herauszufinden.
+		\item-DNA Spuren und Fingerabdrücke können bei Tatorten gefunden werden. Diese Methode hilft Ermittlern schneller die Identität einer Person herauszufinden\footcite{dna-test}.
 	\end{itemize}
 	%https://de.wikipedia.org/wiki/Fingerabdruck
 	\item \textbf{Fingerabdruck:} Die Fingerabdrücke sind bei jedem Menschen unterschiedlich. 
@@ -69,7 +61,7 @@ Eine biometrische Information kann durch viele unterschiedliche Methoden erhoben
 	\end{itemize}
 	\paragraph{Nachteile}
 	\begin{itemize}
-		\item In dem Fall, dass scih eine Person auf dem Finger verletzt, kann es dazu führen, dass der Fingerabdruck sich verändert. Aus diesem Grund kann sich die Person möglicherweise nicht mehr identifizieren.
+		\item In dem Fall, dass sich eine Person auf dem Finger verletzt, kann es dazu führen, dass der Fingerabdruck sich verändert. Aus diesem Grund kann sich die Person möglicherweise nicht mehr identifizieren\footcite{fingerabdruck}.
 	\end{itemize}
 	%https://en.wikipedia.org/wiki/Facial_recognition_system
 	%https://www.pcs.com/wissens-werte/biometrie/gesichtserkennung-von-angesicht-zu-angesicht#:~:text=Hohe%20Sicherheit%20ist%20mit%20Gesichtserkennung,in%20der%20Regel%20nicht%20erkannt.
@@ -81,7 +73,7 @@ Eine biometrische Information kann durch viele unterschiedliche Methoden erhoben
 	\end{itemize}
 	\paragraph{Nachteile}
 	\begin{itemize}
-		\item Eineiige Zwillinge können bei dieser Methode schwer unterschieden werden, da diese über ein fast identisches Gesicht besitzen.
+		\item Eineiige Zwillinge können bei dieser Methode schwer unterschieden werden, da diese über ein fast identisches Gesicht besitzen\footcite{gesichtserkennung-1}\footcite{gesichtserkennung-2}.
 	\end{itemize}
 \end{itemize}
 
@@ -97,29 +89,30 @@ Im laufe der danachfolgenden Jahre baute Apple dann auch einen Fingerprintsensor
 \begin{itemize}
 	\item Berühren eines Knopfes auf dem Gerät (z.B. Apple Geräte).
 	\item Wischen über einen Knopf (z.B. Samsung S7 Edge).
-	\item In-Display, den Finger auf das Display legen (z.B. Oneplus 8). 
+	\item In-Display, den Finger auf das Display legen (z.B. Oneplus 8)\footcite{fingerabdruck-android-1}\footcite{fingerabdruck-android-2}. 
 \end{itemize}
-\paragraph{Gesichtserkennung}
-Die Gesichtserkennung gibt es schon für die meisten Android Geräte. Diese sind häufig sehr unsicher, es exisitieren viel Fälle wo das Feature geknackt worden ist. Aus diesem Grund kennzeichnen die meisten Hersteller diese Methode als unsicher. 
-\\
 %https://www.kiroku-just-write.de/2020/09/01/gesichtserkennung/#:~:text=Die%20grunds%C3%A4tzliche%20Voraussetzung%20f%C3%BCr%20funktionierende,f%C3%BCr%20jeden%20Menschen%20einzigartig%20sind.
+\paragraph{Gesichtserkennung}
+Die Gesichtserkennung gibt es schon für die meisten Android Geräte. Diese sind häufig sehr unsicher, es exisitieren viel Fälle wo das Feature geknackt worden ist. Aus diesem Grund kennzeichnen die meisten Hersteller diese Methode als unsicher\footcite{gesichtserkennung-android}. 
+
 %https://www.consumentenbond.nl/veilig-internetten/gezichtsherkenning-te-hacken
 \paragraph{consumentenbond}
 Im Jahre 2019 wurde eine Studie von einer niederländischen Organisation zu dem Thema Gesichtserkennung bei Smartphones, durchgeführt. 
-Diese haben 60 Smartphones von unterschiedlichen Herstellern getestet. 26 dieser Handys konnten mittels eines Portraits des Telefonbesitzers entsperrt werden.
+Diese haben 60 Smartphones von unterschiedlichen Herstellern getestet. 26 dieser Handys konnten mittels eines Portraits des Telefonbesitzers entsperrt werden.\footcite{consumentenbond}
 
+%https://en.wikipedia.org/wiki/Apple_Inc.
 %https://en.wikipedia.org/wiki/Touch_ID
 \subsection{Biometrie auf iOS Geräten}
-Apple Inc. ist eine Technologie Firma aus den Vereinigten Staaten, die durch den Verkauf von Computern in den siebziger Jahren. Das Unternehmen bringt jährlich Smartphones (iPhones), Tablets (iPads), Laptops (MacBooks) auf den weltweiten Markt.
+Apple Inc. ist eine Technologie Firma aus den Vereinigten Staaten, die durch den Verkauf von Computern in den siebziger Jahren. Das Unternehmen bringt jährlich Smartphones (iPhones), Tablets (iPads), Laptops (MacBooks) auf den weltweiten Markt\footcite{apple}.
 \paragraph{Touch ID}
 Nachdem 
 Im Jahre 2012 kaufte Apple die Firma AuthenTec. Dieses Unternehmen spezialisierte sich auf das Lesen von Fingerabdrücken.
 Im darauffolgenden Jahr brachte das Unternehmen dann das iPhone 5s heraus. Dieses Gerät hatte einen Fingerabdruckssensor im "Home-Button" eingebaut. Ab diesem Zeitpunkt konnten alle Benutzer zusätzlich zu ihrem Passwort eine sogenannte Touch ID zur Identifikation benutzen.
-Die Fingerabdrücke wurden auf den Chips des Geräts gespeichert, anstatt in der Cloud. Das macht Angreifern es unmöglich die biometirschen Infomrationen abzufangen.
+Die Fingerabdrücke wurden auf den Chips des Geräts gespeichert, anstatt in der Cloud. Das macht Angreifern es unmöglich die biometirschen Infomrationen abzufangen\footcite{touchid}.
 %https://www.pcwelt.de/international/Gesichtserkennung-auf-Android-Smartphones-einrichten-10824319.html
 \paragraph{Face ID}
 Das erste Smartphone von Apple, dass Gesichstserkennung besitzte, war das iPhone X (2017). Dieses Feature trug den Namen Face ID und löste größtenteils damit die Touch ID ab.
-Alle Geräte die Face ID verwenden haben eine 3D-Sensoren die mehr Gesichtsmerkmale erkennen als wie bei Android Geräten.
+Alle Geräte die Face ID verwenden haben eine 3D-Sensoren die mehr Gesichtsmerkmale erkennen als wie bei Android Geräten\footcite{faceid}.
 
 
 \subsection{Biometrie bei EMS}
@@ -129,7 +122,7 @@ Dieses Feature kann auch beispielsweise mit Face ID bei iOS Geräten verwendet w
 
 \paragraph{Umfrage} Die Gruppe hatte zwei Ideen biometrische Identifikation in die Applikation zu integrieren. Ein Vorschlag war nach dem der Benutzer sich eingeloggt und SSO ausgewählt hat, kann der Fingerabdruck zur Anmeldung verwendet werden.
 Eine andere Idee war vor jeder Anfrage, die gestellt wurde, die biometrischen Daten überprüft werden.
-\\
+
 Es wurden dafür 10 verschiedene Personen im Alter von 16 bis 20 Jahren befragt. Das Resultat hatte ergeben, dass 8 von 10 Personen bei jeder Ticketanfrage einen Identifikationsprozess durchführen.
 Des Weiteren wurde gefragt, ob beide Vorschläge realisiert werden sollen. Hier haben 10/10 darauf eingestimmt das nur eines dieser Vorhaben realisiert werden soll. Der Grund war zumeist, dass eine zu häufige Abfrage störrend sein kann.
 
@@ -145,7 +138,7 @@ Wenn die Person das Passwort zu ihrem/seinem Account vergessen hat, kann diese d
 Diese Information wird an das Backend weitergegeben und eine E-Mail wird dann mit einem Zurücksetzungscode versandt. 
 
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=7cm]{pw_anfrage.PNG}
     \caption{Passwortzurücksetzungsanfrage}
@@ -159,7 +152,7 @@ Mittels drücken des "Zurücksetzen" Knopfes wird dann das neue Passwort auf gew
 Wenn eine gültige Eingabe getätigt wurde, werden die Daten an das Backend versendet, wo Zurücksetzungscode und E-Mail-Adresse geprüft werden. Wenn ein User mittles diesen Aspekten gefunden wurde, wird das Passwort geändert.
 
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm]{pw_eingabe.PNG}
 	\caption{Passwortzurücksetzung}
