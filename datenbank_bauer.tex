@@ -47,10 +47,66 @@
 		
 		%Quellen: https://support.microsoft.com/de-de/office/grundlagen-des-datenbankentwurfs-eb2159cf-1e30-401a-8084-bd4f9c9ca1f5
 		\subsection{SQL Datenbankentwurf}
+			Es gibt 4 Bedingungen welche für einen guten Datenbankentwurf eingehalten werden sollten.
 
+			\begin{itemize}
+				\item Informationen sollten in themenbasierten Tabellen aufgeteilt werden und wenn möglich sollen redundante Daten vermieden werden. In speziellen Fällen könnte es von Vorteil sein redundante Daten zu speichern um die Performance zu erhöhen.
+				\item Durch den Entwurf sollte die Genauigkeit und die Integrität der Informationen sichergestellt werdne.
+				\item Die Anforderungen an das System in hinsicht auf Berichterstellung und Verarbeitung sollten unterstützt sein.
+				\item Es werden durch diesen Entwurf alle erforderlichen Informationen bereitgestellt. 
+			\end{itemize}
+			
+
+			\subsubsection*{Prozess}
+			Der Entwurfprozess kann in mehrere Schritte unterteilt werden.
+			\subsubsection*{Festlegung des Verwendungszwecks}
+				Dies ist ein relativ simpler Schritt bei welchem vestegelltgt wird für welche Zwecke die Datenbank benutzt wird. Dies Erleicht die nächsten Schritte
+			\subsubsection*{Organisation der erforderlichen Daten}
+				Bei diesem Schritt werden alle notwendigen Informationen welche in der Datenbank gespeichert werden müssen gesammelt.
+			\subsubsection*{Aufteilung der Informationen}
+				In diesem Schritt werden die Informationen in verschieden Themen oder Kategorien aufgeteilt. Jedes Thema wird eine Tabelle in der Datenbank darstellen
+			\subsubsection*{Informationselemente in Spalten umwandeln}
+				Hierbei wird entschieden welche Informationen in jeder Tabelle gespeichert werden. Durch diese Umwandlung entwickelt sich die einzelnen Spalten welche jede Tabelle enthalten wird.
+			\subsubsection*{Angabe der Primärschlüsseln}
+				In diesem Schritt wird ausgewählt welche Spalte jeder Tabelle die gespeicherten Datensätze eindeutig identifiziert. In vielen Fällen wird hierzu ein künstlicher Primärschlüsseln generiert da es keine eindeutige Spalte gibt. In machen Situation kann es auch von Vorteil sein einen zusammengesetzten Primärschlüssel einzusetzen da ein Wert zum identifizieren alleine nicht ausreicht.
+			\subsubsection*{Tabellenbeziehungen erkennen}
+				In diesem Schritt wird entschieden welche Tabellen Daten halten welche verknüpft werden müssen. Diesen Tabellen bekommen entweder eine neue Spalte um die Beziehung darzustellen oder bei Bedarf muss eine Beziehungstabelle erstellt werden.
+			\subsubsection*{Verfeinerung des Entwurfs}
+				Durch die Analyse des bisherigen Entwurfs, welche oft durch das einfügen von Beispielsdaten unterstütz werden. Können eventuelle Fehler oder vergessen Anwendungsfälle erkannt werden welche eine Überarbeitung des Entwurfes erfordern. 
+			\subsubsection*{Normalisierung}
+				Im letzten Schirtt werden die Datennormalisierungsregeln auf die Tabellen angewendet. 
+		
+				%QUellen: https://de.wikipedia.org/wiki/Normalisierung_(Datenbank)#Erste_Normalform_(1NF)
+		\subsection*{Normalisierung}
+			Die Normalisierung ist ein Prozess in dem Attribute in mehrere Relationen aufgeteilt werden. Durch diese Aufteilung entsteht ein Redundanz freies Schema.
+
+			\subsubsection*{Erste Normalform}
+				In der ersten Normalform werden alle Tabellen so umgebaut das keiner der Attribute weiter aufgespaltet werden kann. 
+					Ein Beispiel dafür ist eine Tabelle mit dem Attribut 'Adresse' welche vor dem umbau in die erste Normalform wie folgt aufgebaut war.
+					'Beispielstraße 12 1234 Beispielstadt". In der ersten Normalform wird diese Adresse in eizelne Spalten zerlegt. Eine solche Zerlegung könnte folgendermaßen ablaufen.
+					'Straße, Hausnummer, PLZ, Stadt'
+				Durch diese Zerlegung werden alle Tabelle im Datenbankentwurf Frei von Wiederholungsgruppen welche gleiche oder gleichartige Informationen enthalten.
+			
+			\subsubsection*{Zweite Normalform}
+				Ein Entwurf ist genau dann in zweiter Normalform wenn die erste Normalform eingehalten wird und kein Nichtprimärattribut von einer echten Teilmenge eines Schlüsselkandidaten abhängt.
+				Dies bedeutet das alle Attribute welche nicht Teil eines Schlüssel sind vom gesamten Schlüssel abhängen müssen nicht nor von einem Teil des Schlüssel. 
+				Die zweite Normalform zwingt das Schema dazu das alle Relationen nur einen Sacherverhalt definieren.
+			
+			\subsubsection*{Dritte Normalform}
+				Ein Entwurf ist genau dann in dritter Normalform wenn die zweite Normalform eingehalten wird und kein Nichtschlüsselattribut von transitiv von einem Schlüsselkandidaten abhängt. 
+				Die transitive Abhängigkeit von dem Attribut 'X' besteht, wenn ein Attribut 'Z' abhänging von Attribut 'Y' ist und 'Y' funktional abhängig von 'X' ist. 
+				Durch die dritte Normalform werden thematische Durchmischungen in Relationen beseitigt. 
+			
 		%Quellen: 
 		\subsection{NoSQL Datenbankentwurf}
+			Bei einer NoSQL Datenbank gibt es durch die große Anzahl von Anbietern eine Vielzahl von Möglichkeiten den Entwurf abzuwickeln. 
+			Weshalb in diesem Absatz genauer darauf eingegangen wie der Entwurf der EMS Datenbank vorgenommen wurde. 
+			Da unser Team sich für die MongoDB entschieden hat musste der komplette Entwurf nicht vollständig abgeschlossen sein bevor mit der Entwicklung begonnen wurde. 
+			Trotzdem wollten uns Team von Anfang an einen grundsätzliches Schema festlegen bevor die Entwicklung begonnen hat.
+		
+			\subsubsection*{}
 
+				
 
 	\section{EMS Datenbank}
 		In diesem Bereich wird auf den Datenbankaufbau in unseren Diplomarbeitsprojekt genauer eingegangen und die Gründe für unsere Entscheidungen sowohl den Aufbau betreffend als auch den Anbieter.
@@ -153,6 +209,17 @@
 		
 		\newpage
 		\subsubsection{Entscheidungsgrundlagen}
-			Einer der Gründe warum wir uns für die MongoDB entscheiden haben war, dass am Anfang niemand vorhersagen konnte wie genau unsere Datenbank aufgebaut sein wird. Während der Entwicklung gab es viele Informationen welche nachträglich in die Struktur eingefügt wurden dies hat uns dieser Anbieter sehr vereinfacht. Ein weiter Grund war, die Möglichkeit ein Array aus Objekten zu speichern was viel Abfragen und logistische Probleme gelöst hat ins besondere da wir in unserem Backend über die Schnittstelle "mongoose" auf die Datenbank zugreifen welche einiges ermöglicht was mit MonogDB alleine nicht realisierbar wäre wie zum Beispiel das Vorgeben einer Struktur welche aber veränderbar ist und auch ohne Update auf veralte Datensätze immer noch funktioniert. Diese Struktur ist hat uns auch ermöglicht das alle Mitglieder des Teams einen Überblick über die Datenbank bekommen und einfach Abfragen, Updates und Inserts schreiben konnten. Dazu kommt, dass durch die Möglichkeit der Arrays aus Objekten nur 2 Tabellen (Kollektion) benötigt werden während in einer normalen SQL Datenbank welche in dritter Normalform ist mindestens 12 Tabellen benötigt werden. Natürlich war uns die Performanz der Abfragen sehr wichtig was ein weiter Grund war warum wir uns für diese Technologie entschieden haben da die MongoDB eine sehr hohe Performanz hat selbst beim Abfragen von großen Dokumenten wie sie in unsere Datenbank gespeichert sind. Da die Objekte der MongoDB wie JSON Objekte aufgebaut sind hat das die Auswertung am Backend ebenfalls erleichtert.
+
+			\subsubsection*{Flexibilität }
+
+			\subsubsection*{Performance}
+			Einer der Gründe warum wir uns für die MongoDB entscheiden haben war, dass am Anfang niemand vorhersagen konnte wie genau unsere Datenbank aufgebaut sein wird. 
+			Während der Entwicklung gab es viele Informationen welche nachträglich in die Struktur eingefügt wurden dies hat uns dieser Anbieter sehr vereinfacht. 
+			Ein weiter Grund war, die Möglichkeit ein Array aus Objekten zu speichern was viel Abfragen und logistische Probleme gelöst hat ins besondere da wir in unserem Backend über die Schnittstelle "mongoose" auf 
+			die Datenbank zugreifen welche einiges ermöglicht was mit MonogDB alleine nicht realisierbar wäre wie zum Beispiel das Vorgeben einer Struktur welche aber veränderbar ist und auch ohne Update auf veralte Datensätze immer noch funktioniert. 
+			Diese Struktur ist hat uns auch ermöglicht das alle Mitglieder des Teams einen Überblick über die Datenbank bekommen und einfach Abfragen, Updates und Inserts schreiben konnten. 
+			Dazu kommt, dass durch die Möglichkeit der Arrays aus Objekten nur 2 Tabellen (Kollektion) benötigt werden während in einer normalen SQL Datenbank welche in dritter Normalform ist mindestens 12 Tabellen benötigt werden. 
+			Natürlich war uns die Performanz der Abfragen sehr wichtig was ein weiter Grund war warum wir uns für diese Technologie entschieden haben da die MongoDB eine sehr hohe Performanz hat selbst beim Abfragen von großen Dokumenten wie sie in unsere Datenbank gespeichert sind. 
+			Da die Objekte der MongoDB wie JSON Objekte aufgebaut sind hat das die Auswertung am Backend ebenfalls erleichtert.
 
 \newpage
