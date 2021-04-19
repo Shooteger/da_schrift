@@ -2,8 +2,8 @@
 \bauer
 	\section{Allgemeines zu Datenbanken}
 	%Quelle: https://www.oracle.com/de/database/what-is-database/)
-	\subsection{Definition}\footcite{oracle}
-	Eine Datenbank ist definiert als eine Sammlung von Informationen oder Daten welche im Normalfall auf einem elektronischen Medium wie einer Festplatte abgelegt werden. 
+	\subsection{Definition}
+	Eine Datenbank\footcite{oracle} ist definiert als eine Sammlung von Informationen oder Daten welche im Normalfall auf einem elektronischen Medium wie einer Festplatte abgelegt werden. 
 	Der Zugriff auf die Daten erfolgt meist durch ein Verwaltungsprogramm. In den Grundzügen könnten die Daten auch simple Textdateien oder Papiere sein, welche per Hand befüllt und ausgewertet werden. 
 	Dies ist allerdings nicht die Norm, denn in der Industrie werden meist Datenbankverwaltungssysteme benutzt welche von einem externen Anbieter zur Verfügung gestellt werden (Oracle, MongoDatabase, Microsoft SQL Server).	
 	%Quelle: https://www.mongodb.com/nosql-explained/nosql-vs-sql
@@ -17,16 +17,16 @@
 	Die Structured Query Language, früher bekannt als 'SEQUEL' wurde in den 1970er von Raymond Boyce und Donald Chaberlin welche damals bei IBM angestellt waren, entwickelt. 
 	Zu diesem Zeitpunkt war SQL aber noch nicht für die Öffentlichkeit verfügbar, dies kam erst 1979 als eine Firma Namens "Relation Software" welche heutzutage unter dem Namen Oracle bekannt ist, ihre Version der SQL Sprache als Oracle V2 auf den Markt gebracht haben.
 	%Quelle: https://www.mongodb.com/nosql-explained/nosql-vs-sql
-	\subsubsection{NoSQL (Not only Structured Query Language)}	\footcite{mongodb}
-	In einer NoSQL Datenbank können Daten auf verschieden Arten organisiert und abgespeichert werden. Aber sämtliche dieser Methoden unterscheiden sich vor allem auf eine Art von einer normalen SQL Datenbank. 
+	\subsubsection{NoSQL (Not only Structured Query Language)}	
+	In einer NoSQL Datenbank\footcite{mongodb} können Daten auf verschieden Arten organisiert und abgespeichert werden. Aber sämtliche dieser Methoden unterscheiden sich vor allem auf eine Art von einer normalen SQL Datenbank. 
 	Dieser Unterschied liegt darin, dass die Datenbank nicht in konstanten Tabellen aufgebaut ist und dadurch eine höhere Flexibilität in den Daten ermöglicht. 
 	Ein Beispiel für eine solche Flexibilität ist die Speicherlösung, welche die Technologie 'MongoDB' anbietet. In einer NoSQL Datenbank mit dieser Technologie werden die Daten in einzelnen JSON-Dateien gespeichert. 
 	Dies ermöglicht, dass jedes Element wenn benötigt eine eigene Struktur hat ohne das ein Schema vorgegeben oder angepasst werden muss. 
 	Eine weitere Sache welche in NoSQL Datenbank möglich ist, die in SQL Datenbanken nicht so einfach realisierbar wäre, ist die Möglichkeit ein Array von Datenobjekten zu speichern. 
 	Dies ermöglicht eine sehr hohe Flexibilität und war einer der Gründe warum sich unser Team bei der Implementierung des EMS Projekt für eine MongoDataBase entschieden hat.
 	%Quelle: https://www.mongodb.com/nosql-explained/nosql-vs-sql
-	\section{SQL vs NoSQL} \footcite{sqlvsnosql}
-		Wie bereits beschrieben, gibt es schon im Aufbau und in der Funktionsweise der Datenbank große Unterschiede, in diesem Bereich werden die Vorteile und Nachteile der Datenbank Architekturen genauer beschrieben und gegenüber gestellt.
+	\section{SQL vs NoSQL} 
+		Wie bereits beschrieben, gibt es schon im Aufbau und in der Funktionsweise\footcite{sqlvsnosql} der Datenbank große Unterschiede, in diesem Bereich werden die Vorteile und Nachteile der Datenbank Architekturen genauer beschrieben und gegenüber gestellt.
 	%Quelle: https://becksche.de/Meldung/24-01-2014-sql-oder-nosql
 	\subsection{SQL Vorteile}
 		Um in einer SQL Datenbank etwas zu speichern, muss immer ein Schema für die Datenbank vorher entwickelt und implementiert werden. 
@@ -59,8 +59,8 @@
 		Der Datenbankentwurf umfasst alle Aufgaben zur Ermittlung der Struktur einer Datenbank. 
 		Der Entwurfsprozess unterscheidet sich stark zwischen einer gewöhnlichen SQL Datenbank und einer NoSQL Datenbank, wie sie bei diesem Projekt verwendet wird.		
 		%Quellen: https://support.microsoft.com/de-de/office/grundlagen-des-datenbankentwurfs-eb2159cf-1e30-401a-8084-bd4f9c9ca1f5
-		\subsection{SQL Datenbankentwurf} \footcite{microsoftsql}
-			Es gibt vier Bedingungen welche für einen guten Datenbankentwurf eingehalten werden sollten.
+		\subsection{SQL Datenbankentwurf} 
+			Es gibt vier Bedingungen welche für einen guten Datenbankentwurf\footcite{microsoftsql} eingehalten werden sollten.
 			\begin{itemize}
 				\item Informationen sollten in themenbasierten Tabellen aufgeteilt werden und wenn möglich sollen redundante Daten vermieden werden. In speziellen Fällen könnte es von Vorteil sein, redundante Daten zu speichern, um die Performance zu erhöhen.
 				\item Durch den Entwurf sollte die Genauigkeit und die Integrität der Informationen sichergestellt werden.
@@ -87,8 +87,8 @@
 			\subsubsection{Normalisierung}
 				Im letzten Schirtt werden die Datennormalisierungsregeln auf die Tabellen angewendet. 
 		%Quellen: https://de.wikipedia.org/wiki/Normalisierung_(Datenbank)#Erste_Normalform_(1NF)
-		\subsection{Normalisierung}\footcite{normalisierung}
-			Die Normalisierung ist ein Prozess, in dem Attribute in mehreren Relationen aufgeteilt werden. Durch diese Aufteilung entsteht ein Redundanz freies Schema.
+		\subsection{Normalisierung}
+			Die Normalisierung\footcite{normalisierung} ist ein Prozess, in dem Attribute in mehreren Relationen aufgeteilt werden. Durch diese Aufteilung entsteht ein Redundanz freies Schema.
 			\subsubsection{Erste Normalform}
 				In der ersten Normalform werden alle Tabellen so umgebaut, dass keines der Attribute weiter aufgespaltet werden kann. 
 				Ein Beispiel dafür ist eine Tabelle mit dem Attribut 'Adresse', welche vor dem Umbau in die erste Normalform wie folgt aufgebaut war
@@ -109,8 +109,8 @@
 			Bei einer NoSQL Datenbank gibt es durch die große Anzahl von Anbietern eine Vielzahl von Möglichkeiten den Entwurf abzuwickeln. 
 			Weshalb in diesem Absatz genauer auf die EMS-Datenbank so wie den Entwurfsprozess eingegangen wird. 
 			%Quellen: https://www.mongodb.com/company#:~:text=MongoDB%20was%20founded%20in%202007,the%20shortcomings%20of%20existing%20databases.
-			\subsubsection{Technologie} \footcite{mongohistory}
-				Für die EMS-Software hat sich unser Team für die MongoDB entschieden. Diese Datenbank baut auf JSON ähnliche Objekte, auf welche Dokumente genannt werden. 
+			\subsubsection{Technologie}
+				Für die EMS-Software\footcite{mongohistory} hat sich unser Team für die MongoDB entschieden. Diese Datenbank baut auf JSON ähnliche Objekte, auf welche Dokumente genannt werden. 
 				Jedes Dokumenten repräsentiert einen Datensatz, mehrere Dokumente sind in einer Kollektion zusammengefasst. 
 				Jedes Dokumenten hat beim erstellen einen Identifikator, welche bei MongoDB mit '\_id' abgekürzt wird. 
 				Dieser Identifikator ist in der gesamten Datenbank eindeutig, dass ist möglich da es sich um eine hexadezimal 12-Byte Zahl handelt. 
