@@ -3,7 +3,7 @@
 %%Quellen: Reis Folien, https://de.wikipedia.org/wiki/Cloud_Computing#Servicemodelle
 \section{Cloud Computing Grundlagen}
 \subsection{Definition}
-Es gibt einige verschiedene Definitionen\footcite{Lehrunterlagen-HTL} des Begriffs \textbf{Cloud Computing}, eine sehr präzise Beschreibung wäre:
+Es gibt einige verschiedene Definitionen\footcite{Lehrunterlagen-HTL-cloud} des Begriffs \textbf{Cloud Computing}, eine sehr präzise Beschreibung wäre:
 
 \begin{center}
    \textit{Ein Modell zur Bereitstellung von einer Reihe von Services für Unternehmen oder anderweitige Konsumenten über das Internet, wie zum Beispiel das
@@ -210,7 +210,7 @@ Linie Geld und Zeit spart, jedoch entsteht eine gewisse Abhängigkeit zum Anbiet
 Kommunikation und der durchgehenden Verfügbarkeit seines Services verlassen. Weiters differenziert man sich weniger von der Konkurrenz, welche den gleichen Anbieter nutzen. Dieser hat im Falle, dass ein Konkurrent bei dem gleichen Anbieter ist, die gleichen Chancen und keiner hat mehr einen Vorteil auf der Ebene.\footcite{Lehrunterlagen-HTL-cloud}.
 
 \textbf{Opportunity (Gelegenheiten):} Außer den bei Stärken genannten positiven Eigenschaften, bringen Cloud Lösungen einige neue und innovative Gelegenheiten mit sich. Einerseits verkürzt sich die time-to-market, da in einer Cloud Umgebung schneller entwickelt werden kann und die Services
-untereinander sehr gut auf einander abgestimmt sind.
+untereinander sehr gut aufeinander abgestimmt sind.
 
 Ein weiterer wirtschatlicher Aspekt ist Economies of scale. Die Lizenzkosten für Betriebssystem, Hardware und andere Software, sind bei Einzelanschaffung recht hoch.
 Die Kosten für Wartung und Instandhaltung müssen von jedem selbst getragen werden, sowie müssen auch Updates im Bezug auf Sicherheit redundant gemacht werden. Diese Kosten sind redundant, legt man jedoch viele Rechenzentren zu einem einzelnen zusammen, schafft eine Cloud und lässt mehr Benutzer auf das gleiche System zugreifen, senkt
@@ -218,8 +218,8 @@ dies Anschaffungs- und Erhaltungskosten drastisch nach dem Prinzip \textbf{buy m
 
 \textbf{Transition (Risiken):} Cloud Computing bringt vor allem im Bezug auf den Datenschutz ein großes Risiko auf. Viele Daten werden nicht in der EU gelagert. Sieben von Zehn kommerziellen Rechenzentren haben ihren Standort in den USA und unterliegen somit auch den Datenschutzrichtlinien in diesem
 Land. Für sämtliche Daten welche in der EU gesammelt und/oder verarbeitet werden, gibt es bestimmte Richtlinien und Gesetzte, vor allem für die Übertragung ins Ausland (Kapitel 2). Dies bewirkt einen großen Aufwand und benötigt bei manchen Unternehmen, ausgehend vom Ort der Sammlung der zu verarbeitenden Daten,
-Individuallösungen. Ein weiteres Risiko ist die Abhängigkeit die zum Anbieter entsteht, ständig Systeme von einem zu einem anderen zu migrieren ist aufwändig und auf lange Sicht nicht wirtschaftlich, dies sollte man vermeiden. Ein weiterer Punkt welcher unbedingt auch festegelegt werden muss ist, welche Seite
-für Backups verantwortlich ist, deren Zeitspannen, Häufigkeit, Integrität und Aufbewahrungsdauer. Auch hier spielt der Datenschutz eine wichtige zu beachtende Rolle\footcite{Lehrunterlagen-HTL-cloud}.
+Individuallösungen. Ein weiteres Risiko ist die Abhängigkeit die zum Anbieter entsteht. Ständig Systeme von einem zu einem anderen zu migrieren ist aufwändig und auf lange Sicht nicht wirtschaftlich, dies sollte man vermeiden. Ein weiterer Punkt welcher unbedingt auch festegelegt werden muss ist, welche Seite
+für Backups verantwortlich ist. Deren Zeitspannen, Häufigkeit, Integrität und Aufbewahrungsdauer. Auch hier spielt der Datenschutz eine wichtige zu beachtende Rolle\footcite{Lehrunterlagen-HTL-cloud}.
 \begin{center}
 \begin{figure}[H]
     \centering
@@ -231,160 +231,137 @@ für Backups verantwortlich ist, deren Zeitspannen, Häufigkeit, Integrität und
 
 %https://ourcodeworld.com/articles/read/977/how-to-deploy-a-node-js-application-on-aws-ec2-server
 \section{Cloud Anbieter AWS}
-Bei EMS wurde sich nach einigen Abwägungen für das Cloud Computing System von Amazon, AWS, entschieden. Neben der einhergehenden Popularität des Anbieters spielten auch vor allem die Preise, einfache automatisierte Skalierbarkeit und bereits vorhandenes Know-How im deployen von Full-Stack Anwendungen auf den Service EC2, eine Rolle bei der Wahl\footcite{deploy-nodejs1}.
+Bei EMS wurde sich, nach einigen Abwägungen, für das Cloud Computing System von Amazon, AWS, entschieden. Neben der einhergehenden Popularität des Anbieters spielten auch vor allem die Preise, einfache automatisierte Skalierbarkeit und bereits vorhandenes Know-How im deployen von Full-Stack Anwendungen auf den Service EC2 eine Rolle bei der Wahl\footcite{deploy-nodejs1}.
 
 \subsection{Erstellen einer EC2 Instanz}
-Nachdem auf der Webseite von Amazon Web Services ein Account erstellt worden ist, gelangt man auf die Homepage für verifizierte Benutzer. Auf der linken oberen Ecke unter Services (Abb. XX), findet man sämtliche Cloud Lösungen welche AWS bietet, stand bei Verfassung dieser Schrift, über 200. Im rechten roten Kreis, sieht man zugleich den Servce \textbf{EC2}, welcher hierfür relevant ist, falls dieser nicht angezeigt wird, kann man oben in der Suchleiste den Namen des gesuchten AWS Services eingeben.
-
+Nachdem auf der Webseite von Amazon Web Services ein Account erstellt worden ist, gelangt man auf die Homepage für verifizierte Benutzer. Auf der linken oberen Ecke unter Services (Abb. 1.3), findet man sämtliche Cloud Lösungen welche AWS bietet. Stand bei Verfassung dieser Schrift sind es über 200. Im rechten roten Kreis, sieht man zugleich den Service \textbf{EC2}, welcher hierfür relevant ist. Falls dieser nicht angezeigt wird, kann man oben in der Suchleiste den Namen des gesuchten AWS Services eingeben.
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws1.png}
     \caption{AWS Services Auflistung}
 \end{figure}
 \end{center}
-
-Nachdem man die den EC2 Service ausgewählt hat, landet man auf dem EC2-Dashboard. Hier erhält man einen Überblick über alle laufenden Instanzen falls man schon bestehende hat, Load Balancer und weitere Services. Bevor man unten auf "´Instanz starten"' klickt, muss sichergestellt sein, dass man die richtige Region oben rechts ausgewählt hat. Dies hat vor allem Datenschutzrechtliche Gründe, grundsätzlich gilt, man wählt am besten das Land aus, aus welchem vor allem die Kunden daraus zugreifen. Man sollte, wenn man in einem Land, welches Mitglied in der EU ist, oder Daten von Benutzer aus der EU bei dem zu deployenden Programm anfallen, ein Land in der EU wählen. Zu sehen auf Abb. XX.
-
+Nachdem man den EC2 Service ausgewählt hat, landet man auf dem EC2-Dashboard. Hier erhält man einen Überblick über alle laufenden Instanzen falls man schon bestehende hat. Bevor man unten auf \textbf{Instanz starten} klickt, muss sichergestellt sein, dass man die richtige Region oben rechts ausgewählt hat. Dies hat vor allem datenschutzrechtliche Gründe. Grundsätzlich gilt, man wählt am besten das Land aus, in welchem man sich selbst befindet. Man sollte, wenn man in einem Land, welches Mitglied in der EU ist, oder Daten von Benutzern aus der EU bei dem zu deployenden Programm verwendet werden, ein Land in der EU wählen. Zu sehen auf Abb. 1.4.
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws2.png}
     \caption{AWS Region ändern}
 \end{figure}
 \end{center}
-
-Nach der Regionswahl, wird eine neue Instanz erstellt, nach entsprechendem Klick, startet der erste Schritt im Prozess. Zuerst wählt man ein Betriebssystem, worauf unser virtueller Server laufen wird. In unserem Fall war dies Ubuntu 20, da dies einen großen Marktanteil hat, alle Funktionen bietet welche wir benötigen und das OS gratis und uns bereits bekannt ist.
-
+Nach der Regionswahl wird eine neue Instanz erstellt. Nach entsprechendem Klick auf \textbf{Instanz starten} startet der erste Schritt dieses Prozesses. Zuerst wählt man ein Betriebssystem aus, worauf der virtuelle Server laufen wird. In unserem Fall war es Ubuntu 20, da dies einen großen Marktanteil hat, alle Funktionen bietet welche wir benötigen und das OS gratis und uns bereits bekannt ist (Abb. 1.5).
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws3.png}
     \caption{AWS OS auswählen}
 \end{figure}
 \end{center}
-
-Der nächste Schritt beinhaltet das Selektieren des Instanz Typs. Wie viel virtuelle CPU's, wie viel RAM, wie viel Speicherplatz ohne zusätzliche Services wie zum Beispiel Amazon S3, der Serverinstanz später zu Verfügung steht. Wie gut die Netzwerkleistung ist und noch einige andere Details. Hier gibt es hunderte Instanzen, welche von zum Beispiel 1 Gigabyte RAM bis zu 3 Terrabyte RAM reichen. Für EMS reicht die gratis t2.micro Instanz. Die Spezifikationen dieser Instanz können aus Abb. XX entnommen werden. Diese Instanz kann jederzeit innerhalb von Minuten nach oben, beziehungsweise auch nach unten im Bezug auf Leistung, skaliert werden.
-
+Der nächste Schritt beinhaltet das Selektieren des Instanz Typs. Hier legit man fest, wie viel virtuelle CPU's, wie viel RAM, wie viel Speicherplatz der Serverinstanz später zu Verfügung steht. Hier gibt es hunderte Instanzen welche von zum Beispiel 1 Gigabyte RAM bis zu 3 Terrabyte RAM reichen. Für EMS reicht die gratis t2.micro Instanz. Die Spezifikationen dieser Instanz können aus Abb. 1.6 entnommen werden. Diese Instanz kann jederzeit innerhalb von Minuten nach oben, beziehungsweise auch nach unten im Bezug auf Leistung, skaliert werden.
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws4.png}
     \caption{AWS Instanzspezifikationen}
 \end{figure}
 \end{center}
-
-Im dritte Schritt werden die Anzahl der konfigurierten Anzahl eingeben und einige andere weitere Optionen, welche eine sehr feine Detailreiche und perfekt abgestimmte Instanz auf unterschiedlichste Use-Cases bietet. Für EMS sind auf dieser Seite keine weiteren Eingaben zum jetzigen Zeitpunkt nötig, da diese jederzeit im Nachhinein getroffen werden können und nicht alle auf der zuvor gewählten Instanz verfügbar sind. Auf dieser Seite kann man schon eine IAM-Rolle hinzufügen, dies sind die Benutzer in AWS, um auf eine EC2 Instanz über zum Beispiel SSH zuzugreifen oder Änderungen an der Instanz selbst vorzunehmen, muss man eine Rolle mit Berechtigungen erstellen, diese können dann später auch an andere Benutzer und AWS-Konten vergeben werden.
-
+Im dritten Schritt können Rollen, Zugriffseinstellungen und andere Details ausgewählt werden, damit man perfekt abgestimmte Instanzen für die unterschiedlichsten Use-Cases erstellen kann. Zum jetzigen Zeitpunkt sind hier aber keine weiteren Eingaben nötig, da diese jederzeit im Nachhinein getroffen werden können. Auf dieser Seite kann man schon eine IAM-Rolle hinzufügen. Dies benötigt ein Benutzer in AWS, um auf einer EC2 Instanz über zum Beispiel SSH zuzugreifen oder Änderungen an der Instanz selbst vornehmen zu können. Diese Rollen können auch an andere AWS-Konten vergeben werden, damit diese Zugriff auf die Instanz erhalten.
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws5.png}
     \caption{AWS Partitionierung}
 \end{figure}
 \end{center}
-
-Im vierten Schritt wird die Größe des Speichers festgelegt. Optional kann dieser auf verschiedene Volumen verteilt werden und je nachdem, welchen Instanz Typ man in Schritt zwei ausgewählt hat, auch diese Verschlüsseln lassen. Sowie auch den Typ des Volumen, worauf alles gespeichert wird, läuft.
-
+Im vierten Schritt wird die Größe des Speichers festgelegt. Optional kann dieser auf verschiedene Volumen verteilt werden und je nachdem, welchen Instanz Typ man in Schritt zwei ausgewählt hat, auch diese verschlüsseln lassen (Abb. 1.7).
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws_tags.png}
     \caption{AWS Tags}
 \end{figure}
 \end{center}
-
-Schritt Nummer fünf beinhaltet die Setzung von Tags für die Instanz. Diese werden in Key-Value Paaren angegeben. In Abb. XX ist aus Sicherheitsgründen der Schlüssel und der Wert zensiert, diese können komplett individuell und auf den Zweck der Instanz personalisiert sein.
-
+Schritt Nummer fünf beinhaltet die Setzung von Tags für die Instanz. Diese werden in Key-Value Paaren angegeben. In Abb. 1.8 ist aus Sicherheitsgründen der Schlüssel und der Wert zensiert, diese Werte können komplett individuell und auf den Zweck der Instanz personalisiert sein.
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws_security_group.png}
     \caption{AWS Sicherheit und Zugriff}
 \end{figure}
 \end{center}
+%Quellen: \footnote{https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml}
+Im sechsten und letzten aktiven Schritt zur Erstellung einer neue EC2 Instanz fügt man Protokolle hinzu und öffnet Ports. Über diese Ports, kann dann direkt auf die Instanz zugegriffen werden, dies ist essentiell, damit die EMS App auch auf das Backend in der Cloud zugreifen kann.
 
-Im sechsten und letzten aktiven Schritt zur Erstellung einer neue EC2 Instanz, fügt man Ports und Protokolle hinzu, welche für die Instanz geöffnet werden. Über diese Ports, kann dann direkt auf die Instanz zugegriffen werden, dies ist, damit das Backend von EMS mit der App oder der Webapp kommunizieren kann, essentiell. Die Protokolle wurde jeweils auf ihren Standardports laut IANA (Internet Assigned Numbers Authority). Wenn die zum Zugriff berechtigte Quelle auf den Standardwert \textbf{0.0.0.0/0} belassen wird, kann sich jede Quelle mit der Instanz verbinden.
-Das hier ein Backend gehostet wird, werden Port 80 (HTTP) und Port 443 (HTTPS) für Anfragen aus allen Quellen offen sein. Zugriff mittels SSH auf Port 22 wird auf eine aus Sicherheitsgründen zensierte IP-Adresse beschränkt.
+Die Protokolle wurden jeweils ihren Standardports laut IANA\footcite{iana} (Internet Assigned Numbers Authority) zugewiesen. Wenn die zum Zugriff berechtigte Quelle auf den Standardwert \textbf{0.0.0.0/0} belassen wird, kann sich jede Quelle mit der Instanz verbinden.
 
-Nach der Auswahl der Zugriffspunkte und Ports, gelangt man auf eine Übersichtsseite. Hier kann man seine Angaben noch einmal überprüfen, sind alle Angaben korrekt, klickt man auf Start und in ein paar Minuten, die Zeit hängt von gewählter Option in Schritt zwei ab, ist die neue Instanz einsatzbereit und man kann sich zum Beispiel per SSH mit einer Shell (Putty) verbinden und zu arbeiten beginnen. 
+Da hier ein Backend gehostet wird, werden Port 80 (HTTP) und Port 443 (HTTPS) für Anfragen aus allen Quellen offen sein. Zugriff mittels SSH auf Port 22 wird auf eine aus Sicherheitsgründen zensierte IP-Adresse beschränkt.
+
+Nach der Auswahl der Zugriffspunkte und Ports, gelangt man auf eine Übersichtsseite. Hier kann man seine Angaben noch einmal überprüfen. Sind alle Angaben korrekt, klickt man auf Start und in ein paar Minuten, die Zeit hängt von gewählter Option in Schritt zwei ab, ist die neue Instanz einsatzbereit und man kann sich zum Beispiel per SSH mit einer Shell (Putty\footcite{putty}) verbinden und zu arbeiten beginnen.
+%\footnote{https://putty.de.uptodown.com/windows} 
 
 \subsection{Backend deployment auf einer EC2 Instanz}
-Nach der ersten Verbindung, müssen alle notwendigen Pakete und Anwendungen installiert werden, in unserem Fall Node.js und Express. Man kann direkt von Github ein Repository auf eine EC2 Instanz klonen. Sicherheitskritische Details wie IP-Adressen werden geschwärzt und zensiert.
+Nach der ersten Verbindung müssen alle notwendigen Pakete und Anwendungen installiert werden, damit die zur Installation gedachte Software auch lauffähig ist.
+In konkretem Fall bei EMS, Node.js und Express. Man kann direkt von Github ein Repository auf eine EC2 Instanz klonen. 
 
+In Abbildung 1.10 werden sämtliche Details der nun voll einsatzbereiten Instanz dargestellt, vorerst ist nur der Verbinden-Knopf rechts oben wichtig, hiermit kann man direkt eine SSH Verbindung mit seiner Instanz herstellen. So kann man sich verbsinden, ohne den .pem Schlüssel, welchen man bei erstellen der Instanz am Ende herunterladen musste, zu nutzen. Eine einfache, sichere und schnelle Methode um über eine Shell auf der Instanz zu arbeiten.
 \begin{center}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{aws_verbinden.png}
-    \caption{AWS Instanz Übersicht}
-\end{figure}
-\end{center}
-
-In Abb. XInstanzÜX werden sämtliche Details der nun voll einsatzbereiten Instanz dargestellt, vorerst ist nur der Verbinden-Knopf rechts oben wichtig, hiermit kann man direkt eine SSH Verbindung mit seiner Instanz herstellen, ohne seinen .pem Schlüssel, welchen man bei erstellen der Instanz am Ende herunterladen musste, zu nutzen. Eine einfache, sichere und schnelle Methode um über eine Shell auf der Instanz zu arbeiten.
-
-\begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws_verbinden.png}
     \caption{AWS SSH Verbindung}
 \end{figure}
 \end{center}
-
-Nun mit der Instanz verbunden, muss, um einen Node.Js Server zu hosten, zuerst Node.Js und installiert werden, da in dem Beispiel hier ein komplettes Backend mit Express gehostet wird, muss dies auch installiert werden. Dies kann unter Ubuntu 20 mit den folgenden Befehlen in angegebener Reihenfolge gemacht werden\footcite{deploy-nodejs1}:
-
+Nun mit der Instanz verbunden muss, um einen Node.Js Server zu hosten, zuerst Node.Js installiert werden. Da in dem Beispiel hier ein komplettes Backend mit Express gehostet wird, muss diese Technologie auch noch installiert werden. Dies kann unter Ubuntu 20 mit den folgenden Befehlen in angegebener Reihenfolge gemacht werden\footcite{deploy-nodejs1}:
 \begin{lstlisting}[language=bash]
-# Using Ubuntu and Node.js Version 15+
+# Ubuntu 19+ und Node.Js Version 15+
 curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-#For newest Express version
+#Neueste Express Version
 sudo npm install -g express-generator
 
-#For nodemon
+#In EMS wurde zusätzlich Nodemon zum starten benutzt
 sudo npm i -g nodemon
 \end{lstlisting}
-
-Nach erfolgreicher Installation sollte mit mit in Abb. XX zu sehendem Kommando, die aktuelle Node.Js Version Installation überprüfen können. (Falls die Installation nicht erfolgte, überprüfen ob man den Befehl sudo benutzt hat.)
-
+Nach erfolgreicher Installation sollte mit dem in Abb. 1.11 zu sehendem Kommando, die aktuell installierte Node.Js Version überprüfen können. (Falls die Installation nicht erfolgte, überprüfen ob man den Befehl sudo benutzt hat.)
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws_nodejs_v.png}
     \caption{AWS Node.js Version}
 \end{figure}
 \end{center}
-
-Unter Ubuntu musst Git nicht installieren werden, da es mitausgeliefert wird. Falls dies aber doch der Fall sein sollte, kannst man es mit folgendem Befehl installieren;
-
+Unter Ubuntu musst Git nicht installieren werden, da es mitausgeliefert wird. Falls es aber nicht installiert ist, kann man es mit folgendem Befehl unter Ubuntu installieren:
 \begin{lstlisting}[language=bash]
 sudo apt-get install git
 \end{lstlisting}
-
-Danach klont man das Git-Repository mit dem Backend oder der Node.js Anwendung auf die AWS Instanz.
-
-
+Danach klont man das Git-Repository, welches das Backend enthält, auf die AWS Instanz.
 \begin{lstlisting}[language=bash]
-git clone https://github.com/[PATH_TO:REPOSITORY]
+git clone https://github.com/[PATH_TO_REPOSITORY]
 \end{lstlisting}
-
-Nach sämtlichen Installationen und wechseln in das Verzeichnis des Repositories, wird das Backend gestartet, dies geschieht mit folgenden Befehlen:
-
+Nach sämtlichen Installationen muss in das Verzeichnis des geklonten Repositories gewechselt werden um fortzufahren.
+Im nächsten Schritt müssen alle im Projekten Klassen und Module installiert werden, danach kann man das Programm starten:
 \begin{lstlisting}[language=bash]
+#Abhängigkeiten installieren
 npm install
 
+#Server starten
 nodemon start
 \end{lstlisting}
-
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws_nodejs_s.png}
     \caption{AWS Backend running}
 \end{figure}
 \end{center}
+Abbildung 1.12 zeigt einen das Node.Js/Express Backend von EMS auf einer AWS EC2 Instanz laufend. 
+Der Server läuft jetzt auf Port 3000. 
+Wenn man nun aber die öffentliche DNS Adresse der Instanz in die Suchleiste eines Webbrowser einfügt und den Port des Server noch dazu angibt, passiert jedoch nichts,
+obwohl die Instanz und Node.js online sind.
 
-Abb. zeigt einen Node.js und Express Server auf einer AWS EC2 Instanz laufend. Der Server läuft jetzt auf Port 3000. Wenn man nun aber die öffentliche DNS Adresse der Instanz in die Suchleiste eines Webbrowser einfügt und den Port des Server noch dazu angibt, passiert noch nichts, obwohl die Instanz und Node.js online sind. Damit der Server auch von außerhalb der Instanz erreicht werden kann, muss entsprechender Port geöffnet werden.
-
+Damit der Server auch von außerhalb der Instanz erreicht werden kann, muss entsprechender neuer Port geöffnet werden, in dem Fall Nummer 3000.
 \begin{center}
 \begin{figure}[h]
     \centering
@@ -392,20 +369,16 @@ Abb. zeigt einen Node.js und Express Server auf einer AWS EC2 Instanz laufend. D
     \caption{AWS Dashboard Sicherheitsgruppe auswählen}
 \end{figure}
 \end{center}
-
-Dies geschieht in dem man auf de, EC2 Dashboard auf "`Sicherheitsgruppen"' geklickt hat, wie in Abb. XX zu sehen ist. 
-
+Um dies einzustellen muss man zur AWS Seite auf das EC2 Dashboard zurück wechseln und auf \textbf{Sicherheitsgruppen} klicken, wie in Abb. 1.13 zu sehen ist. 
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws_launch_wizard.png}
     \caption{AWS Dashboard Sicherheitsgruppe auswählen}
 \end{figure}
 \end{center}
-
-Bei der Erstellung der Instanz, hat man gleichzeitig auch eine Sicherheitsgruppe erstellt, unter Schritt sechs. Diese wird nun ausgewählt und im unteren Fenster der Reiter "´Regeln für eingehenden Datenverkehr"' ausgewählt und dort auf Bearbeiten geklickt.
-
-
+Bei der Erstellung der Instanz hat man gleichzeitig auch eine Sicherheitsgruppe erstellt, das war bei Schritt sechs (Kapitel 1.3.1).
+Diese wird nun ausgewählt und im unteren Fenster der Reiter \textbf{Regeln für eingehenden Datenverkehr} ausgewählt und dort auf Bearbeiten geklickt (Abbildung 1.14).
 \begin{center}
 \begin{figure}[h]
     \centering
@@ -413,27 +386,27 @@ Bei der Erstellung der Instanz, hat man gleichzeitig auch eine Sicherheitsgruppe
     \caption{AWS Dashboard Sicherheitsgruppe auswählen}
 \end{figure}
 \end{center}
+Es geht ein neues Fenster auf, hier gibt man den das Protokoll an, in dem Fall hier \textbf{Benutzerdefiniertes TCP}. Den Port, Nummer 3000 und zuletzt, wer darauf zugreifen darf. In dem Fall hier
+wurde zu Testzwecken die momentane IP eines privaten Computers benutzt. Später wird hier 0.0.0.0/0 stehen, was bedeutet, jedes Gerät, egal welche IP, darf hierauf zugreifen (Abbildung 1.15). 
 
-Eine Neue Regeln hinzufügen und den Port des Node.js/Express Servers eingeben, plus als Quelle die Sicherheitsgruppen ID der gewählten Sicherheitsgruppe eintragen, dies bewirkt dass alles Instanzen mit dieser Sicherheitsgruppe Port 3000 frei haben.
-
-Indem man nun bis zu maximal einer Minute wartet, damit alle Änderungen übernommen worden sind, kann der Server über Port 3000 aufgerufen werden und Funktionen ausgeführt werden zum Beispiel:
-
+Innerhalb einer Minute sind alle Änderungen übernommen worden und der Server kann über Port 3000 aufgerufen werden und Funktionen können ausgeführt werden indem man folgenden linken
+in die Suchleiste eines Browser eingibt:
 \begin{lstlisting}[language=bash]
 http://[Oeffentlicher-IPv4-DNS-DER-INSTANZ].compute.amazonaws.com:[PORTNUMMER]/[FUNKTIONS_NAME]
 \end{lstlisting}
-
-Die Ausgabe erscheint dann im unteren Bereich, falls die Funktion einen Rückgabewert besitzt, wie in Abb. zu sehen.
-
+Falls die Funktion einen Rückgabewert besitzt, erscheint der Rückgabewert im Browser wie in Abbildung 1.16 zu sehen ist.
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws_functionsaufruf.png}
     \caption{AWS Instanz Port geöffnet}
 \end{figure}
 \end{center}
-
-Einen letzten Schritt gibt es noch. Der Server läuft in einem SSH Fenster im Vordergrund und kann mit Strg+C abgebrochen werden. Um den Prozess nun im Hintergrund laufen zu lassen, gibt man folgenden Befehl ein:
-
+Einen letzten Schritt gibt es noch.
+Der Server läuft in einem SSH Fenster im Vordergrund und wird automatisch abgebrochen, wenn das Terminal beendet wird.
+Damit der Prozess weiter ausgeführt wird, muss er im Hintergrund durchgeführt werden. Um dies zu erreichen gibt es Programme
+wie \textbf{pm2}\footcite{pm2}. Folgende Befehle erklären die Installation und Benutzung von pm2:
+%\footnote{https://pm2.keymetrics.io/}
 \begin{lstlisting}[language=bash]
 #Installieren von pm2
 sudo npm install pm2 -g
@@ -444,9 +417,8 @@ sudo pm2 start www
 #Zum anzeigen aller Prozesse in pm2
 sudo pm2 list
 \end{lstlisting}
-
-Die Ausgabe wie in Abb. XX zu sehen ist, zeigt den Prozess in pm2 unter der OS - Prozess ID 4165 und pm2 ID 1 laufen. Er ist online und einige weitere Details zur Analyse und Fehlerbehandlung werden angezeigt. Sollte man am Server im Code ändern, muss man den Hintergrundprozess neu starten. Dies geht mit:
-
+Die Ausgabe in Abbildung 1.17 zeigt den Serverprozess in pm2 unter der OS - Prozess ID 4165 und pm2 ID 1 laufen. Er ist online und einige weitere Details zur Analyse und Fehlerbehandlung werden angezeigt.
+Gibt es ein Update oder einen Patch für den Server, muss man den Hintergrundprozess neu starten. Dies geht folgend:
 \begin{lstlisting}[language=bash]
 #Neustart von pm2 Prozess mit ID 1
 sudo pm2 restart 1
@@ -454,14 +426,11 @@ sudo pm2 restart 1
 #Stoppe Prozess
 sudo pm2 stop 1
 \end{lstlisting}
-
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{aws_om2.png}
     \caption{AWS Node.js Server im Hintergrund}
 \end{figure}
 \end{center}
-
-
 \newpage
