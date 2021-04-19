@@ -14,10 +14,10 @@ In jeder Phase erfolgt die Entwicklung in kurzen Zyklen, die Iterationen genannt
 
 	\subsection{Phasen}
 	\begin{itemize}
-		\item Inception-Phase: Abgrenzung des Projektumfangs und genaue Beschreibung der wesentlichen Ziele. Es wird die Machbarkeit analysiert und der Aufwand festgestellt.
-		\item Elaboration: Wichtigste Phase im Projekt. Hier sollte eine vollständige Analyse des Systems vorliegen. Es soll am Ende dieser Phase ein Prototyp vorliegen, der die wichtigsten Anforderungen beinhaltet.
-		\item Construction: Hier finden die Entwicklung und das Testen der Applikation/Features statt.
-		\item Transition: In dieser Phase soll ein Prototyp vorhanden sein der dem Auftraggeber übergeben werden kann. 
+		\item \textbf{Inception-Phase:} Abgrenzung des Projektumfangs und genaue Beschreibung der wesentlichen Ziele. Es wird die Machbarkeit analysiert und der Aufwand festgestellt.
+		\item \textbf{Elaboration:} Wichtigste Phase im Projekt. Hier sollte eine vollständige Analyse des Systems vorliegen. Es soll am Ende dieser Phase ein Prototyp vorliegen, der die wichtigsten Anforderungen beinhaltet.
+		\item \textbf{Construction:} Hier finden die Entwicklung und das Testen der Applikation/Features statt.
+		\item \textbf{Transition:} In dieser Phase soll ein Prototyp vorhanden sein der dem Auftraggeber übergeben werden kann. 
 	\end{itemize}
 	
 	TODO: add aufwand und dauer pic
@@ -29,13 +29,19 @@ Die Anzahl der Iterationen in einer Phase wird durch den Schwierigkeitsgrad des 
   
   Die kurzen Entwicklungszyklen der Iterationen in RUP ermöglichen ein frühzeitiges Feedback des Kunden, was hilft, dass späte Änderungen durch den Kunden vermieden werden können. 
   
-  TODO: Add iterationen grafik
+  \begin{center}
+			\begin{figure}[h]
+   		\centering
+    	\includegraphics[width=\textwidth]{rup_iterationen.png}
+		   \caption{Iterationen in RUP}
+			\end{figure}
+		\end{center}
   
   Die obenstehende Grafik zeigt alle Workflows einer Iteration. Die verschiedenen Workflows werden abhängig von der Phase der Iteration mit verschiedenen Intensitäten abgearbeitet. 
 Es können mehrere Zyklen pro Iteration ablaufen.
 Am Anfang jeder Iteration wird ein Iterationsplan erstellt, der die Aufgaben und Ziele einer jeden Iteration definiert. 
 RUP trägt durch seine iterative Natur zur Vermeidung eines Late Design Breakages bei. Nicht iterative Modelle ermöglichen in einem frühen Stadium der Entwicklung keine Gesamtsicht auf das System. Mängel im System können erst spät erkannt werden. Somit müssen in vielen Komponenten der Software Änderungen vorgenommen werden, was einen hohen Aufwand darstellt und Verzögerungen im Deployment mit sich ziehen kann. 
-Ein iterativer Entwicklungsansatz kann zwar nach jeder abgeschlossenen Phase auch Probleme offenlegen. Diese sind aber auf Komponenten, die seit der zuletzt abgeschlossenen Phase erstellt wurden, begrenzt.
+Ein iterativer Entwicklungsansatz kann zwar nach jeder abgeschlossenen Phase auch Probleme offenlegen, diese sind aber auf Komponenten, die seit der zuletzt abgeschlossenen Phase erstellt wurden, begrenzt.
 
   \subsection{Workflows}
   \begin{itemize}
@@ -111,8 +117,33 @@ Hierbei gibt es mehrere Linien, an denen der Fortschritt gemessen wird. Eine gib
 	\section{Scrum als Ablaufverfahren in der Entwicklung von EMS}
 	
 		Am Anfang des Projekts wurden vom Team alle User Stories, die benötigt worden sind, um die gewünschten Funktionen von EMS realisieren zu können, definiert. Diese User-Stories wurden, soweit vom Umfang her möglich, in Tasks unterteilt. 
+		
+		  \begin{center}
+			\begin{figure}[h]
+   		\centering
+    	\includegraphics[width=6cm]{User-Story_Tasks.png}
+		   \caption{Beispiel einer User-Story mit Tasks}
+			\end{figure}
+		\end{center}
+		
 Nach der Definition wurden allen User-Stories vom Team gemeinsam eine geschätzte Abarbeitungsdauer und eine Priorität zugewiesen.  
-User-Stories und die dazugehörigen Tasks wurden dann Sprints hinzugefügt, die eine Dauer von drei Wochen hatten. Die Diplomarbeitsmitglieder konnten sich zum größten Teil ihre zu bearbeitenden User-Stories selbst aussuchen. Im Falle eines beendeten Sprints, der noch offene User-Stories aufwies, wurden die betroffenen User-Stories wieder zurück in das Product Backlog verschoben und bei Beginn des nächsten Sprints diesem wieder hinzugefügt
+User-Stories und die dazugehörigen Tasks wurden dann Sprints hinzugefügt, die eine Dauer von drei Wochen hatten. 
 
-TODO Blacklog, user story und sprint
+  \begin{center}
+			\begin{figure}[h]
+   		\centering
+    	\includegraphics[width=6cm]{Sprint.png}
+		   \caption{Beispiel eines Sprints}
+			\end{figure}
+		\end{center}
+
+Die Diplomarbeitsmitglieder konnten sich zum größten Teil ihre zu bearbeitenden User-Stories selbst aussuchen. Im Falle eines beendeten Sprints, der noch offene User-Stories aufwies, wurden die betroffenen User-Stories wieder zurück in das Product Backlog verschoben und bei Beginn des nächsten Sprints diesem wieder hinzugefügt.
+
+  \begin{center}
+			\begin{figure}[h]
+   		\centering
+    	\includegraphics[width=6cm]{product_backlog.png}
+		   \caption{Product Backlog}
+			\end{figure}
+		\end{center}
 	

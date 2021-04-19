@@ -120,3 +120,36 @@ Diese Methode hat eine hohe Resistenz gegen Extinktion. Die Wahrscheinlichkeit e
 		\subsection{Nichtkontingente Verstärkung}
 		
 		Nichtkontingente Verstärkung beschreibt die Abnahme von Verhaltensmustern unabhängig vom Verhalten der Person. Die Nichtkontingente Verstärkung kann verwendet werden, um die Wahrscheinlichkeit eines unerwünschten Verhaltens zu reduzieren, in dem man andere, Verhaltensmuster, die nicht erwünscht sein müssen, aber nicht, nicht erwünscht sind, belohnt und somit das unerwünschte Verhalten abtrainiert, ohne es selbst zu behandeln. \\
+		
+		\subsection{Umsetzung in EMS}
+		
+		EMS bietet zwei verschiedene Formen der positiven Verstärkung in Form einer materiellen Belohnung mit festem Verhältnis, den Goodies und einer immateriellen Belohnung mit festem Verhältnis, den Leaderboards und eine positive Bestrafung mit festen Intervallen, dem Punkteverfall nach einer bestimmten Zeitspanne der Inaktivität.
+Es war ein großes Anliegen in EMS ein sinnvolles und gut durchdachtes Belohnungssystem, dass Motivation ankurbelt, zu implementieren.
+Ein funktionierendes Motivationssystem trägt dazu bei, dass Promoter, also die Kartenverkäufer, ihre Leistung immer weiter steigern wollen und somit den Kartenverkauf des Events optimieren. 
+Um die Promoter/innen davon abzuhalten ihre Verkaufszahlen nicht zeitgerecht einzutragen, bzw. Sie davon abzuhalten, nach einem bestimmten Verdienst von Punkten nicht weiter Karten zu verkaufen wurde ein Punkteverfall implementiert. Nach einer definierten Zeitspanne von Inaktivität, also einer bestimmten Zeit, in der keine Änderungen im Kartenstand eines/r Promoter/in eingetragen wurde, werden Punkte wieder abgezogen.
+Ein/e Promoter/in bekommt nach einer bestimmten Anzahl von Karten Punkte. Diese Punkte werden für jedes Event, an dem der/die Promoter/in teilnimmt gespeichert. 
+Promoter/innen können diese Punkte für Goodies, also Belohnungen, die für jedes Event einzeln erstellt werden können, eintauschen. 
+Es wird auch für jedes Event eine Rangliste, das Leaderboard, geführt. In diesem Leaderboard werden die zehn verkaufsstärksten Promoter/innen in Riehenfolge mit dem genauen Punktestand aufgeführt. 
+
+	\begin{center}
+		\begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm]{Leaderboard.png}
+    \caption{Leaderboard eines Events}
+		\end{figure}
+		\end{center}
+
+Punkte werden für jede/n Promoter/in auf der Seite des spezifischen Events angezeigt. 
+
+	\begin{center}
+		\begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm]{Event-Detail.png}
+    \caption{Eventdetail eines Events mit angezeigtem Punktestand}
+		\end{figure}
+		\end{center}
+Promoter/innen können auf den Button „Punkte einlösen“ klicken, um sich Goodies anzeigen zu lassen, für die sie ihre Punkte einlösen können. Goodies werden für jedes Event einzeln definiert und können von Rabatten bis zu Hotelzimmer reichen.
+Bei Klick auf „Leaderboard ansehen“ wird der/die Promoter/in auf eine Seite weitergeleitet, die die zehn verkaufsstärksten Promoter anzeigt. 
+
+
+
