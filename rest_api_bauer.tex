@@ -59,7 +59,7 @@
 		 	\subsubsection{'add\_event\_to\_user'}
 		 		Diese Post Funktion wird aufgerufen wenn einem User ein neues Event zugewiesen wird. In dieser Funktion wird ein temporäres Event Objekt erstellt welche alle notwendigen Daten von der Request speichert. Dieses Objekt wird in einem Array gespeichert welches bei einem spezifischen User in der Datenbank festgehalten wird. Falls beim speichern ein Fehler auftritt wird der Datenbankfehler an das Frontend geschickt anderen Falls wird der geänderte User zurück gesendet. Diese Funktion ist die Grundlage für die EMS Software da ohne ein User ohne Events weder Karten bekommen kann oder seinen Kartenstand eintragen kann.
 		 		
-		 		\begin{figure}[h]
+		 		\begin{figure}[H]
 		 			\centering
 		 			\includegraphics[width=\textwidth]{add_event_to_user.png}
 		 			\caption{'add\_event\_to\_user' Funktion}
@@ -68,7 +68,7 @@
 		 	\subsubsection{'create\_user'}
 		 		Diese Funktion ist ebenfalls eine Post Funktion welche verwendet wird um einen neuen Promoter oder Administrator in der Datenbank anzulegen. Die meisten Daten werden aus der Request gespeichert allerdings werden 3 der benötigten Datenfelder vom Server ausgefüllt und das Password wir durch eine externe Bibliothek gehascht. Danach wir eine temporäres Objekt erstellt welches alle für das erstellen benötigte Daten umfasst. Dieses Objekt wird über Mongoose in die User Kollektion gespeichert. Diese Funktion bildet einen Teil der Grundlage da die EMS Software für eine große Anzahl von Usern ausgelegt ist. 
 		 		
-		 		\begin{figure}[h]
+		 		\begin{figure}[H]
 		 			\centering
 		 			\includegraphics[width=\textwidth]{create_user.png}
 		 			\caption{'create\_user' Funktion}
@@ -77,7 +77,7 @@
 		 	\subsubsection{'authenticateToken'}
 		 		'authenticateToken' ist eine Middleware welche vor dem ausführen sämtlicher Funktion überprüft ob im Kopf der Anfrage ein gültiger JWS-Token mitgeschickt wurde. Falls ein ungültiger oder falscher Token mitgeschickt wurde wird der Vorgang abgebrochen und eine Fehlermeldung an das Frontend gesendet. Wird ein gültiger Token mitgeschickt wird die Anfrage nach der Überprüfung wie gewollt ausgeführt. Diese Zwischensoftware hilft mit der Sicherheit der Website da keine Anfragen direkt an den Server geschickt werden können ohne das sie von einem eingeloggten User oder Administrator stammen. 
 		 		
-		 		\begin{figure}[h]
+		 		\begin{figure}[H]
 		 			\centering
 		 			\includegraphics[width=\textwidth]{authentication_middleware.png}
 		 			\caption{'authentication' Middleware}
