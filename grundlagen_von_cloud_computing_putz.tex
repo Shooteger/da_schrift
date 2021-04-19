@@ -109,26 +109,29 @@ Der maßgebende Unterschied zwischen Function- und Platform as a Service ist, da
 Dies bewirkt normalerweise eine Kostenerhöhung auf Seiten des Nutzers, welche direkt abgebucht oder in Rechnung gestellt wird.
 Die Skalierung ist hier gut dokumentiert und übersichtlich und man kann die Auslastung und Belastung der Entwicklerumgebung leicht nachvollziehen.
 
-Ganz anders im Gegensatz dazu geschieht die Skalierung bei FaaS. Bei diesem Service läuft keine extra Serverinstanz im Hintergrund. Bei FaaS muss der Benutzer die \textbf{Function execution time} bezahlen. Die Zeit zwischen den Ausführungen von Code wird hierbei nicht in Rechnung gestellt, also lediglich, wenn ein Code zum Beispiel übersetzt oder ein Programm ausgeführt und getestet wird. Somit muss der Benutzer auch nicht mehr an die Skalierung denken, da seine Entwicklerumgebung quasi kostenlos zu Verfügung steht und er nur die Ausführung der Software nach deren Zeitaufwand bezahlen muss.
+Ganz anders im Gegensatz dazu geschieht die Skalierung bei FaaS. Bei diesem Service läuft keine extra Serverinstanz im Hintergrund. Bei FaaS muss der Benutzer die \textbf{Function execution time} bezahlen.
+Die Zeit zwischen den Ausführungen von Code wird hierbei nicht in Rechnung gestellt, also lediglich, wenn ein Code zum Beispiel übersetzt oder ein Programm ausgeführt und getestet wird.
+Somit muss der Benutzer auch nicht mehr an die Skalierung denken, da seine Entwicklerumgebung quasi kostenlos zur Verfügung steht und er nur die Ausführung der Software nach deren Zeitaufwand bezahlen muss.
 Dies sorgt für geringere Kosten auf Seiten des Kunden, bei gleichzeitig höherer Skalierbarkeit, da diese nicht mehr beachtet werden muss.
 Einen Nachteil gibt es jedoch und zwar kann die Latenz bei diesem Service höher als bei einer Lösung mit PaaS ausfallen.
-Dies ist jedoch von vielen Faktoren und nicht zuletzt auch von der Komplexität des kodierten Programmes abhängig.
+Dies ist jedoch von vielen Faktoren, und nicht zuletzt auch von der Komplexität des kodierten Programmes abhängig.
 
 FaaS verfolgt den Ansatz des sogenannten \textbf{"`serverless computing"'}. Hierbei übernimmt der Cloud-Anbieter die komplette Ressourcenzuweisung für den Kunden.
 Bei serverless computing wird keine Ressource im volatilen Speicher gehalten.
-Dies bedeutet, Berechnungen werden in bestimmten Abständen durch bestimmte Events von Seiten des Kunden aus ausgelöst und die Ergebnisse werden dann in einen persistenten Speicher geschrieben.
-Wenn eine Anwendung gerade nicht vom Kunden benutzt wird, wird dies auch nicht in Rechnung gestellt, wie es bei herkömmlichen Services der Fall ist.
+Dies bedeutet, Berechnungen werden in bestimmten Abständen durch bestimmte Events von Seiten des Kunden aus ausgelöst und die Ergebnisse dann in einen persistenten Speicher geschrieben.
+Wenn eine Anwendung gerade nicht vom Kunden genutzt wird, wird dies auch nicht in Rechnung gestellt, wie es bei herkömmlichen Services der Fall ist.
 Es gibt keinen fixierten Betrag der monatlich oder quartalsmäßig abgebucht wird.
 Nur produktiv genutzte Zeit in der Anwendung wird berechnet.
 
-Das erste offizielle, kommerzielle Angebot eines solchen Services gab es 2006. Seitdem haben viele große Cloud-Anbieter wie zum Beispiel Amazon mit AWS Lambda, Google und Microsoft mit Azure, solche \textbf{pay as you go} Services zu Verfügung gestellt\footcite{cloud-computing}.
+Das erste offizielle, kommerzielle Angebot eines solchen Services gab es 2006.
+Seitdem haben viele große Cloud-Anbieter wie zum Beispiel Amazon mit AWS Lambda, Google und Microsoft mit Azure, solche \textbf{pay as you go} Services zu Verfügung gestellt\footcite{cloud-computing}.
 
 % Quellen: https://www.quora.com/What-are-the-Iaas-Paas-and-SaaS-services-in-Amazon-webservices?share=1
 %https://de.wikipedia.org/wiki/Everything_as_a_Service#Weitere_Ans%C3%A4tze_2
 %https://web.archive.org/web/20110728093045/http://www.thecloudcomputing.org/2009/1/panels.html#Panel2
 \subsubsection{Everything as a Service (XaaS)}
-XaaS oder auch EaaS\footcite{cloud-eaas} stellt prinzipiell alles zu Verfügung. Also SaaS, Paas sowie auch Iaas.
-Einige Anbieter spezialisieren sich auf ein bestimmtes Service Modell, manche bieten jedoch prinzipiell alle Services unter der Bezeichnung XaaS an und spalten diese Services in die spezifischere Modelle, wie zum Beispiel SaaS auf.
+XaaS oder auch EaaS\footcite{cloud-eaas} stellt prinzipiell alles zu Verfügung. Also SaaS, PaaS sowie auch IaaS.
+Einige Anbieter spezialisieren sich auf ein bestimmtes Service Modell, manche bieten jedoch prinzipiell alle Services unter der Bezeichnung XaaS an und spalten diese Services in spezifischere Modelle, wie zum Beispiel SaaS auf.
 Dies sorgt vor allem bei Neukunden manchmal für Verwirrung. AWS (Amazon Web Services) ist so ein Service.
 Dieser bietet prinzipiell jedes Modell unter XaaS an, jedoch sind hunderte weitere Services einzeln spezifiziert verfügbar. AWS heißt lediglich das Cloud Computing System.
 Ein tatsächlicher Service heißt zum Beispiel AWS EC2, dieser Service ist als IaaS zu spezifizieren.
@@ -136,9 +139,9 @@ Hierbei kann man einen virtuellen Server mit einem bestimmten Betriebssystem, vi
 
 Ein weiterer IaaS Service in AWS ist S3, hier kann man Speicher mieten.
 
-AWS bietet stand April 2021 über 200 verschiedenen Services in allen Servicemodellen Iaas, Paas und SaaS.
+AWS bietet stand April 2021 über 200 verschiedene Services in allen Servicemodellen Iaas, Paas und SaaS.
 
-Weitere noch spezifischere Servicemodelle wie zum Beispiel High Performance Computing as a Service (HPCaaS), Data Intensive Computing as a Service (DICaaS) oder Humans as a Service (HuaaS) können unter XaaS übergeordnet zusammengefasst werden.
+Weitere noch spezifischere Servicemodelle wie zum Beispiel High Performance Computing as a Service (HPCaaS), Data Intensive Computing as a Service (DICaaS) oder Humans as a Service (HuaaS) können unter dem Begriff XaaS zusammengefasst werden.
 Für HuaaS als Beispiel gibt es den AWS Service, Amazon Mechanical Turk.
 Dieser Dienst befindet sich jedoch noch in einer Beta-Phase, hierbei wird menschliche Intelligenz wie ein Webservice genutzt.
 
@@ -147,7 +150,8 @@ Dieser Dienst befindet sich jedoch noch in einer Beta-Phase, hierbei wird mensch
 %https://de.wikipedia.org/wiki/Cloud_Computing#Organisatorische_Arten_von_Clouds
 \subsection{Liefermodelle}
 Im Kapitel Servicemodelle (Kapitel 1.1.3) wurden die verschiedenen Modelle, welche eine Cloud anbieten kann, behandelt. Nun gibt es auch verschiedene Methoden, dem Kunden die Services zu Verfügung zu stellen.
-Im Englischen werden diese Methoden \textbf{Deployment Models} genannt. Die im Deutsch genannten Liefermodelle\footcite{Lehrunterlagen-HTL-cloud} beschreiben nun, wie genau die Services unter Berücksichtigung ihrer Aufteilung in bereits genannte Servicemodelle einem Benutzer zu Verfügung gestellt werden:
+Im Englischen werden diese Methoden \textbf{Deployment Models} genannt.
+Die im Deutsch genannten Liefermodelle\footcite{Lehrunterlagen-HTL-cloud} beschreiben nun, wie genau die Services unter Berücksichtigung ihrer Aufteilung in bereits genannte Servicemodelle einem Benutzer zu Verfügung gestellt werden:
 \begin{itemize}
 	\item Private cloud
 	\item Public cloud
@@ -159,13 +163,13 @@ Im Englischen werden diese Methoden \textbf{Deployment Models} genannt. Die im D
 %https://de.wikipedia.org/wiki/Cloud_Computing#Organisatorische_Arten_von_Clouds
 %https://azure.microsoft.com/en-us/overview/what-is-a-private-cloud/
 \subsubsection{Private cloud}
-Private Clouds werden nur von einem einzelnen Unternehmen, einer Organisation oder einem Kunden betrieben, oder stehen nur diesem und einem vertrauenswürdigen Dritten zu Verfügung.
+Private cloud's werden nur von einem einzelnen Unternehmen, einer Organisation oder einem Kunden betrieben, oder stehen nur diesem und einem vertrauenswürdigen Dritten zu Verfügung.
 Diese Cloud Umgebung wird entweder intern, in einem firmeneigenen Rechenzentrum gehostet und verwaltet, oder aber der vertrauenswürdige Dritte übernimmt das Hosting. In letzterem Fall liegt das Rechenzentrum extern bei dem Dritten.
 
-Nicht zu verwechseln mit einem normalen IT-Betrieb, wie er in fast jedem kleinen bis mittleren Unternehmen betrieben wird. Die Bezeichnung \textbf{Private cloud} ist erst dann zutreffend, wenn alle fünf Charakteristika einer Cloud erfüllt werden (siehe Kapitel 1.1.2).
-Bei einer privaten Cloud gibt es verschiedene Evolutionsstufen, welche die Wichtigkeit beziehungsweise die Verbreitung und den Nutzungsgrad innerhalb der Organisation beschreibt:
+Nicht zu verwechseln mit einem normalen IT-Betrieb, wie er in fast jedem kleinen bis mittleren Unternehmen betrieben wird. Die Bezeichnung \textbf{private cloud} ist erst dann zutreffend, wenn alle fünf Charakteristika einer Cloud erfüllt werden (siehe Kapitel 1.1.2).
+Bei einer private cloud gibt es verschiedene Evolutionsstufen, welche die Wichtigkeit beziehungsweise die Verbreitung und den Nutzungsgrad innerhalb der Organisation beschreibt:
 \begin{itemize}
-	\item \textbf{Exploratory cloud}: Hier wird die Private Cloud hauptsächlich als Testumgebung parallel zum Produktivbetrieb genutzt. Oft wird sie auch, falls man sich Know-how im Gebiet des Cloud Computing anschaffen will, für Studien, um Potential und Nachteilen einer internen Cloud herauszufinden, benutzt.
+	\item \textbf{Exploratory cloud}: Hier wird die private cloud hauptsächlich als Testumgebung parallel zum Produktivbetrieb genutzt. Oft wird sie auch, falls man sich Know-how im Gebiet des Cloud Computing anschaffen will, für Studien, um Potential und Nachteilen einer internen Cloud herauszufinden, benutzt.
 	\item \textbf{Department cloud}: Eine Cloud, die vor allem produktiv und abteilungsintern genutzt wird.
 	\item \textbf{Enterprise cloud}: Diese Form der privaten Cloud wird im gesamten Unternehmen benutzt und ist fest im Produktivbetrieb integriert\footcite{Lehrunterlagen-HTL-cloud}.
 \end{itemize}
@@ -177,15 +181,14 @@ Anwendungsfälle für eine private Cloud gibt es vor allem in Unternehmen, welch
 %Reis Folien
 %https://azure.microsoft.com/en-us/overview/what-are-private-public-hybrid-clouds/
 \subsubsection{Public cloud}
-Eine Public Cloud\footcite{cloud-ms-ph} bietet für die breite Öffentlichkeit und Einzelpersonen einen Zugang zu den angebotenen Services über das Internet.
+Eine public cloud\footcite{cloud-ms-ph} bietet für die breite Öffentlichkeit und Einzelpersonen einen Zugang zu den angebotenen Services über das Internet.
 Eine öffentliche Cloud kann in drei Unterkategorien eingeteilt\footcite{Lehrunterlagen-HTL-cloud} werden:
 \begin{itemize}
 	\item \textbf{Exclusive Cloud}: Der Benutzer/Kunde und der Hoster der Cloud kennen sich persönlich durch zum Beispiel Schriftverkehr (E-Mail). Normalerweise besteht zwischen den Parteien ein individueller bilateraler Vertrag
-	\item \textbf{Open Cloud}: In der Regel kennen sich der Benutzer/Kunde und Cloudanbieter nicht. In sogenannten \textbf{"`Service Level Agreements"'}, oder kurz SSL, werden die Leistungen und die Vergütung für jeden SSL genauestens beschrieben. Hier laufen Vertragsabschluss und Nutzung voll- oder teilautomatisiert ab, da die Anzahl der Nutzer bei dieser Form der öffentlichen Cloud viel höher als bei allen anderen ist.
+	\item \textbf{Open Cloud}: In der Regel kennen sich der Nutzer und Cloudanbieter nicht. In sogenannten \textbf{"`Service Level Agreements"'}, oder kurz SSL, werden die Leistungen und die Vergütung für jeden SSL genauestens beschrieben. Hier laufen Vertragsabschluss und Nutzung voll- oder teilautomatisiert ab, da die Anzahl der Nutzer bei dieser Form der öffentlichen Cloud viel höher als bei allen anderen ist.
 	\item \textbf{Virtual Private Cloud}: Ein abgetrennter Bereich in einer öffentlichen Cloud, der für einen bestimmten einzelnen Kunden reserviert wird. Zusätzlich werden durch besondere Sicherheitsmaßnahmen entsprechende Vorkehrungen getroffen, welche für die Integrität des exklusiven Bereichs sorgen. Ein Beispiel wäre bei Inanspruchnahme eines IaaS die physische Trennung der gemieteten Hardware von der restlichen oder bei anderen Services ein spezieller Zugang über einen VPN\footcite{Lehrunterlagen-HTL-cloud}.
 \end{itemize}
 Die bekanntesten öffentlichen Clouds sind Amazon Web Services, Google App Engine, Windows Azure und auch Salesforce.com\footcite{cloud-computing}.
-
 %Quellen:
 %Reis Folien
 %https://de.wikipedia.org/wiki/Cloud_Computing#Organisatorische_Arten_von_Clouds
@@ -202,7 +205,7 @@ Beispiel: Ein Unternehmen hat eine private Enterprise Cloud, und nutzt aber zus�
 Eine Community Cloud ist ein Zusammenschluss von einigen unter sich bekannten Nutzer.
 Diese \textbf{verschmolzene} neue Cloud aus zum Beispiel einigen privaten Clouds, welche einen sehr ähnlichen oder gleichen Zweck hatten, kann intern in deren Gebäuden gehostet werden, oder extern von einem Dritten betrieben werden.
 Die Kosten werden unter den ursprünglichen Teilnehmern aufgeteilt.
-Ein Anbieter hierfür wäre zum Beispiel \textbf{Googel Gov Cloud}.
+Ein Anbieter hierfür wäre zum Beispiel \textbf{Google Gov Cloud}.
 \begin{center}
     \begin{figure}[H]
         \centering
@@ -237,7 +240,9 @@ Bei einer traditionellen Lösung wäre dies nicht so einfach möglich, da zuerst
 
 Einerseits kauft man sich die IT-Kompetenz ein, dies kann gleichzeitig zwar auch ein Vorteil sein, da man sich in erster 
 Linie Geld und Zeit spart, jedoch entsteht eine gewisse Abhängigkeit zum Anbieter des in Anspruch genommenen Services. Bei Cloud Computing werden Freiheiten im Gegenzug für Kostenreduzierung aufgegeben. Der Kunde muss sich auf die Zuverlässigkeit der
-Kommunikation und der durchgehenden Verfügbarkeit seines Services verlassen. Weiters differenziert man sich weniger von der Konkurrenz, welche den gleichen Anbieter nutzen. Dieser hat im Falle, dass ein Konkurrent bei dem gleichen Anbieter ist, die gleichen Chancen und keiner hat mehr einen Vorteil auf der Ebene.\footcite{Lehrunterlagen-HTL-cloud}.
+Kommunikation und der durchgehenden Verfügbarkeit seines Services verlassen.
+Weiters differenziert man sich weniger von der Konkurrenz, welche den gleichen Anbieter nutzen.
+Dieser hat im Falle, dass ein Konkurrent bei dem gleichen Anbieter ist, die gleichen Chancen und keiner hat mehr einen Vorteil.\footcite{Lehrunterlagen-HTL-cloud}.
 
 \textbf{Opportunity (Gelegenheiten):} Außer den bei Stärken genannten positiven Eigenschaften, bringen Cloud Lösungen einige neue und innovative Gelegenheiten mit sich. Einerseits verkürzt sich die time-to-market, da in einer Cloud Umgebung schneller entwickelt werden kann und die Services
 untereinander sehr gut aufeinander abgestimmt sind.
@@ -386,7 +391,7 @@ Nach erfolgreicher Installation sollte mit dem in Abb. 1.11 zu sehenden Kommando
     \caption{AWS Node.js Version}
 \end{figure}
 \end{center}
-Unter Ubuntu musst Git nicht installieren werden da es mitausgeliefert wird. Falls es aber nicht installiert ist, kann man es mit folgendem Befehl unter Ubuntu installieren:
+Unter Ubuntu muss Git nicht installieren werden da es mitausgeliefert wird. Falls es aber nicht installiert ist, kann man es mit folgendem Befehl unter Ubuntu installieren:
 \begin{lstlisting}[language=bash]
 sudo apt-get install git
 \end{lstlisting}
@@ -432,7 +437,7 @@ Um dies einzustellen muss man zur AWS Seite auf das EC2 Dashboard zurück wechse
 \end{figure}
 \end{center}
 Bei der Erstellung der Instanz hat man gleichzeitig auch eine Sicherheitsgruppe erstellt. Zu sehen in Schritt sechs bei Kapitel 1.3.1.
-Diese wird nun ausgewählt und im unteren Fenster der Reiter \textbf{Regeln für eingehenden Datenverkehr} ausgewählt und dort auf Bearbeiten geklickt (Abbildung 1.14).
+Diese wird nun ausgewählt und im unteren Fenster der Reiter \textbf{Regeln für eingehenden Datenverkehr} geklickt und dort auf Bearbeiten gedrückt (Abbildung 1.14).
 \begin{center}
 \begin{figure}[h]
     \centering

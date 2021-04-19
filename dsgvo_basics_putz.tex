@@ -8,7 +8,7 @@
 \subsection{DSGVO Grundsätze}
 Die Datenschutzgrundverordnung\footcite{dsgvo-wiki}, oder im englischen Sprachraum \textbf{General Data Protection Regulation (GDPR)} genannt, soll die Rechte von natürlichen, realen Personen im Bezug auf Verarbeitung deren personenbezogenen Daten genau definieren und sicherstellen.
 
-Die DSGVO wurde am 25. Mai 2016 beschlossen und trat an selbigem in Kraft. Sie musste ab diesem Zeitpunkt unter Einhaltung einer zweijährigen Umsetzungsfrist bis 25. Mai 2018 eingehalten werden. Primär soll jedem EU-Bürger das Recht auf informelle Selbstbestimmung garantiert werden und jeder Mensch in der EU soll vor nicht sachgerechter Nutzung der eigenen Daten rechtlich geschützt werden.
+Die DSGVO wurde am 25. Mai 2016 beschlossen und trat an selbigem Datum in Kraft. Sie musste ab diesem Zeitpunkt unter Einhaltung einer zweijährigen Umsetzungsfrist bis 25. Mai 2018 eingehalten werden. Primär soll jedem EU-Bürger das Recht auf informelle Selbstbestimmung garantiert werden und jeder Mensch in der EU soll vor nicht sachgerechter Nutzung der eigenen Daten rechtlich geschützt werden.
 Die neuen Datenschutzrichtlinien der Europäischen Union ersetzen die bis dahin geltenden \textbf{Datenschutzrichtlinie 95/94}.
 
 Das Gesetz wurde als EU Verordnung erlassen und muss somit in allen Mitgliedsstaaten vollständig übernommen werden.
@@ -38,7 +38,7 @@ Eine Übersicht:
 \begin{itemize}
 	\item \textbf{Kapitel I (Artikel 1 bis 4)}: Allgemeine Bestimmungen
 	\item \textbf{Kapitel II (Artikel 5 bis 11)}: Grundsätze und Rechtmäßigkeit
-	\item \textbf{Kapitel III (Artikel 12 bis 23)}: Grundsätze und Rechtmäßigkeit
+	\item \textbf{Kapitel III (Artikel 12 bis 23)}: Rechte der betroffenen Person
 	\item \textbf{Kapitel IV (Artikel 24 bis 43)}: Verantwortlicher und Auftragsverarbeiter
 	\item \textbf{Kapitel V (Artikel 44 bis 50)}: Übermittlungen personenbezogener Daten an Drittländer oder an internationale Organisationen
 	\item \textbf{Kapitel VI (Artikel 51 bis 59)}: Unabhängige Aufsichtsbehörden
@@ -93,7 +93,8 @@ Die Anzahl der Befragten unterscheidet sich je Kategorie in der Studie.
 %\footnote{https://www.capgemini.com/at-de/wp-content/uploads/sites/25/2019/02/IT-Trends-Studie-2019-1.pdf}
 
 Im Jahr 2018 musste die Datenschutzgrundverordnung komplett umgesetzt worden sein. Die Studie zeigt auf, dass viele Unternehmen sich noch nicht an die neuen Gegebenheiten angepasst haben.
-Vor allem Unternehmen im Bereich des BigData haben große Schwierigkeiten, die neuen Gesetzte umzusetzen. Mehr als die Hälfte aller Unternehmen klagt davon, dass ihre Projekte ausgebremst und gleichzeitig mit einem höheren Aufwand betrieben werden müssen.
+Vor allem Unternehmen im Bereich des BigData haben große Schwierigkeiten, die neuen Gesetzte umzusetzen.
+Mehr als die Hälfte aller Unternehmen klagt davon, dass ihre Projekte ausgebremst und gleichzeitig mit einem höheren Aufwand betrieben werden müssen.
 Einen positiven Effekt hatte die DSGVO aber im Hinblick auf den Austausch der Daten, wie Abbildung 2.1 zeigt.
 \begin{center}
 \begin{figure}[h]
@@ -111,14 +112,12 @@ Die EU Verordnung musste bereits am 25.Mai 2018 fertig umgesetzt worden sein, je
 
 Datenschutzfreundliche Softwareentwicklung und Integration von Datenschutz in die IT-Systeme, welches unter dem Begriff \textbf{Privacy by design} zusammengefasst wird, liegt in der Studie auf Platz zwei, gleich hinter DSGVO-Compliance. 
 
-Dies bewirkt, dass bereits bei der ersten Phase bei einer Softwareentwicklung die DSGVO integriert und mitgedacht werden muss.
+Dies bewirkt, dass bereits bei der ersten Phase bei einer Softwareentwicklung die DSGVO integriert und darauf geachtet werden muss.
 Zudem müssen jetzt nun auch Sicherheitsfachleute für diesen neuen Fall in den Entwicklungsprozess miteinbezogen werden, was nur jedem sechsten Unternehmen gelungen ist.
 Rund 13,5 Prozent planen erst diesen Prozess noch in die Entwicklung zu integrieren.
-
 \section{Datenschutz in EMS}
 EMS muss personenbezogene Daten speichern, diese werden jedoch zu keinem Zeitpunkt weiterverarbeitet und weitergegeben. Diese Daten werden ausschließlich zu internen Prozessabwicklungen benötigt, wie zum Beispiel dem
 Anmeldesystem (Kapitel 6). Außerdem vefügt jeder Nutzer über eine pseudonymisierte Kennung, welche nicht eindeutig zuzuordnen ist (Kapitel 7.4).
-
 \subsection{AWS Datenschutzgrundverordnung}
 AWS bietet eine eigene DSGVO Compliance Abteilung\footcite{aws-dsgvo}. Amazon Web Services stellt eine übersichtliche Tabelle\footcite{AWS-DSGVO-Tabelle}, welche angebotenen Dienste genau eine Verschlüsselung, Löschung und 
 genaue Überwachung der Daten bieten, zu Verfügung. Als Beispiel wird hier ein für EMS relevanter Service, AWS EC2, genauer hinsichtlich DSGVO Konformität beschrieben.
@@ -151,7 +150,8 @@ welche den Klarnamen eines Benutzers gespeichert hat. Dies bedeutet, dass sämtl
 %\footnote{https://aws.amazon.com/de/blogs/security/how-to-protect-data-at-rest-with-amazon-ec2-instance-store-encryption/}
 %\footnote{https://en.wikipedia.org/wiki/Advanced_Encryption_Standard}
 
-Personenbezogene Daten werden nur einmal zur Anlegung eines neuen Benutzers benötigt. Hier müssen alle in folgender Abbildung gezeigten Felder mit den entsprechenden Daten gefüllt werden um einen neuen Benutzer, einen Promoter, anzulegen.
+Personenbezogene Daten werden nur einmal zur Anlegung eines neuen Nutzers benötigt.
+Hier müssen alle in folgender Abbildung gezeigten Felder mit den entsprechenden Daten gefüllt werden um einen neuen Benutzer, einen Promoter, anzulegen.
 \begin{center}
 	\begin{figure}[h]
 		\centering
@@ -182,8 +182,8 @@ Vertrauensgrundsätze\footcite{atlas-soc2} die da wären:
 \end{enumerate}
 SOC 2 von MongoDB Atlas wird in zwei verschiedenen Formaten angeboten:
 \begin{enumerate}
-	\item \textbf{Type I}: Bewertet DSGVO-Umsetzung und Stand des Datenschutzen zum angegebenen Zeitpunkt 
-	\item \textbf{Type II}: Bewertet DSGVO-Umsetzung und Stand des Datenschutzen in einer angegebenen zeitlichen Periode, welche mindestens sechs Monate lang sein muss
+	\item \textbf{Type I}: Bewertet DSGVO-Umsetzung und Stand des Datenschutzes zum angegebenen Zeitpunkt 
+	\item \textbf{Type II}: Bewertet DSGVO-Umsetzung und Stand des Datenschutzes in einer angegebenen zeitlichen Periode, welche mindestens sechs Monate lang sein muss
 \end{enumerate}
 Das Angebot \textbf{Type II} unter SOC 2 in Atlas wird von einem externen Unternehmen\footcite{atlas-soc2}, Schellman and Company LLC durchgeführt.
 \newpage
