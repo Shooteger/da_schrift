@@ -73,15 +73,13 @@
 
 \include{Kurzfassung}
 
-\include{Einleitung}
-
 %%%----------------------------------------------------------
 \mainmatter           %Hauptteil (ab hier arab. Seitenzahlen)
 %%%----------------------------------------------------------
 %\appendix
 %Hier kommen die Includes für den Hauptteil
+\include{Einleitung}
 
-%ZB
 \include{grundlagen_von_cloud_computing_putz}
 \include{dsgvo_basics_putz}
 \include{multimedia_chat_putz}
@@ -115,19 +113,14 @@
 \chapter*{Index}
 \addcontentsline{toc}{chapter}{Index}
 \printindex[allgemein]
-
 \printindex
-
 \printindex[name]
-
 \printindex[title]
-
 
 %Literaturverzeichnis
 \clearpage
 \addcontentsline{toc}{chapter}{\bibname}
 \printbibliography
-
 \clearpage
 \include{messbox}
 
