@@ -5,6 +5,11 @@
 \subsection{Anmerkung}
 Da dieses Dokument eine Event-Management-Software behandelt, in der Tickets, also Eintrittskarten verwaltet und an Promoter vergeben werden, besteht die Gefahr, dass diese Ticketverwaltung mit einem Ticketsystem, also einem Issue-Tracking-System, verwechselt werden kann.  
   
+\subsection{Kartenverwaltungssystem}
+Da EMS eine Software zum Managen von Promoter/innen eines Events ist und somit auch die Karten, die ein/e Promoter/in für diese Events zugeteilt bekommt verwaltet werden müssen, musste ein ausführliches Ticketverwaltungssystem erstellt werden.
+Für jedes Event können verschieden Kartentypen wie zum Beispiel Early-Bird-, Standart- oder VIP-Karten definiert werden. Sobald ein User einem Event hinzugefügt wird, sieht dieser noch keine Kartentypen. Erst nach einer Transaktion, bei dem ein bestimmter Kartentyp dem User überschrieben wird, sieht er genau die Karten, die er durch eine Transaktion bekommen hat. 
+Nachdem ein/e Promoter/in einen bestimmten Kartenstand auf seinem Event-Konto hat, kann er bei Verkauf seinen Kartenstand eintragen. Es wird automatisch das Geld, was er durch diesen Verkauf hat auf der Seite angezeigt. Die Admins können diesen Geld-Soll-Stand sehen und bei einer Übergabe genau überprüfen. 
+  
 \subsection{Definition}
 Ein Ticketsystem, auch Issue-Tracking-System oder Service-Tracking-System, hat die Aufgabe, alle eingehenden Anfrage von internen und externen Stellen zu verwalten. IT-Abteilungen haben ein sehr hohes Volumen von Meldungen, die bewältigt werden müssen. Somit wird ein System benötigt, dass jede einzelne Meldung während des gesamten Lebenszyklus von Eingang bis hin zur Lösung verwaltet.
 
@@ -18,7 +23,7 @@ Erfolgreiches Issue-Tracking kann einem Unternehmen helfen Entwicklungskosten vo
 \begin{itemize}
 	\item \textbf{Self-Service-Portal:} Soll einen One-Stop-Shop darstellen, in dem Kunden und Mitarbeiter ihre Tickets schnell und einfach an die zuständige Abteilung des Unternehmens schicken können. Self-Service-Portale vereinfachen den Kontakt zwischen Kunden bzw. Mitarbeiter und der zuständigen Stelle, indem es genau eine Kontaktstelle gibt. Somit können unnötige Anrufe und E-Mail-Verkehre vermieden werden und optimieren somit den Workflow.
 	\item \textbf{Organisationssystem:} Nach Eingang eines Tickets in das System ist der erste Schritt, dieses zu protokollieren. In der Regel werden den Tickets eine prägnante Kategorie, eine Dringlichkeit, eine geschätzte Zeit bis zur Lösung, Fristen und eine Beschreibung, um das Problem, dass das Ticket beschreiben soll, reproduzierbar zu machen, zugewiesen. Die Tickets werden dann in ein Organisationssystem gespeichert und für die Abarbeitung zur Verfügung gestellt.
-	\item \textbf{Zuweisen von Tickets:} Um den Workflow des Support-teams zu optimieren, sollten Tickets im Prinzip des One-Stop-Shops, einen „Eigentümer“, also einen Mitarbeiter, der sich ausschließlich um dieses Ticket kümmert, zugewiesen bekommen.
+	\item \textbf{Zuweisen von Tickets:} Um den Workflow des Support-teams zu optimieren, sollten Tickets im Prinzip des One-Stop-Shops, einen „Eigentümer“, also einen Mitarbeiter, der sich ausschließlich um dieses Ticket kümmert, zugewiesen bekommen. Da eine Abgrenzung zu anderen Tickets besteht muss ein/e Mitarbeiter/in sich nur auf die Tickets konzentrieren, für die er/sie als Eigentümer markiert ist.
 	\item \textbf{Sicheres System:} Ticketsysteme sollten sicher sein und somit muss eine hohe Priorität auf die Sicherheit im Auswahlverfahren einer Implementierung gesetzt werden. Informationen, die in einem Ticketsystem gespeichert werden, können interne, systemkritische Probleme beschreiben und müssen damit mit höchster Vertraulichkeit behandelt werden.
 	\item \textbf{Live Support:} Ein rund um die Uhr besetzter Helpdesk mit Live-Chat Funktionalität vereinfacht die Meldung von Problemen und fördert somit die Bereitschaft von Kunden und Mitarbeitern aufgetretene Fehler in der Software zu melden und in Kooperation mit dem Support-team in einer ausreichenden Form zu beschreiben. Der Helpdesk kann bei technischen Problemen, die keine Softwareänderung vermögen, oder auf Seiten des Kunden oder Mitarbeiters entstanden sind mit bereits bekannten Workarounds helfen. Ebenfalls können redundante Tickets vermieden werden, indem das Support-team kein neues Ticket schreibt, dessen Problem schon erfasst und formell festgehalten wurde.
 \end{itemize}
@@ -29,8 +34,8 @@ Die nachstehenden Funktionen können den Support-Betrieb weiter optimieren
 	\item \textbf{Mehrsprachige Systeme:} Betrifft hauptsächlich internationale Systeme. Ein Mehrsprachiges Support-System kann dennoch universell sinnvoll sein, da Konversationen in der Muttersprache des Kunden für diesen angenehmer und leichter zu verstehen sind und somit die Bearbeitungszeit der Support-Abteilung verringern können. Internationale Systeme können verschiedensprachige Support-teams einstellen, die die gewonnen Informationen in einer einheitlichen Sprache, meistens Englisch, im Ticketsystem festhalten. Unternehmen, mit kleineren Budgets können Echtzeitübersetzungsdienste implementieren.
 	\item \textbf{Anpassung:} Es ist Sinnvoll, Ticketsysteme mit Orientierung an Plug-and-Play-Prinzipien zu entwickeln, da somit der Funktionsumfang des Systems an die Anforderungen des Projekts angepasst werden kann und eine spätere Erweiterung des Ticketsystems vereinfacht wird.
 \end{itemize}  
-Die genannten Funktionen stellen allein nicht zwingend sicher, dass das Ticketsystem so effektiv wie möglich funktioniert. Es ist wichtig Kunden, Mitarbeitern und Supportern einen Weg einzurichten, Feedback oder Beschwerden zu äußern und auf dieses zu hören und sich aktiv an der Verbesserung und Anpassung des Ticketsystems zu halten. \\
-Eine Implementierung eines Berichtssystems, in dem wichtige Metriken und Analysen wie die durchschnittliche Zeit bis zur Problemlösung, Einhaltung von Fristen usw. festgehalten werden kann ebenfalls die Qualität und Effizienz des Supports steigern. \\
+Die genannten Funktionen stellen allein nicht zwingend sicher, dass das Ticketsystem so effektiv wie möglich funktioniert. Es ist wichtig Kunden, Mitarbeitern und Supportern einen Weg einzurichten, Feedback oder Beschwerden zu äußern und auf dieses zu hören und sich aktiv an der Verbesserung und Anpassung des Ticketsystems zu halten. 
+Eine Implementierung eines Berichtssystems, in dem wichtige Metriken und Analysen wie die durchschnittliche Zeit bis zur Problemlösung, Einhaltung von Fristen usw. festgehalten werden kann ebenfalls die Qualität und Effizienz des Supports steigern. 
 Community-Foren und regelmäßige Feedback-Umfragen können beim Aufbau und der Pflege von Beziehungen zwischen Support und Kunden helfen und ein Gefühl von Rechenschaftspflicht und Vertrauen erzeugen.
 %Quelle(n): https://www.datanyze.com/market-share/project-management--217/jira-market-share 
 \subsection{Marktanalyse}  
@@ -137,4 +142,8 @@ Merkmale:
 \end{itemize}			
 \subsection{Vergleich zwischen Vivifyscrum und Jira als Issue-Tracking-System}				
 Im Rahmen der Projektentwicklung musste das Projektmanagement-tool Vivifyscrum als Issue-Tracking-System verwendet werden. Eigentlich war geplant Jira als Projektmanagementsoftware und Issue-Tracking-Tool zu verwendet. In diesem Vergleich werden Vivifyscrum und Jira hinsichtlich Issue-Tracking-Funktionalitäten auf Basis früherer Erfahrungen gegenübergestellt. 
-TODO weiter machen
+
+Vivifyscrum
+Die Issue-Tracking-Funktionalitäten in Vivifyscrum sind sehr begrenzt. Es gibt keine eigene Implementation für Issues, sondern nur die Möglichkeit, Objekte, die User-Stories sein können, in Bugs oder Ideas umzuändern.
+
+Jira hat dagegen eine sehr mächtige Implementierung eines Issue-Tracking-Systems. Es können Issues erstellt werden, User Stories zu Issues abgeändert werden, Bugs können priorisiert werden und über den kompletten Lebenszyklus des Bugs verfolgt und auf Wunsch kann bei einer Statusänderung des Bugs eine Nachricht verschickt werden. Es ist auch möglich nach vielen verschiedenen Kriterien zu filtern.  
