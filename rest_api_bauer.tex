@@ -2,7 +2,8 @@
 \bauer
 %Quelle: https://en.wikipedia.org/wiki/Representational_state_transfer
 \section{Definition} 
-REST\footcite{rest} steht für 'Representational State Transfer' und wird oft zum Erstellen von interaktiven Applikationen insbesondere in der Webentwicklung verwendet. Wenn die Applikation dem Prinzip,der Rest Software Architektur folgt, so nennt man diese auch Restful. Die Architektur selbst beschreibt den Zugriff und die Veränderung von Ressource mit einem Zustandslosen Protokoll. Eine Rest API ist somit eine Anwendungsschnittstelle auf die durch ein zustandsloses Protokoll zugegriffen wird.			
+REST\footcite{rest} steht für 'Representational State Transfer' und wird oft zum Erstellen von interaktiven Applikationen, insbesondere in der Webentwicklung verwendet. 
+Wenn die Applikation dem Prinzip, der Rest Software Architektur folgt, so nennt man diese auch Restful. Die Architektur selbst beschreibt den Zugriff und die Veränderung von Ressource mit einem zustandslosen Protokoll. Eine Rest API ist somit eine Anwendungsschnittstelle auf die durch ein zustandsloses Protokoll zugegriffen wird.			
 %Quelle: 
 \section{Geschichte}
 Roy Fielding schrieb im Jahre 2000 seine Dissertation über den REST-Architekturstil, allerdings findet die korrekte Umsetzung erst seit dem 2014 Anklang in World Wide Web.		 	
@@ -11,14 +12,14 @@ Roy Fielding schrieb im Jahre 2000 seine Dissertation über den REST-Architektur
 \subsection{Zustandslosigkeit}
 Jede Anfrage auf dem Server muss sämtliche notwendige Informationen zur Ausführung der Anfrage enthalten, was bedeutet das sämtliche Session Daten nur auf dem Client gespeichert werden müssen.		 	
 \subsection{Caching}
-Jede Antwort der Schnittstelle muss als "cachable" oder "non-cacheable" gekennzeichnet sein, damit der Client alle Informationen für die er nicht eine erneute Anfrage an den Server schicken muss, abspeichern kann. Dies erspart sowohl dem Client, als auch dem Server selbst Rechenzeit.		 	
+Jede Antwort der Schnittstelle muss als 'cachable' oder 'non-cacheable' gekennzeichnet sein, damit der Client alle Informationen für die er nicht eine erneute Anfrage an den Server schicken muss, abspeichern kann. Dies erspart sowohl dem Client, als auch dem Server selbst Rechenzeit.		 	
 \subsection{Einheitliche Schnittstellen}
 Da der Client getrennt vom Server agieren kann und nur Anfragen an diesen schickt, ist es möglich mit einer Rest API eine Schnittstelle für mehrere Geräte zu entwickeln, da zum Beispiel eine Smartphone App die gleiche Schnittstelle wie eine Website verwenden könnte.		 	
 \subsection{Mehrschichtige Systeme}
-Das System soll aus mehreren Ebenen aufgebaut werden, allerdings sieht der Client selbst nur eine Schnittstelle, was das Interagieren vereinfacht. Der große Vorteil liegt darin, dass dieses System die Abkapslung durch eine Firewall so wie eine einfache Skalierbarkeit bietet.		 	
+Das System soll aus mehreren Ebenen aufgebaut werden, allerdings sieht der Client selbst nur eine Schnittstelle, was das Interagieren vereinfacht. Der große Vorteil liegt darin, dass dieses System die Abkapslung durch eine Firewall sowie eine einfache Skalierbarkeit bietet.		 	
 %Quelle: https://de.wikipedia.org/wiki/Node.js
 \section{Node.js}
-Node.js\footcite{nodejs} ist eine open-source Javascript Laufzeitumgebung, welche plattformübergreifend arbeitet. 
+Node.js\footcite{nodejs} ist eine Open-source Javascript Laufzeitumgebung, welche plattformübergreifend arbeitet. 
 Die Laufzeitumgebung wird oft dazu verwendet, um Webbrowser aufzusetzen. 
 Dieser läuft dann über die JavaScript-Implementierung V8, ursprünglich wurde die Technologie für Google Chrome entwickelt. 
 Das Besondere an der Architektur ist, dass sie sehr ressourcensparend ist und dabei eine sehr große Anzahl von Netzwerkverbindungen gleichzeitig zulässt. 
@@ -28,7 +29,7 @@ Wie zum Beispiel von einer Berechnung oder einer Datenbankabfrage.
 %Quelle: https://hostingtribunal.com/blog/node-js-stats/#gref
 \subsection{Geschichte}
 Node.js wurde ursprünglich von Ryan Dahl in 2009 entwickelt. 
-Im Jänner 2010 kam der nächste große Schritt für Node.js, da zu diesem Zeitpunkt der Package Manager (npm) erschien, welcher Programmierer auf der ganzen Welt eine einfache Methode gab Quellcode in Form von so genannten Packages zu entwickel und zu verbreiten. 
+Im Jänner 2010 kam der nächste große Schritt für Node.js, dazu diesem Zeitpunkt der Package Manager (npm) erschien, welcher Programmierer auf der ganzen Welt eine einfache Methode gab Quellcode in Form von so genannten Packages zu entwickel und zu verbreiten. 
 Im Juli 2011 kam die erste Node.js Version für Windows, da die früheren Versionen nur unter Linux und Mac OS X veröffentlicht wurden. Im Jahr 2018 hatte Node.js die 1 Milliarde Downloads. Heutzutage wird Node.js für über 20 Millionen Webseiten verwendet. 		 		
 %Quellen: https://www.yuhiro.de/vorteile-und-nachteile-von-node-js/
 \subsection{Vorteile}
@@ -47,7 +48,7 @@ Unser Team entschied sich ebenfalls für ein Node.js Backend, um genauer zu sein
 Abgesehen von Express verwendet der Server Mongoose um eine Verbindung mit der Datenbank aufzubauen und den JSON Web Token\footcite{web-token} kurz JWT, welcher es uns ermöglicht nach RFC 7519 genormte Access-Token zu generieren und zu überprüfen. 		 	
 \subsection{Express.js}
 Express.js oder auch Express genant, erschien am 16.11.2010 und wurde von TJ Holowaychuk programiert, welcher Express als Server mit minimalen Funktionsweisen, aber einer großen Menge von Erweiterungen beschreibt. 
-Der große Unterschied zwischen Express und Node.js liegt darin, dass Express ein Framework basierend auf Node.js is, welches vor allem auf Web-Applikationen ausgelegt ist und einige Prinzipien und Methoden von Node.js für diesen Zweck verändert oder sogar Funktionen hinzufügt. 
+Der große Unterschied zwischen Express und Node.js liegt darin, dass Express ein Framework basierend auf Node.js ist, welches vor allem auf Web-Applikationen ausgelegt ist und einige Prinzipien und Methoden von Node.js für diesen Zweck verändert oder sogar Funktionen hinzufügt. 
 Dies macht das entwickeln von Web-Applikation mit Express einfacher. 	
 %Quellen: https://www.accentsconagua.com/articles/code/an-introduction-to-mongoose-for-mongodb-and-node-js.html
 \subsection{Mongoose}
@@ -61,7 +62,7 @@ In diesem Teil werden einige der wichtigsten Funktionen beschrieben, welche von 
 Diese Post Funktion wird aufgerufen, wenn einem User ein neues Event zugewiesen wird. 
 In dieser Funktion wird ein temporäres Event Objekt erstellt, welche alle notwendigen Daten von der Request speichert. 
 Dieses Objekt wird in einem Array gespeichert, welches bei einem spezifischen User in der Datenbank festgehalten wird. 
-Falls beim Speichern ein Fehler auftritt, wird der Datenbankfehler an das Frontend geschickt, anderen Falls wird der geänderte User zurück gesendet. 
+Falls beim Speichern ein Fehler auftritt, wird der Datenbankfehler an das Frontend geschickt, anderen Falls wird der geänderte User zurückgesendet. 
 Diese Funktion ist die Grundlage für die EMS Software, da ein User ohne Events weder Karten bekommen kann noch seinen Kartenstand eintragen kann.		 		
 \begin{figure}[H]
 	\centering
