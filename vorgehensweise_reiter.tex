@@ -1,13 +1,14 @@
 \chapter{Vorgehensweise}
 \reiter
-Es war ursprünglich geplant RUP als Vorgehensmethode zu verwenden. 
+Es war ursprünglich geplant RUP\footcite{Lehrunterlagen-RUP} als Vorgehensmethode zu verwenden. 
 \section{RUP}
 RUP steht für Rational Unified Process und ist ein Prozessmodell, dass für die Software-Entwicklung konzipiert wurde und einen besonderen Schwerpunkt auf objektorientierte Entwicklung legt. Das Prozessmodell wurde von der Firma Rational entwickelt und besteht seit 1998 als RUP. Vorgängermodelle gibt es seit 1995. 
 RUP berücksichtigt Best-Practices der Softwareentwicklung, also, Richtlinien, die aus Jahrelanger Erfahrung in der Industrie abgeleitet werden konnten. Pest-Practices müssen nicht zwingend befolgt werden, stellen aber für Entwickler einen guten Ansatz, der durch Erfahrene Herausgeber definiert worden ist, dar. 
 RUP orientiert sich an Anwendungsfällen, die Anforderungen an das Gesamtsystem beschreiben. Anforderungen können als größere und ausführlicher definierte User-Stories gesehen werden.  
 Der Projektablauf ist in vier Phasen aufgeteilt. Nach jeder Phase wird ein Meilenstein definiert, der inhaltlich klar beschrieben wurde.
 Um die Projektziele erreichen zu können werden verschiedene Prozesse, einen Workflow, die, während jeder Phase als Querschnittsaufgabe, durchgeführt werden müssen, benötigt. Ein Workflow beschreibt welches Teammitglied welche Aufgabe zu welcher Zeit mit einem bestimmten Ergebnis durchzuführen hat.
-In jeder Phase erfolgt die Entwicklung in kurzen Zyklen, die Iterationen genannt werden. Die Arbeit in einer Iteration ist auf die Erfüllung von Meilensteinen fokussiert. Am Ende einer Iteration sollte immer eine funktionsfähige Version des zu entwickelten Systems stehen. 
+In jeder Phase erfolgt die Entwicklung in kurzen Zyklen, die Iterationen genannt werden. Die Arbeit in einer Iteration ist auf die Erfüllung von Meilensteinen fokussiert. Am Ende einer Iteration sollte immer eine funktionsfähige Version des zu entwickelten Systems stehen.
+\newpage
 \subsection{Phasen}
 \begin{itemize}
 	\item \textbf{Inception-Phase:} Abgrenzung des Projektumfangs und genaue Beschreibung der wesentlichen Ziele. Es wird die Machbarkeit analysiert und der Aufwand festgestellt.
@@ -15,13 +16,19 @@ In jeder Phase erfolgt die Entwicklung in kurzen Zyklen, die Iterationen genannt
 	\item \textbf{Construction:} Hier finden die Entwicklung und das Testen der Applikation/Features statt.
 	\item \textbf{Transition:} In dieser Phase soll ein Prototyp vorhanden sein der dem Auftraggeber übergeben werden kann. 
 \end{itemize}
-TODO: add aufwand und dauer pic
+\begin{center}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{RUP-Arbeitsdauer.png}
+	\caption{Verteilung des Arbeitsaufwandes bei RUP in Bezug auf die Phasen}
+\end{figure}
+\end{center}
 Diese Phasen werden genauer durch Phasenergebnisse sowie Meilenstein-Kriterien, die bei dem Übergang in die nächste Phase erfüllt werden müssen, beschrieben.
 Die Anzahl der Iterationen in einer Phase wird durch den Schwierigkeitsgrad des Projekts bestimmt. 
 \subsection{Iterationen}
-Die kurzen Entwicklungszyklen der Iterationen in RUP ermöglichen ein frühzeitiges Feedback des Kunden, was hilft, dass späte Änderungen durch den Kunden vermieden werden können. 
+Die kurzen Entwicklungszyklen\footcite{rup-workflows} der Iterationen in RUP ermöglichen ein frühzeitiges Feedback des Kunden, was hilft, dass späte Änderungen durch den Kunden vermieden werden können. 
 \begin{center}
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{rup_iterationen.png}
 	\caption{Iterationen in RUP}
@@ -49,7 +56,7 @@ Ein iterativer Entwicklungsansatz kann zwar nach jeder abgeschlossenen Phase auc
 \end{itemize}
 \section{SCRUM}
 Im Rahmen der Anfangsarbeiten der Diplomarbeit wurde abteilungsintern die Verwendung der Projektmanagementsoftware Vivifyscrum vorgeschrieben. Durch diese Vorschrift konnte das Projekt nicht mit dem RUP-Prozessmodell entwickelt werden. 
-Als Reaktion darauf wurde entschieden, dass SCRUM als Prozessmodell verwendet werden soll.
+Als Reaktion darauf wurde entschieden, dass SCRUM\footcite{Lehrunterlagen-SCRUM} als Prozessmodell verwendet werden soll.
 \subsection{Rollen in Scrum}
 Scrum hat grundsätzlich drei Rollen:
 \begin{itemize} 
@@ -57,7 +64,13 @@ Scrum hat grundsätzlich drei Rollen:
 	\item \textbf{Scrum Master:} diese Person moderiert den Prozessablauf und versucht ihn voranzubringen. Er ist kein Mitglied des Entwicklungsteams.
 	\item \textbf{Team} ist eine Gruppe von Entwicklern, die an dem Projekt arbeiten und für die Umsetzung der Arbeiten verantwortlich ist.
 \end{itemize}
-TODO grafik von Ablauf hinzufügen
+\begin{center}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{SCRUM-Verhältnisse.png}
+	\caption{Visualisierung der Rollen in SCRUM}
+\end{figure}
+\end{center}
 \subsection{Product Backlog}
 Bei Scrum gibt es den sogenannten Product Backlog, er beinhaltet alle Anforderungen, diese werden nach und nach in Sprints abgearbeitet.
 \subsection{Sprint Planning Meeting}
@@ -71,7 +84,7 @@ Das Sprint Review Meeting wird am Ende jedes Sprints abgehalten. Es wird ein lau
 \subsection{Sprint Retrospektive}
 Hier wird mit dem Scrum Master besprochen, wie der Arbeitsprozess bis zu diesem Zeitpunkt verlaufen ist. Das Ergebnis einer Sprint Retrospektive sind Maßnahmen, die den Entwicklern helfen sollen, zukünftige Sprints besser abschließen zu können.
 \subsection{Fortschrittskontrolle}
-Die nachfolgenden Methoden unterstützen die Planung, Durchführung und die Kontrolle des Arbeitsfortschrittes. 
+Die nachfolgenden Methoden unterstützen die Planung, Durchführung und die Kontrolle des Arbeitsfortschrittes.
 \begin{itemize}
 	\item	User Stories
 	\item	Sprint Backlog
@@ -88,6 +101,7 @@ Das Sprint Backlog stellt eine visuelle Darstellung dar, mit der der Fortschritt
 \subsection{Burndown Chart}
 Beim Burndown Chart wird der Verlauf des Projekts an den abgearbeiteten Tasks gemessen und bildlich dargestellt. In dem Diagramm beschreibt die x-Achse den Aufwand (in Personenstunden) bzw. die Anzahl von Tasks und die y-Achse die Arbeitstage des Sprints. 
 Hierbei gibt es mehrere Linien, an denen der Fortschritt gemessen wird. Eine gibt die ideale Abarbeitung der Tasks an, eine den aktuellen Fortschritt in Tasks und eine den Fortschritt in Storypoints.
+\newpage
 \subsection{Timeboxing}
 Das Timeboxing zwingt ein Entwicklerteam Deadlines unbedingt einzuhalten. Sprints, die noch offene User Stories enthalten und zu Ende gegangen sind können nicht mit voller Funktionalität ausgeliefert werden. Die offenen User Stories müssen zurück in das Product Backlog geschoben und in den nächsten Sprint aufgenommen werden.
 \subsection{Definition of Done}
