@@ -11,11 +11,11 @@ Es gibt einige verschiedene Definitionen\footcite{Lehrunterlagen-HTL-cloud} des 
 	angeboten werden. Der Service läuft aus der Sicht des Konsumenten extern beim Anbieter der Services, dem sogenannten Provider.}
 \end{center}
 
-Jede Cloud hat bestimmte Eigenschaften\footcite{cloud-servicemodelle} welche den Begriff definieren, diese teilen sich in drei Hauptbereiche auf:
+Jede Cloud hat bestimmte Eigenschaften\footcite{cloud-servicemodelle}, welche den Begriff definieren, diese teilen sich in drei Hauptbereiche auf:
 \begin{enumerate}
 	\item die zentralen, essenziellen Charakteristiken einer Cloud
 	\item Servicemodelle
-	\item Deployment Models oder auch Bereitstellungsmodelle genant
+	\item Deployment Models oder auch Bereitstellungsmodelle genannt
 \end{enumerate}
 
 %Quellen: Reis Folien
@@ -24,12 +24,12 @@ Jede Cloud hat bestimmte Eigenschaften\footcite{cloud-servicemodelle} welche den
 Jede Cloud hat bestimmte spezielle Charakteristiken\footcite{cloud-computing}. Das NIST \textbf{(National Institute of Standard and Technology)} listet
 momentan fünf essenzielle Eigenschaften, die da wären:
 \begin{enumerate}
-	\item \textbf{On-demand self-service: } Bedeutet, dass Ressourcen wie etwa Speicher und Rechenleistung der Cloud, vom Nutzer selbstständig oder automatisiert 
-ohne persöhnliche Interaktion mit dem Serviceprovider in Anpsruch genommen werden können
-	\item \textbf{Broad network access: } Services aus der Cloud sind über das Internet und durch Standardmechanismen, mithilfe von verschiedenen Plattformen wie einem Smartphone, einem Laptop, einem Stand-PC oder Tablet, erreichbar
-	\item \textbf{Resource pooling: } Die in generell in einer Cloud zu Verfügung stehenden Ressourcen wie zum Beispiel Speicher und Rechenleistung, sind für alle Kunden gebündelt von einem Pool aus verfügbar und werden geteilt. Dabei ist der physische Standort der Server für den Klienten in der Regel unbekannt.
-	\item \textbf{Rapid elasticity: } Die durch den Kunden in Anspruch genommenen Ressourcen können aus dessen Sicht, schnell ins beinahe unendliche skaliert werden. Die Lastenänderung
-kann ebenfalls automatisiert angepasst werden sodass keine menschliche Interaktion notwendig ist.
+	\item \textbf{On-demand self-service: } Bedeutet, dass Ressourcen, wie etwa Speicher und Rechenleistung der Cloud, vom Nutzer selbstständig oder automatisiert 
+ohne persönliche Interaktion mit dem Serviceprovider in Anpsruch genommen werden können.
+	\item \textbf{Broad network access: } Services aus der Cloud sind über das Internet und durch Standardmechanismen, mithilfe von verschiedenen Plattformen wie einem Smartphone, einem Laptop, einem Stand-PC oder einem Tablet, erreichbar.
+	\item \textbf{Resource pooling: } Die generell in einer Cloud zur Verfügung stehenden Ressourcen wie zum Beispiel dem Speicher und der Rechenleistung, sind für alle Kunden gebündelt von einem Pool aus verfügbar und werden geteilt. Dabei ist der physische Standort der Server für den Klienten in der Regel unbekannt.
+	\item \textbf{Rapid elasticity: } Die durch den Kunden in Anspruch genommenen Ressourcen können aus dessen Sicht schnell ins beinahe unendliche skaliert werden. Die Lastenänderung
+kann ebenfalls automatisiert angepasst werden, sodass keine menschliche Interaktion notwendig ist.
 	\item \textbf{Measured Service: } Die Ressourcennutzung der Kunden kann durch den Anbieter gemessen, überwacht und analysiert werden. Zum Zwecke von Abrechnungen, einer effektiveren
 Nutzung der in Anspruch genommenen Ressourcen oder für eine vorausschauende Gesamtplanung.
 \end{enumerate}
@@ -37,7 +37,7 @@ Nutzung der in Anspruch genommenen Ressourcen oder für eine vorausschauende Ges
 %Quellen: Reis Folien, https://de.wikipedia.org/wiki/Cloud_Computing#Servicemodelle,
 %https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models
 \subsection{Servicemodelle}
-NIST listet drei grundsätzliche Standard-Modelle\footcite{cloud-servicemodelle}, in welcher Form Cloud Computing Dienste angeboten werden können. Diese werden oft als Schichten untereinander vereinfacht dargestellt:
+Das NIST listet drei grundsätzliche Standard-Modelle\footcite{cloud-servicemodelle}, in welcher Form Cloud Computing Dienste angeboten werden können. Diese werden oft als Schichten untereinander vereinfacht dargestellt:
 \begin{itemize}
 	\item Infrastructure as a Service (IaaS)
 	\item Platform as a Service (PaaS)
@@ -48,17 +48,19 @@ NIST listet drei grundsätzliche Standard-Modelle\footcite{cloud-servicemodelle}
 %https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models,
 %https://de.wikipedia.org/wiki/Everything_as_a_Service,
 \subsubsection{Infrastructure as  a Service (IaaS)}
-Bei IaaS\footcite{cloud-ms} nimmt der Kunde IT-Infrastruktur wie Server, Speicher oder Virtuelle Computer von einem Cloudanbieter in Anspruch. In diesem Fall gestaltet der Kunde seine eigene Infrastruktur in der Cloud selbst und kümmert sich um die Installation von Software und den laufenden Betrieb derer selbst. Der Anbieter ist lediglich für die genutzten physischen Hardware Elemente verantwortlich und wartet diese. Alles andere fällt in den Zuständigkeitsbereich des Kunden. Kurz zusammengefasst ist IaaS die Bereitstellung von Infrastruktur über das Internet, welche vom Nutzer bedingt kontrolliert wird. \newline
+Bei IaaS\footcite{cloud-ms} nimmt der Kunde IT-Infrastruktur wie Server, Speicher oder Virtuelle Computer von einem Cloudanbieter in Anspruch. In diesem Fall gestaltet der Kunde seine eigene Infrastruktur in der Cloud selbst und kümmert sich um die Installation von Software und den laufenden Betrieb derer selbst.
+Der Anbieter ist lediglich für die genutzten physischen Hardware Elemente verantwortlich und wartet diese.
+Alles andere fällt in den Zuständigkeitsbereich des Kunden. Kurz zusammengefasst ist IaaS die Bereitstellung von Infrastruktur über das Internet, welche vom Nutzer bedingt kontrolliert wird.
 
 Infrastructure as a Service kann auch als Everything as a Service bezeichnet werden, da in diesem Geschäftsmodell alles vom Kunden selbst verwaltet wird. Einige Charakteristiken von IaaS:
 \begin{itemize}
 	\item Nur einmalig genutzte Anwendungen werden einmal bezahlt und wieder freigegeben
-	\item Im Falle eines explosionsartigen Wachstums und ein erreichen der Belastungsspitze, können die Services skaliert werden. So können die bestehenden Ressourcen innerhalb von Minuten zum Beispiel um viel Speicher erweitert werden oder auch im Gegenteil nicht genutzte Kapazitäten frei gegeben werden, welche dann nicht mehr bezahlt werden müssen.
+	\item Im Falle eines explosionsartigen Wachstums und ein Erreichen der Belastungsspitze, können die Services skaliert werden. So können die bestehenden Ressourcen innerhalb von Minuten beispielweise um viel Speicher erweitert werden oder auch im Gegenteil nicht genutzte Kapazitäten frei gegeben werden, welche dann nicht mehr bezahlt werden müssen.
 \end{itemize}
 
 Ein Beispiel zu letzterem Punkt wäre das Mieten eines VPS-Servers (Virtual Private Server) um das Backend einer App wie EMS darauf aufzusetzen.
-Als Kunde mietet man eine gewisse Größe an Hauptspeicher (RAM) und Nebenspeicher (SSD), eine Anzahl an CPU-Kernen, wie groß die 
-Bandbreite sein soll und noch viele andere Optionen, welche bei jedem Cloudanbieter variieren. 
+Als Kunde mietet man eine gewisse Größe an Hauptspeicher (RAM) und Nebenspeicher (SSD), eine Anzahl an CPU-Kernen, die Größe der 
+Bandbreite und noch viele andere Optionen, welche bei jedem Cloudanbieter variieren. 
 Auf diesem VPS-Server kann man nun sein Front- und Backend aufsetzen und hat über alles selbst die Kontrolle.
 Klassische Anbieter welche IaaS anbieten wären Amazon mit Amazon Web Services (AWS) mit dem möglicherweise populärsten Service, \textbf{EC2}.
 
@@ -66,26 +68,32 @@ Klassische Anbieter welche IaaS anbieten wären Amazon mit Amazon Web Services (
 %https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models,
 %https://de.wikipedia.org/wiki/Platform_as_a_Service
 \subsubsection{Platform as a Service (PaaS)}
-PaaS\footcite{cloud-ms} stellt dem Kunden eine Programmier- und Laufzeitumgebung zu Verfügung. Hier stellt der Cloudanbieter eine Softwareumgebung, fertig
-aufgesetzt für den Nutzer, zu Verfügung. Die Daten- und Rechenkapazitäten
+PaaS\footcite{cloud-ms} stellt dem Kunden eine Programmier- und Laufzeitumgebung zur Verfügung. Hier stellt der Cloudanbieter eine Softwareumgebung, fertig
+aufgesetzt für den Nutzer, zur Verfügung. Die Daten- und Rechenkapazitäten
 der Umgebungen sind dabei flexibel und können somit dynamisch angepasst werden.
 
-Diese Form des Cloudservices würde sich vor allem an Unternehmen richten, welche eine große Anzahl an Mitarbeiter beschäftigt und an vielen Applikationen gleichzeitig arbeitet und diese schnell entwickeln muss. 
-Dieses Unternehmen müsste jeden Arbeitsplatz mit einem entsprechend Leistungsstarken Computer ausrüsten, was viel Kapital erfordert. Stattdessen könnte solch eine Firma auf PaaS zurückgreifen und für einen geringen Betrag, monatlich diese Umgebungen in einer Cloud mieten und spart sich so viel Kapital und bleibt bei den benötigten
-Rechenleistungen flexibel, da die Umgebungen eben auf die benötigten Performanceansprüche skaliert werden kann. Dies wäre bei eingekaufter Hardware in einem Büro nicht so leicht, was dieses Servicemodell den Kunden auch schnell und einfach auf neue Technologien und neue Anforderungen am Markt reagieren lässt.
+Diese Form des Cloudservices würde sich vor allem an Unternehmen richten, welche eine große Anzahl an Mitarbeitern beschäftigt und an vielen Applikationen gleichzeitig arbeitet und diese schnell entwickeln muss. 
+Dieses Unternehmen müsste jeden Arbeitsplatz mit einem entsprechend Leistungsstarken Computer ausrüsten, was viel Kapital erfordert. Stattdessen könnte solch eine Firma auf PaaS zurückgreifen und für einen geringen Betrag monatlich diese Umgebungen in einer Cloud mieten und spart sich so viel Kapital und bleibt bei den benötigten
+Rechenleistungen flexibel, da die Umgebungen auf die benötigten Performanceansprüche skaliert werden kann. Dies wäre bei eingekaufter Hardware in einem Büro nicht so leicht, was dieses Servicemodell den Kunden auch schnell und einfach auf neue Technologien und neue Anforderungen am Markt reagieren lässt.
 
 %Quellen: Reis Folien, https://de.wikipedia.org/wiki/Cloud_Computing#Servicemodelle,
 %https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models,
 %https://de.wikipedia.org/wiki/Software_as_a_Service
 
 \subsubsection{Software as a Service (SaaS)}
-Manchmal auf als Software on Demand\footcite{cloud-computing} beschrieben, was \textbf{Software nach Bedarf} übersetzt bedeutet. Hier bietet der Cloudanbieter spezielle Software zur Nutzung an. Der Kunde kann dann diese Software- und Anwendungsprogramme nach belieben benutzen. Die Applikationen werden über das Internet dem Nutzer zu Verfügung gestellt, 
-und dieser kann mittels einer API darauf zugreifen was meistens über einen Browser oder eine App geschieht. Die Infrastruktur hinter den Anwendungen verwaltet der Anbieter selbst und auch die angebotene Software kann nur bis zu einem gewissen Teil vom Kunden konfiguriert werden. Also sämtliche Instandhaltungsarbeiten obliegen dem Cloudanbieter. Der Nutzer benutzt lediglich die angebotene Software und kann sich bei Problemen nur an den Support wenden.
+Manchmal auch als Software on Demand\footcite{cloud-computing} beschrieben, was übersetzt, \textbf{Software nach Bedarf}, bedeutet.
+Hier bietet der Cloudanbieter spezielle Software zur Nutzung an. Der Kunde kann dann diese Software- und Anwendungsprogramme nach belieben nutzen.
+Die Applikationen werden dem Nutzer über das Internet zu Verfügung gestellt, 
+und dieser kann mittels einer API darauf zugreifen was meistens über einen Browser oder eine App geschieht.
+Die Infrastruktur hinter den Anwendungen verwaltet der Anbieter selbst, und auch die angebotene Software kann nur bis zu einem gewissen Teil vom Kunden konfiguriert werden.
+Also obliegen sämtliche Instandhaltungsarbeiten dem Cloudanbieter.
+Der User verwendet lediglich die angebotene Software und kann sich bei Problemen nur an den Support wenden.
 
 Beispiele für so ein Service, wären die meisten Google Services wie Gmail, Docs, Drive und Photos. Noch weitere prominente Beispiele für Software as a Service, sind Github, Office 365 und Dropbox.
 
 Zusätzlich zu den oben genannten standardisierten Modellen, existieren noch einige weitere Modelle auf dem Markt. Prinzipiell
-kann man heutzutage fast jeden nur denkbaren Service über eine Cloud beziehen. Mit der Zeit haben sich dafür auch spezielle Bezeichnungen gebildet. Diese Fachbegriffe können groß zusammengefasst werden:
+kann man heutzutage fast jeden nur denkbaren Service über eine Cloud beziehen.
+Mit der Zeit haben sich dafür auch spezielle Bezeichnungen gebildet. Diese Fachbegriffe können übergeordnet zusammengefasst werden:
 \begin{itemize}
 	\item Function as a Service (FaaS)
 	\item Everything as a Service (XaaS)
@@ -95,34 +103,55 @@ kann man heutzutage fast jeden nur denkbaren Service über eine Cloud beziehen. 
 %https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/#cloud-computing-models,
 %https://de.wikipedia.org/wiki/Function_as_a_Service
 \subsubsection{Function as a Service (FaaS)}
-Prinzipiell ist FaaS\footcite{cloud-ms} von den Angeboten und Leistungen ähnlich wie das vorhin beschriebene PaaS-Modell. Es stellt eine Laufzeitumgebung zu Verfügung worauf Softwareanwendungen erstellt werden können. Der maßgebende Unterschied zwischen Function- und Platform as a Service ist, dass bei PaaS die Skalierung mittels hinzufügen von weiteren Serverprozessen zu den bereits in Anspruch genommenen stattfindet. Dies bewirkt natürlich normalerweise eine Kostenerhöhung auf Seiten des Benutzers, welche direkt abgebucht oder in Rechnung gestellt wird. Die Skalierung ist dem Benutzer hier dadurch aber auch sehr übersichtlich und man kann die Aus- und Belastung der Entwicklerumgebung leicht nachvollziehen.\newline
+Prinzipiell ist FaaS\footcite{cloud-ms} von den Angeboten und Leistungen ähnlich wie das vorhin beschriebene PaaS-Modell.
+Es stellt eine Laufzeitumgebung zur Verfügung in der Softwareanwendungen erstellt werden können.
+Der maßgebende Unterschied zwischen Function- und Platform as a Service ist, dass bei PaaS die Skalierung mittels Hinzufügen von weiteren Serverprozessen zu den bereits in Anspruch genommenen stattfindet.
+Dies bewirkt normalerweise eine Kostenerhöhung auf Seiten des Nutzers, welche direkt abgebucht oder in Rechnung gestellt wird.
+Die Skalierung ist hier gut dokumentiert und übersichtlich und man kann die Auslastung und Belastung der Entwicklerumgebung leicht nachvollziehen.
 
-Ganz anders im Gegensatz dazu geschieht die Skalierung bei FaaS. Bei diesem Service läuft keine extra Serverinstanz im Hintergrund. Bei FaaS muss der Benutzer die \textbf{Function execution time} bezahlen. Die Zeit zwischen den Ausführungen von Code wird hierbei nicht in Rechnung gestellt, also lediglich, wenn ein Code zum Beispiel übersetzt oder ein Programm ausgeführt und getestet wird. Somit muss der Benutzer auch nicht mehr an die Skalierung denken, da seine Entwicklerumgebung quasi kostenlos zu Verfügung steht und er nur die Ausführung der Software nach deren Zeitaufwand bezahlen muss.
-Dies sorgt für geringere Kosten auf Seiten des Kunden, bei gleichzeitig höherer Skalierbarkeit, da diese nicht mehr beachtet werden muss. Einen Nachteil gibt es jedoch und zwar kann die Latenz bei diesem Service höher, als bei einer Lösung mit PaaS ausfallen. Dies ist jedoch von vielen Faktoren und nicht zuletzt auch von der Komplexität des kodierten Programmes abhängig.
+Ganz anders im Gegensatz dazu geschieht die Skalierung bei FaaS. Bei diesem Service läuft keine extra Serverinstanz im Hintergrund. Bei FaaS muss der Benutzer die \textbf{Function execution time} bezahlen.
+Die Zeit zwischen den Ausführungen von Code wird hierbei nicht in Rechnung gestellt, also lediglich, wenn ein Code zum Beispiel übersetzt oder ein Programm ausgeführt und getestet wird.
+Somit muss der Benutzer auch nicht mehr an die Skalierung denken, da seine Entwicklerumgebung quasi kostenlos zur Verfügung steht und er nur die Ausführung der Software nach deren Zeitaufwand bezahlen muss.
+Dies sorgt für geringere Kosten auf Seiten des Kunden, bei gleichzeitig höherer Skalierbarkeit, da diese nicht mehr beachtet werden muss.
+Einen Nachteil gibt es jedoch und zwar kann die Latenz bei diesem Service höher als bei einer Lösung mit PaaS ausfallen.
+Dies ist jedoch von vielen Faktoren, und nicht zuletzt auch von der Komplexität des kodierten Programmes abhängig.
 
-FaaS verfolgt den Ansatz des sogenannten \textbf{"`serverless computing"'}. Hierbei übernimmt der Cloud-Anbieter die komplette Ressourcenzuweisung für den Kunden. Bei serverless computing wird keine Ressource im volatilen Speicher gehalten. Dies bedeutet, Berechnungen werden in bestimmten Abständen durch bestimmte Events von Seiten des Kunden aus ausgelöst und die Ergebnisse werden dann in einen persistenten Speicher geschrieben. Wenn eine Anwendung gerade nicht vom Kunden benutzt wird, wird dies auch nicht in Rechnung gestellt wie es bei herkömmlichen Services der Fall ist. Es gibt keinen fixierten Betrag der monatlich oder Quartalsmäßig abgebucht wird. Nur produktiv genutzte Zeit in der Anwendung wird berechnet.
+FaaS verfolgt den Ansatz des sogenannten \textbf{"`serverless computing"'}. Hierbei übernimmt der Cloud-Anbieter die komplette Ressourcenzuweisung für den Kunden.
+Bei serverless computing wird keine Ressource im volatilen Speicher gehalten.
+Dies bedeutet, Berechnungen werden in bestimmten Abständen durch bestimmte Events von Seiten des Kunden aus ausgelöst und die Ergebnisse dann in einen persistenten Speicher geschrieben.
+Wenn eine Anwendung gerade nicht vom Kunden genutzt wird, wird dies auch nicht in Rechnung gestellt, wie es bei herkömmlichen Services der Fall ist.
+Es gibt keinen fixierten Betrag der monatlich oder quartalsmäßig abgebucht wird.
+Nur produktiv genutzte Zeit in der Anwendung wird berechnet.
 
-Das erste offizielle, kommerzielle Angebot eines solchen Services gab es 2006. Seitdem haben viele große Cloud-Anbieter wie zum Beispiel Amazon mit AWS Lambda, Google und Microsoft mit Azure, solche \textbf{pay as you go} Services zu Verfügung gestellt\footcite{cloud-computing}.
+Das erste offizielle, kommerzielle Angebot eines solchen Services gab es 2006.
+Seitdem haben viele große Cloud-Anbieter wie zum Beispiel Amazon mit AWS Lambda, Google und Microsoft mit Azure, solche \textbf{pay as you go} Services zu Verfügung gestellt\footcite{cloud-computing}.
 
 % Quellen: https://www.quora.com/What-are-the-Iaas-Paas-and-SaaS-services-in-Amazon-webservices?share=1
 %https://de.wikipedia.org/wiki/Everything_as_a_Service#Weitere_Ans%C3%A4tze_2
 %https://web.archive.org/web/20110728093045/http://www.thecloudcomputing.org/2009/1/panels.html#Panel2
 \subsubsection{Everything as a Service (XaaS)}
-XaaS oder auch EaaS\footcite{cloud-eaas}, stellt prinzipiell alles zu Verfügung. Also SaaS, Paas sowie auch Iaas. Einige Anbieter spezialisieren sich auf ein bestimmtes Service Modell, manche bieten jedoch prinzipiell alle Services unter der Bezeichnung XaaS an und spalten diese Services in die spezifischere Modelle, wie zum Beispiel SaaS auf. Dies sorgt vor allem bei Neukunden manchmal für Verwirrung. AWS (Amazon Web Services) ist zum Beispiel so ein Service. Dieser bietet prinzipiell jedes Modell unter XaaS an, jedoch sind hunderte weitere Services einzeln spezifiziert verfügbar. AWS heißt lediglich das Cloud Computing System. Ein tatsächlicher Service heißt zum Beispiel AWS EC2, dieser Service ist als IaaS zu spezifizieren.
+XaaS oder auch EaaS\footcite{cloud-eaas} stellt prinzipiell alles zu Verfügung. Also SaaS, PaaS sowie auch IaaS.
+Einige Anbieter spezialisieren sich auf ein bestimmtes Service Modell, manche bieten jedoch prinzipiell alle Services unter der Bezeichnung XaaS an und spalten diese Services in spezifischere Modelle, wie zum Beispiel SaaS auf.
+Dies sorgt vor allem bei Neukunden manchmal für Verwirrung. AWS (Amazon Web Services) ist so ein Service.
+Dieser bietet prinzipiell jedes Modell unter XaaS an, jedoch sind hunderte weitere Services einzeln spezifiziert verfügbar. AWS heißt lediglich das Cloud Computing System.
+Ein tatsächlicher Service heißt zum Beispiel AWS EC2, dieser Service ist als IaaS zu spezifizieren.
 Hierbei kann man einen virtuellen Server mit einem bestimmten Betriebssystem, virtueller Kernanzahl und Hauptspeicher mieten. Dieser Service kostet stündlich, egal ob er benutzt wird oder nicht.
 
 Ein weiterer IaaS Service in AWS ist S3, hier kann man Speicher mieten.
 
-AWS bietet stand April 2021 über 200 verschiedenen Services in allen Servicemodellen Iaas, Paas und SaaS.
+AWS bietet stand April 2021 über 200 verschiedene Services in allen Servicemodellen Iaas, Paas und SaaS.
 
-Weitere noch spezifischere Servicemodelle wie zum Beispiel High Performance Computing as a Service (HPCaaS), Data Intensive Computing as a Service (DICaaS) oder Humans as a Service (HuaaS). Können unter XaaS übergeordnet zusammengefasst werden. Für HuaaS als Beispiel gibt es den AWS Service, Amazon Mechanical Turk. Dieser Dienst befindet sich jedoch noch in einer Beta-Phase, hierbei wird menschliche Intelligenz wie ein Webservice genutzt.
+Weitere noch spezifischere Servicemodelle wie zum Beispiel High Performance Computing as a Service (HPCaaS), Data Intensive Computing as a Service (DICaaS) oder Humans as a Service (HuaaS) können unter dem Begriff XaaS zusammengefasst werden.
+Für HuaaS als Beispiel gibt es den AWS Service, Amazon Mechanical Turk.
+Dieser Dienst befindet sich jedoch noch in einer Beta-Phase, hierbei wird menschliche Intelligenz wie ein Webservice genutzt.
 
 %Quellen:
 %Reis Folien
 %https://de.wikipedia.org/wiki/Cloud_Computing#Organisatorische_Arten_von_Clouds
 \subsection{Liefermodelle}
-Im Kapitel Servicemodelle (Kapitel 1.1.3) wurden die verschiedenen Modelle welche eine Cloud anbieten kann behandelt. Nun gibt es auch verschiedene Methoden, dem Kunden die Services zu Verfügung zu stellen.
-Im Englischen werden diese Methoden \textbf{Deployment Models} genannt. Die im Deutsch genannten Liefermodelle\footcite{Lehrunterlagen-HTL-cloud} beschreiben nun, wie genau die Services unter Berücksichtigung ihrer Aufteilung in bereits genannte Servicemodelle, einem Benutzer zu Verfügung gestellt werden:
+Im Kapitel Servicemodelle (Kapitel 1.1.3) wurden die verschiedenen Modelle, welche eine Cloud anbieten kann, behandelt. Nun gibt es auch verschiedene Methoden, dem Kunden die Services zu Verfügung zu stellen.
+Im Englischen werden diese Methoden \textbf{Deployment Models} genannt.
+Die im Deutsch genannten Liefermodelle\footcite{Lehrunterlagen-HTL-cloud} beschreiben nun, wie genau die Services unter Berücksichtigung ihrer Aufteilung in bereits genannte Servicemodelle einem Benutzer zu Verfügung gestellt werden:
 \begin{itemize}
 	\item Private cloud
 	\item Public cloud
@@ -134,31 +163,32 @@ Im Englischen werden diese Methoden \textbf{Deployment Models} genannt. Die im D
 %https://de.wikipedia.org/wiki/Cloud_Computing#Organisatorische_Arten_von_Clouds
 %https://azure.microsoft.com/en-us/overview/what-is-a-private-cloud/
 \subsubsection{Private cloud}
-Private Clouds werden nur von einem einzelnen Unternehmen, einer Organisation oder einem Kunden betrieben oder stehen nur diesem und einem vertrauenswürdigen Dritten zu Verfügung. Diese Cloud Umgebung wird entweder intern, von zum Beispiel in einem firmeneigenen Rechenzentrum gehostet und verwaltet, oder aber der vertrauenswürdige Dritte übernimmt das Hosting. In letzterem Fall liegt das Rechenzentrum extern bei dem Dritten.
+Private cloud's werden nur von einem einzelnen Unternehmen, einer Organisation oder einem Kunden betrieben, oder stehen nur diesem und einem vertrauenswürdigen Dritten zu Verfügung.
+Diese Cloud Umgebung wird entweder intern, in einem firmeneigenen Rechenzentrum gehostet und verwaltet, oder aber der vertrauenswürdige Dritte übernimmt das Hosting. In letzterem Fall liegt das Rechenzentrum extern bei dem Dritten.
 
-Nicht zu verwechseln mit einem normalen IT-Betrieb, wie er in fast jedem kleinen bis mittleren Unternehmen betrieben wird. Die Bezeichnung \textbf{Private cloud} ist erst dann zutreffend, wenn alle fünf Charakteristika einer Cloud erfüllt werden (siehe Kapitel 1.1.2).
-Bei einer privaten Cloud gibt es verschiedene Evolutionsstufen welche die Wichtigkeit beziehungsweise die Verbreitung und den Nutzungsgrad innerhalb der Organisation beschreibt:
+Nicht zu verwechseln mit einem normalen IT-Betrieb, wie er in fast jedem kleinen bis mittleren Unternehmen betrieben wird. Die Bezeichnung \textbf{private cloud} ist erst dann zutreffend, wenn alle fünf Charakteristika einer Cloud erfüllt werden (siehe Kapitel 1.1.2).
+Bei einer private cloud gibt es verschiedene Evolutionsstufen, welche die Wichtigkeit beziehungsweise die Verbreitung und den Nutzungsgrad innerhalb der Organisation beschreibt:
 \begin{itemize}
-	\item \textbf{Exploratory cloud}: Hier wird die Private Cloud hauptsächlich als Testumgebung parallel zum Produktivbetrieb genutzt. Oft wird sie auch, falls man sich Know-how im Gebiet des Cloud Computing anschaffen will, für Studien, um Potential und Nachteilen einer internen Cloud herauszufinden, benutzt.
+	\item \textbf{Exploratory cloud}: Hier wird die private cloud hauptsächlich als Testumgebung parallel zum Produktivbetrieb genutzt. Oft wird sie auch, falls man sich Know-how im Gebiet des Cloud Computing anschaffen will, für Studien, um Potential und Nachteilen einer internen Cloud herauszufinden, benutzt.
 	\item \textbf{Department cloud}: Eine Cloud, die vor allem produktiv und abteilungsintern genutzt wird.
 	\item \textbf{Enterprise cloud}: Diese Form der privaten Cloud wird im gesamten Unternehmen benutzt und ist fest im Produktivbetrieb integriert\footcite{Lehrunterlagen-HTL-cloud}.
 \end{itemize}
 
 Microsoft bietet mit Azure\footcite{cloud-ms-privat} einen Service an, nämlich \textbf{Azure Express Route}, welcher vor allem auf Ansprüche einer Private cloud angepasst ist.
-Anwendungsfälle für eine private Cloud gibt es vor allem in Unternehmen, welche personenbezogene Daten (Kapitel 2.3.1), die im Rahmen der DSGVO unter den Begriff \textbf{sensible Daten} fällt, speichert und verarbeitet.
+Anwendungsfälle für eine private Cloud gibt es vor allem in Unternehmen, welche personenbezogene Daten (Kapitel 2.3.1), die im Rahmen der DSGVO unter den Begriff \textbf{sensible Daten} fallen, speichert und verarbeitet.
 
 %Quellen:
 %Reis Folien
 %https://azure.microsoft.com/en-us/overview/what-are-private-public-hybrid-clouds/
 \subsubsection{Public cloud}
-Eine Public Cloud\footcite{cloud-ms-ph} bietet für die breite Öffentlichkeit und Einzelpersonen einen Zugang zu den angebotenen Services über das Internet. Eine öffentliche Cloud kann mit drei weitere Formen genauer aufteilen\footcite{Lehrunterlagen-HTL-cloud}:
+Eine public cloud\footcite{cloud-ms-ph} bietet für die breite Öffentlichkeit und Einzelpersonen einen Zugang zu den angebotenen Services über das Internet.
+Eine öffentliche Cloud kann in drei Unterkategorien eingeteilt\footcite{Lehrunterlagen-HTL-cloud} werden:
 \begin{itemize}
 	\item \textbf{Exclusive Cloud}: Der Benutzer/Kunde und der Hoster der Cloud kennen sich persönlich durch zum Beispiel Schriftverkehr (E-Mail). Normalerweise besteht zwischen den Parteien ein individueller bilateraler Vertrag
-	\item \textbf{Open Cloud}: In der Regel kennen sich der Benutzer/Kunde und Cloudanbieter nicht. In sogenannten \textbf{"`Service Level Agreements"'}, oder kurz SSL, werden die Leistungen und die Vergütung für jeden SSL genauestens beschrieben. Hier laufen Vertragsabschluss und Nutzung voll- oder teilautomatisiert ab, da die Anzahl der Nutzer bei dieser Form der öffentlichen Cloud viel höher als bei allen anderen ist.
-	\item \textbf{Virtual Private Cloud}: Ein abgetrennter Bereich in einer öffentlichen Cloud, der für einen bestimmten einzelnen Kunden reserviert wird. Zusätzlich werden durch besondere Sicherheitsmaßnahmen entsprechende Vorkehrungen getroffen, welche für die Integrität des exklusiven Bereichs sorgen. Ein Beispiel wäre bei Inanspruchnahme eines IaaS, die physische Trennung der gemieteten Hardware von der restlichen oder bei anderen Services ein spezieller Zugang über einen VPN\footcite{Lehrunterlagen-HTL-cloud}.
+	\item \textbf{Open Cloud}: In der Regel kennen sich der Nutzer und Cloudanbieter nicht. In sogenannten \textbf{"`Service Level Agreements"'}, oder kurz SSL, werden die Leistungen und die Vergütung für jeden SSL genauestens beschrieben. Hier laufen Vertragsabschluss und Nutzung voll- oder teilautomatisiert ab, da die Anzahl der Nutzer bei dieser Form der öffentlichen Cloud viel höher als bei allen anderen ist.
+	\item \textbf{Virtual Private Cloud}: Ein abgetrennter Bereich in einer öffentlichen Cloud, der für einen bestimmten einzelnen Kunden reserviert wird. Zusätzlich werden durch besondere Sicherheitsmaßnahmen entsprechende Vorkehrungen getroffen, welche für die Integrität des exklusiven Bereichs sorgen. Ein Beispiel wäre bei Inanspruchnahme eines IaaS die physische Trennung der gemieteten Hardware von der restlichen oder bei anderen Services ein spezieller Zugang über einen VPN\footcite{Lehrunterlagen-HTL-cloud}.
 \end{itemize}
 Die bekanntesten öffentlichen Clouds sind Amazon Web Services, Google App Engine, Windows Azure und auch Salesforce.com\footcite{cloud-computing}.
-
 %Quellen:
 %Reis Folien
 %https://de.wikipedia.org/wiki/Cloud_Computing#Organisatorische_Arten_von_Clouds
@@ -172,8 +202,10 @@ Beispiel: Ein Unternehmen hat eine private Enterprise Cloud, und nutzt aber zus�
 %https://de.wikipedia.org/wiki/Cloud_Computing#Organisatorische_Arten_von_Clouds
 %https://en.wikipedia.org/wiki/Cloud_computing#Serverless_computing
 \subsubsection{Community cloud}
-Eine Community Cloud ist ein Zusammenschluss von einigen unter sich bekannter Nutzer. Diese "`verschmolzene"' neue Cloud aus zum Beispiel einiger privaten Clouds welche einen sehr ähnlichen oder gleichen Zweck hatten, kann intern in deren Gebäuden gehostet werden, oder extern von einem Dritten betrieben werden. Die Kosten dafür wird unter den ursprünglichen Teilnehmern aufgeteilt.
-Ein Anbieter hierfür wäre zum Beispiel \textbf{Googel Gov Cloud}.
+Eine Community Cloud ist ein Zusammenschluss von einigen unter sich bekannten Nutzer.
+Diese \textbf{verschmolzene} neue Cloud aus zum Beispiel einigen privaten Clouds, welche einen sehr ähnlichen oder gleichen Zweck hatten, kann intern in deren Gebäuden gehostet werden, oder extern von einem Dritten betrieben werden.
+Die Kosten werden unter den ursprünglichen Teilnehmern aufgeteilt.
+Ein Anbieter hierfür wäre zum Beispiel \textbf{Google Gov Cloud}.
 \begin{center}
     \begin{figure}[H]
         \centering
@@ -182,7 +214,8 @@ Ein Anbieter hierfür wäre zum Beispiel \textbf{Googel Gov Cloud}.
     \end{figure}
 \end{center}
 \section{Cloud Computing Wirtschaftlichkeit}
-Cloud Computing bietet generell viele Möglichkeiten und bringt viele Vorteile mit sich, welche mit einer klassischen Unternehmes-IT in mittleren bis großen Betrieben nicht möglich sind. Vor allem auch die Analyse von Big Data und die exponentiell ansteigende Menge an zu verarbeitenden Daten, wären ohne Cloud Lösung nicht in diesem Umfang wie er im momentanen stattfindet möglich.
+Cloud Computing bietet generell viele Möglichkeiten und bringt viele Vorteile mit sich welche mit einer klassischen Unternehmes-IT in mittleren bis großen Betrieben nicht möglich sind.
+Vor allem auch die Analyse von Big Data und die exponentiell ansteigende Menge an zu verarbeitenden Daten wären ohne Cloud Lösung nicht in diesem Umfang wie er im momentanen stattfindet möglich.
 
 Eine Cloud Lösung bietet aber nicht immer einen Mehrwert. Viele kleine und mittlere Betriebe müssen genau abwiegen, ob in ihrem speziellen Fall eine Lösung mittels Cloud Computing wirtschaftlich und ressourcentechnisch sinnvoll wäre.
 \newpage
@@ -199,27 +232,34 @@ durchführen\footcite{Lehrunterlagen-HTL-cloud}:
 IT-Lösung betrachtet. Hier sticht vor allem heraus, dass die Stärken einer Cloud in der Verfügbarkeit, Stabilität,
 Performance und letzten Endes vor allem in der Skalierbarkeit liegen.
 
-Zum Beispiel, falls bei einer intern gewählten Hardwarelösung die maximale Nutzlast der Server ständig erreicht wird, kann sich das negativ auf die Performance und somit die Kundenzufriedenheit, und der Lebensdauer der 
-Hardwareteile auswirken. Bei einer Cloud-Lösung kann hier bei so einem Notfall einfach per Knopfdruck, oder auch vollautomatisiert auf zum Beispiel prozentualer Auslastung, einfach nach oben skaliert werden. Ist der Ansturm vorbei, können nicht benötigte Ressourcen wieder freigegeben werden.
-Bei einer traditionellen Lösung, wäre dies nicht so einfach möglich, da zuerst teure Hardware eingekauft, geliefert und auch installiert werden müsste\footcite{Lehrunterlagen-HTL-cloud}.
+Zum Beispiel, falls bei einer intern gewählten Hardwarelösung die maximale Nutzlast der Server ständig erreicht wird, kann sich das negativ auf die Performance und somit die Kundenzufriedenheit und die Lebensdauer der 
+Hardwareteile auswirken. Bei einer Cloud-Lösung kann hier bei so einem Notfall einfach per Knopfdruck, oder auch vollautomatisiert auf zum Beispiel prozentualer Auslastung, nach oben skaliert werden. Ist der Ansturm vorbei, können nicht benötigte Ressourcen wieder freigegeben werden.
+Bei einer traditionellen Lösung wäre dies nicht so einfach möglich, da zuerst teure Hardware eingekauft, geliefert und auch installiert werden müsste\footcite{Lehrunterlagen-HTL-cloud}.
 
-\textbf{Weakness (Schwächen):} Außer Nachteilen in bestimmten Use-Cases, hat Cloud Computing außerdem ein paar andere Schwächen im Gegensatz zu einer traditionellen Lösung.
+\textbf{Weakness (Schwächen):} Außer Nachteilen in bestimmten Use-Cases hat Cloud Computing außerdem ein paar andere Schwächen im Gegensatz zu einer traditionellen Lösung.
 
 Einerseits kauft man sich die IT-Kompetenz ein, dies kann gleichzeitig zwar auch ein Vorteil sein, da man sich in erster 
 Linie Geld und Zeit spart, jedoch entsteht eine gewisse Abhängigkeit zum Anbieter des in Anspruch genommenen Services. Bei Cloud Computing werden Freiheiten im Gegenzug für Kostenreduzierung aufgegeben. Der Kunde muss sich auf die Zuverlässigkeit der
-Kommunikation und der durchgehenden Verfügbarkeit seines Services verlassen. Weiters differenziert man sich weniger von der Konkurrenz, welche den gleichen Anbieter nutzen. Dieser hat im Falle, dass ein Konkurrent bei dem gleichen Anbieter ist, die gleichen Chancen und keiner hat mehr einen Vorteil auf der Ebene.\footcite{Lehrunterlagen-HTL-cloud}.
+Kommunikation und der durchgehenden Verfügbarkeit seines Services verlassen.
+Weiters differenziert man sich weniger von der Konkurrenz, welche den gleichen Anbieter nutzen.
+Dieser hat im Falle, dass ein Konkurrent bei dem gleichen Anbieter ist, die gleichen Chancen und keiner hat mehr einen Vorteil.\footcite{Lehrunterlagen-HTL-cloud}.
 
 \textbf{Opportunity (Gelegenheiten):} Außer den bei Stärken genannten positiven Eigenschaften, bringen Cloud Lösungen einige neue und innovative Gelegenheiten mit sich. Einerseits verkürzt sich die time-to-market, da in einer Cloud Umgebung schneller entwickelt werden kann und die Services
 untereinander sehr gut aufeinander abgestimmt sind.
 
-Ein weiterer wirtschatlicher Aspekt ist Economies of scale. Die Lizenzkosten für Betriebssystem, Hardware und andere Software, sind bei Einzelanschaffung recht hoch.
-Die Kosten für Wartung und Instandhaltung müssen von jedem selbst getragen werden, sowie müssen auch Updates im Bezug auf Sicherheit redundant gemacht werden. Diese Kosten sind redundant, legt man jedoch viele Rechenzentren zu einem einzelnen zusammen, schafft eine Cloud und lässt mehr Benutzer auf das gleiche System zugreifen, senkt
+Ein weiterer wirtschatlicher Aspekt ist Economies of scale.
+Die Lizenzkosten für Betriebssystem, Hardware und andere Software sind bei Einzelanschaffung recht hoch.
+Die Kosten für Wartung und Instandhaltung müssen von jedem selbst getragen werden. Aauch Updates im Bezug auf Sicherheit müssen redundant gemacht werden. Legt man jedoch viele Rechenzentren zu einem einzelnen zusammen, schafft eine Cloud und lässt mehr Benutzer auf das gleiche System zugreifen, senkt
 dies Anschaffungs- und Erhaltungskosten drastisch nach dem Prinzip \textbf{buy more pay less}\footcite{eos}. Dies ist in Abb. 1.2 gut veranschaulicht, hier sieht man die Benutzerzahlen einer Cloud im Verhältnis zu den Kosten pro Person für die Anschaffung\footcite{Lehrunterlagen-HTL-cloud}.
 
-\textbf{Transition (Risiken):} Cloud Computing bringt vor allem im Bezug auf den Datenschutz ein großes Risiko auf. Viele Daten werden nicht in der EU gelagert. Sieben von Zehn kommerziellen Rechenzentren haben ihren Standort in den USA und unterliegen somit auch den Datenschutzrichtlinien in diesem
-Land. Für sämtliche Daten welche in der EU gesammelt und/oder verarbeitet werden, gibt es bestimmte Richtlinien und Gesetzte, vor allem für die Übertragung ins Ausland (Kapitel 2). Dies bewirkt einen großen Aufwand und benötigt bei manchen Unternehmen, ausgehend vom Ort der Sammlung der zu verarbeitenden Daten,
-Individuallösungen. Ein weiteres Risiko ist die Abhängigkeit die zum Anbieter entsteht. Ständig Systeme von einem zu einem anderen zu migrieren ist aufwändig und auf lange Sicht nicht wirtschaftlich, dies sollte man vermeiden. Ein weiterer Punkt welcher unbedingt auch festegelegt werden muss ist, welche Seite
-für Backups verantwortlich ist. Deren Zeitspannen, Häufigkeit, Integrität und Aufbewahrungsdauer. Auch hier spielt der Datenschutz eine wichtige zu beachtende Rolle\footcite{Lehrunterlagen-HTL-cloud}.
+\textbf{Transition (Risiken):} Cloud Computing erschafft vor allem im Bezug auf den Datenschutz ein neues Problem und Risiko. Viele Daten werden nicht in der EU gelagert.
+Sieben von zehn kommerziellen Rechenzentren haben ihren Standort in den USA und unterliegen somit auch den Datenschutzrichtlinien in diesem Land.
+Für sämtliche Daten, welche in der EU gesammelt und/oder verarbeitet werden, gibt es bestimmte Richtlinien und Gesetzte, vor allem für die Übertragung ins Ausland (Kapitel 2).
+Dies bewirkt einen großen Aufwand und benötigt bei manchen Unternehmen, ausgehend vom Ort der Sammlung der zu verarbeitenden Daten,
+Individuallösungen. Ein weiteres Risiko ist die Abhängigkeit, die zum Anbieter entsteht.
+Ständig Systeme von einem zu einem anderen zu migrieren ist aufwändig und auf lange Sicht nicht wirtschaftlich, dies sollte man vermeiden.
+Ein weiterer Punkt, welcher unbedingt auch festegelegt werden muss, ist, welche Seite
+für Backups verantwortlich ist, deren Zeitspannen, Häufigkeit, Integrität und Aufbewahrungsdauer. Auch hier spielt der Datenschutz eine wichtige zu beachtende Rolle\footcite{Lehrunterlagen-HTL-cloud}.
 \begin{center}
 \begin{figure}[H]
     \centering
@@ -231,10 +271,13 @@ für Backups verantwortlich ist. Deren Zeitspannen, Häufigkeit, Integrität und
 
 %https://ourcodeworld.com/articles/read/977/how-to-deploy-a-node-js-application-on-aws-ec2-server
 \section{Cloud Anbieter AWS}
-Bei EMS wurde sich, nach einigen Abwägungen, für das Cloud Computing System von Amazon, AWS, entschieden. Neben der einhergehenden Popularität des Anbieters spielten auch vor allem die Preise, einfache automatisierte Skalierbarkeit und bereits vorhandenes Know-How im deployen von Full-Stack Anwendungen auf den Service EC2 eine Rolle bei der Wahl\footcite{deploy-nodejs1}.
-
+Nach einigen Abwägungen, wurde sich bei EMS intern für den Cloud Anbieter AWS entschieden.
+Neben der einhergehenden Popularität des Anbieters spielten auch vor allem die Preise, einfache automatisierte Skalierbarkeit und bereits vorhandenes Know-How im deployen von Full-Stack Anwendungen auf den Service EC2 eine Rolle bei der Wahl\footcite{deploy-nodejs1}.
 \subsection{Erstellen einer EC2 Instanz}
-Nachdem auf der Webseite von Amazon Web Services ein Account erstellt worden ist, gelangt man auf die Homepage für verifizierte Benutzer. Auf der linken oberen Ecke unter Services (Abb. 1.3), findet man sämtliche Cloud Lösungen welche AWS bietet. Stand bei Verfassung dieser Schrift sind es über 200. Im rechten roten Kreis, sieht man zugleich den Service \textbf{EC2}, welcher hierfür relevant ist. Falls dieser nicht angezeigt wird, kann man oben in der Suchleiste den Namen des gesuchten AWS Services eingeben.
+Nachdem auf der Webseite von Amazon Web Services ein Account erstellt worden ist, gelangt man auf die Homepage für verifizierte Benutzer.
+Auf der linken oberen Ecke unter Services (Abb. 1.3), findet man sämtliche Cloud Lösungen, welche AWS bietet.
+Stand bei Verfassung dieser Schrift sind es über 200. Im rechten roten Kreis sieht man zugleich den Service \textbf{EC2}, welcher hierfür relevant ist.
+Falls dieser nicht angezeigt wird, kann man oben in der Suchleiste den Namen des gesuchten AWS Services eingeben.
 \begin{center}
 \begin{figure}[H]
     \centering
@@ -242,7 +285,10 @@ Nachdem auf der Webseite von Amazon Web Services ein Account erstellt worden ist
     \caption{AWS Services Auflistung}
 \end{figure}
 \end{center}
-Nachdem man den EC2 Service ausgewählt hat, landet man auf dem EC2-Dashboard. Hier erhält man einen Überblick über alle laufenden Instanzen falls man schon bestehende hat. Bevor man unten auf \textbf{Instanz starten} klickt, muss sichergestellt sein, dass man die richtige Region oben rechts ausgewählt hat. Dies hat vor allem datenschutzrechtliche Gründe. Grundsätzlich gilt, man wählt am besten das Land aus, in welchem man sich selbst befindet. Man sollte, wenn man in einem Land, welches Mitglied in der EU ist, oder Daten von Benutzern aus der EU bei dem zu deployenden Programm verwendet werden, ein Land in der EU wählen. Zu sehen auf Abb. 1.4.
+Nachdem man den EC2 Service ausgewählt hat, landet man auf dem EC2-Dashboard. Hier erhält man einen Überblick über alle laufenden Instanzen, falls man schon bestehende hat.
+Bevor man unten auf \textbf{Instanz starten} klickt, muss sichergestellt sein, dass man die richtige Region oben rechts ausgewählt hat. Dies hat vor allem datenschutzrechtliche Gründe.
+Grundsätzlich gilt, man wählt am besten das Land aus, in welchem man sich selbst befindet.
+Man sollte, wenn man in einem Land, welches Mitglied in der EU ist, oder Daten von Benutzern aus der EU bei dem zu deployenden Programm verwendet werden, ein Land in der EU wählen. Zu sehen auf Abb. 1.4.
 \begin{center}
 \begin{figure}[H]
     \centering
@@ -250,7 +296,9 @@ Nachdem man den EC2 Service ausgewählt hat, landet man auf dem EC2-Dashboard. H
     \caption{AWS Region ändern}
 \end{figure}
 \end{center}
-Nach der Regionswahl wird eine neue Instanz erstellt. Nach entsprechendem Klick auf \textbf{Instanz starten} startet der erste Schritt dieses Prozesses. Zuerst wählt man ein Betriebssystem aus, worauf der virtuelle Server laufen wird. In unserem Fall war es Ubuntu 20, da dies einen großen Marktanteil hat, alle Funktionen bietet welche wir benötigen und das OS gratis und uns bereits bekannt ist (Abb. 1.5).
+Nach der Regionswahl wird eine neue Instanz erstellt. Nach entsprechendem Klick auf \textbf{Instanz starten} startet der erste Schritt dieses Prozesses.
+Zuerst wählt man ein Betriebssystem aus, worauf der virtuelle Server laufen wird.
+In unserem Fall war es Ubuntu 20, da dies einen großen Marktanteil hat, alle Funktionen bietet, welche wir benötigen, und das OS gratis und uns bereits bekannt ist (Abb. 1.5).
 \begin{center}
 \begin{figure}[H]
     \centering
@@ -258,7 +306,11 @@ Nach der Regionswahl wird eine neue Instanz erstellt. Nach entsprechendem Klick 
     \caption{AWS OS auswählen}
 \end{figure}
 \end{center}
-Der nächste Schritt beinhaltet das Selektieren des Instanz Typs. Hier legit man fest, wie viel virtuelle CPU's, wie viel RAM, wie viel Speicherplatz der Serverinstanz später zu Verfügung steht. Hier gibt es hunderte Instanzen welche von zum Beispiel 1 Gigabyte RAM bis zu 3 Terrabyte RAM reichen. Für EMS reicht die gratis t2.micro Instanz. Die Spezifikationen dieser Instanz können aus Abb. 1.6 entnommen werden. Diese Instanz kann jederzeit innerhalb von Minuten nach oben, beziehungsweise auch nach unten im Bezug auf Leistung, skaliert werden.
+Der nächste Schritt beinhaltet das Selektieren des Instanz Typs.
+Hier legt man fest, wie viel virtuelle CPU's, wie viel RAM, wie viel Speicherplatz der Serverinstanz später zu Verfügung steht.
+Hier gibt es hunderte Instanzen, welche von zum Beispiel 1 Gigabyte RAM bis zu 3 Terrabyte RAM reichen.
+Für EMS reicht die gratis t2.micro Instanz. Die Spezifikationen dieser Instanz können aus Abb. 1.6 entnommen werden.
+Diese Instanz kann jederzeit innerhalb von Minuten nach oben, beziehungsweise auch nach unten im Bezug auf Leistung, skaliert werden.
 \begin{center}
 \begin{figure}[H]
     \centering
@@ -282,7 +334,8 @@ Im vierten Schritt wird die Größe des Speichers festgelegt. Optional kann dies
     \caption{AWS Tags}
 \end{figure}
 \end{center}
-Schritt Nummer fünf beinhaltet die Setzung von Tags für die Instanz. Diese werden in Key-Value Paaren angegeben. In Abb. 1.8 ist aus Sicherheitsgründen der Schlüssel und der Wert zensiert, diese Werte können komplett individuell und auf den Zweck der Instanz personalisiert sein.
+Schritt Nummer fünf beinhaltet die Setzung von Tags für die Instanz.
+Diese werden in Key-Value Paaren angegeben. In Abb. 1.8 ist aus Sicherheitsgründen der Schlüssel und der Wert zensiert. Diese Werte können komplett individuell und auf den Zweck der Instanz personalisiert sein.
 \begin{center}
 \begin{figure}[H]
     \centering
@@ -291,20 +344,25 @@ Schritt Nummer fünf beinhaltet die Setzung von Tags für die Instanz. Diese wer
 \end{figure}
 \end{center}
 %Quellen: \footnote{https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml}
-Im sechsten und letzten aktiven Schritt zur Erstellung einer neue EC2 Instanz fügt man Protokolle hinzu und öffnet Ports. Über diese Ports, kann dann direkt auf die Instanz zugegriffen werden, dies ist essentiell, damit die EMS App auch auf das Backend in der Cloud zugreifen kann.
+Im sechsten und letzten aktiven Schritt zur Erstellung einer neue EC2 Instanz fügt man Protokolle hinzu und öffnet Ports.
+Über diese Ports kann dann direkt auf die Instanz zugegriffen werden. Dies ist essentiell, damit die EMS App auch auf das Backend in der Cloud zugreifen kann.
 
-Die Protokolle wurden jeweils ihren Standardports laut IANA\footcite{iana} (Internet Assigned Numbers Authority) zugewiesen. Wenn die zum Zugriff berechtigte Quelle auf den Standardwert \textbf{0.0.0.0/0} belassen wird, kann sich jede Quelle mit der Instanz verbinden.
+Die Protokolle wurden jeweils ihren Standardports laut IANA\footcite{iana} (Internet Assigned Numbers Authority) zugewiesen.
+Wenn die zum Zugriff berechtigte Quelle auf den Standardwert \textbf{0.0.0.0/0} belassen wird, kann sich jede Quelle mit der Instanz verbinden.
 
 Da hier ein Backend gehostet wird, werden Port 80 (HTTP) und Port 443 (HTTPS) für Anfragen aus allen Quellen offen sein. Zugriff mittels SSH auf Port 22 wird auf eine aus Sicherheitsgründen zensierte IP-Adresse beschränkt.
 
-Nach der Auswahl der Zugriffspunkte und Ports, gelangt man auf eine Übersichtsseite. Hier kann man seine Angaben noch einmal überprüfen. Sind alle Angaben korrekt, klickt man auf Start und in ein paar Minuten, die Zeit hängt von gewählter Option in Schritt zwei ab, ist die neue Instanz einsatzbereit und man kann sich zum Beispiel per SSH mit einer Shell (Putty\footcite{putty}) verbinden und zu arbeiten beginnen.
+Nach der Auswahl der Zugriffspunkte und Ports gelangt man auf eine Übersichtsseite.
+Hier kann man seine Angaben noch einmal überprüfen.
+Sind alle Angaben korrekt, klickt man auf Start und in ein paar Minuten, die Zeit hängt von gewählter Option in Schritt zwei ab, ist die neue Instanz einsatzbereit und man kann sich zum Beispiel per SSH mit einer Shell (Putty\footcite{putty}) verbinden und zu arbeiten beginnen.
 %\footnote{https://putty.de.uptodown.com/windows} 
 
 \subsection{Backend deployment auf einer EC2 Instanz}
-Nach der ersten Verbindung müssen alle notwendigen Pakete und Anwendungen installiert werden, damit die zur Installation gedachte Software auch lauffähig ist.
-In konkretem Fall bei EMS, Node.js und Express. Man kann direkt von Github ein Repository auf eine EC2 Instanz klonen. 
+Nach der ersten Verbindung müssen alle notwendigen Pakete und Anwendungen installiert werden, damit die zur Installation gedachte Software auch lauffähig ist,
+im konkreten Fall bei EMS, Node.js und Express. Man kann direkt von Github ein Repository auf eine EC2 Instanz klonen. 
 
-In Abbildung 1.10 werden sämtliche Details der nun voll einsatzbereiten Instanz dargestellt, vorerst ist nur der Verbinden-Knopf rechts oben wichtig, hiermit kann man direkt eine SSH Verbindung mit seiner Instanz herstellen. So kann man sich verbsinden, ohne den .pem Schlüssel, welchen man bei erstellen der Instanz am Ende herunterladen musste, zu nutzen. Eine einfache, sichere und schnelle Methode um über eine Shell auf der Instanz zu arbeiten.
+In Abbildung 1.10 werden sämtliche Details der nun voll einsatzbereiten Instanz dargestellt, vorerst ist nur der Verbinden-Knopf rechts oben wichtig. Hiermit kann man direkt eine SSH Verbindung mit seiner Instanz herstellen.
+So kann man sich verbinden, ohne den .pem Schlüssel, welchen man bei erstellen der Instanz am Ende herunterladen musste, zu nutzen. Eine einfache, sichere und schnelle Methode um über eine Shell auf der Instanz zu arbeiten.
 \begin{center}
 \begin{figure}[H]
     \centering
@@ -312,7 +370,7 @@ In Abbildung 1.10 werden sämtliche Details der nun voll einsatzbereiten Instanz
     \caption{AWS SSH Verbindung}
 \end{figure}
 \end{center}
-Nun mit der Instanz verbunden muss, um einen Node.Js Server zu hosten, zuerst Node.Js installiert werden. Da in dem Beispiel hier ein komplettes Backend mit Express gehostet wird, muss diese Technologie auch noch installiert werden. Dies kann unter Ubuntu 20 mit den folgenden Befehlen in angegebener Reihenfolge gemacht werden\footcite{deploy-nodejs1}:
+Nun mit der Instanz verbunden muss zuerst Node.Js installiert werden damit der Node.Js Server aus EMS lauffähig ist. Da in dem Beispiel hier ein komplettes Backend mit Express gehostet wird, muss diese Technologie auch noch installiert werden. Dies kann unter Ubuntu 20 mit den folgenden Befehlen in angegebener Reihenfolge gemacht werden\footcite{deploy-nodejs1}:
 \begin{lstlisting}[language=bash]
 # Ubuntu 19+ und Node.Js Version 15+
 curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
@@ -324,7 +382,8 @@ sudo npm install -g express-generator
 #In EMS wurde zusätzlich Nodemon zum starten benutzt
 sudo npm i -g nodemon
 \end{lstlisting}
-Nach erfolgreicher Installation sollte mit dem in Abb. 1.11 zu sehendem Kommando, die aktuell installierte Node.Js Version überprüfen können. (Falls die Installation nicht erfolgte, überprüfen ob man den Befehl sudo benutzt hat.)
+Nach erfolgreicher Installation sollte mit dem in Abb. 1.11 zu sehenden Kommando die aktuell installierte Node.Js Version überprüfen können.
+(Falls die Installation nicht erfolgte, überprüfen, ob man den Befehl sudo benutzt hat.)
 \begin{center}
 \begin{figure}[H]
     \centering
@@ -332,7 +391,7 @@ Nach erfolgreicher Installation sollte mit dem in Abb. 1.11 zu sehendem Kommando
     \caption{AWS Node.js Version}
 \end{figure}
 \end{center}
-Unter Ubuntu musst Git nicht installieren werden, da es mitausgeliefert wird. Falls es aber nicht installiert ist, kann man es mit folgendem Befehl unter Ubuntu installieren:
+Unter Ubuntu muss Git nicht installieren werden da es mitausgeliefert wird. Falls es aber nicht installiert ist, kann man es mit folgendem Befehl unter Ubuntu installieren:
 \begin{lstlisting}[language=bash]
 sudo apt-get install git
 \end{lstlisting}
@@ -341,7 +400,7 @@ Danach klont man das Git-Repository, welches das Backend enthält, auf die AWS I
 git clone https://github.com/[PATH_TO_REPOSITORY]
 \end{lstlisting}
 Nach sämtlichen Installationen muss in das Verzeichnis des geklonten Repositories gewechselt werden um fortzufahren.
-Im nächsten Schritt müssen alle im Projekten Klassen und Module installiert werden, danach kann man das Programm starten:
+Im nächsten Schritt müssen alle im Projekt enthaltenen Klassen, Module und externe Bibliotheken installiert werden, danach kann man das Programm starten:
 \begin{lstlisting}[language=bash]
 #Abhängigkeiten installieren
 npm install
@@ -356,12 +415,12 @@ nodemon start
     \caption{AWS Backend running}
 \end{figure}
 \end{center}
-Abbildung 1.12 zeigt einen das Node.Js/Express Backend von EMS auf einer AWS EC2 Instanz laufend. 
+Abbildung 1.12 zeigt das Node.Js/Express Backend von EMS auf einer AWS EC2 Instanz laufend. 
 Der Server läuft jetzt auf Port 3000. 
-Wenn man nun aber die öffentliche DNS Adresse der Instanz in die Suchleiste eines Webbrowser einfügt und den Port des Server noch dazu angibt, passiert jedoch nichts,
+Wenn man nun aber die öffentliche DNS Adresse der Instanz in die Suchleiste eines Webbrowser einfügt, und den Port des Server noch dazu angibt, passiert jedoch nichts,
 obwohl die Instanz und Node.js online sind.
 
-Damit der Server auch von außerhalb der Instanz erreicht werden kann, muss entsprechender neuer Port geöffnet werden, in dem Fall Nummer 3000.
+Damit der Server auch von außerhalb der Instanz erreicht werden kann muss entsprechender Port des Servers geöffnet werden, in dem Fall Nummer 3000.
 \begin{center}
 \begin{figure}[h]
     \centering
@@ -377,8 +436,8 @@ Um dies einzustellen muss man zur AWS Seite auf das EC2 Dashboard zurück wechse
     \caption{AWS Dashboard Sicherheitsgruppe auswählen}
 \end{figure}
 \end{center}
-Bei der Erstellung der Instanz hat man gleichzeitig auch eine Sicherheitsgruppe erstellt, das war bei Schritt sechs (Kapitel 1.3.1).
-Diese wird nun ausgewählt und im unteren Fenster der Reiter \textbf{Regeln für eingehenden Datenverkehr} ausgewählt und dort auf Bearbeiten geklickt (Abbildung 1.14).
+Bei der Erstellung der Instanz hat man gleichzeitig auch eine Sicherheitsgruppe erstellt. Zu sehen in Schritt sechs bei Kapitel 1.3.1.
+Diese wird nun ausgewählt und im unteren Fenster der Reiter \textbf{Regeln für eingehenden Datenverkehr} geklickt und dort auf Bearbeiten gedrückt (Abbildung 1.14).
 \begin{center}
 \begin{figure}[h]
     \centering
@@ -386,10 +445,10 @@ Diese wird nun ausgewählt und im unteren Fenster der Reiter \textbf{Regeln für
     \caption{AWS Dashboard Sicherheitsgruppe auswählen}
 \end{figure}
 \end{center}
-Es geht ein neues Fenster auf, hier gibt man den das Protokoll an, in dem Fall hier \textbf{Benutzerdefiniertes TCP}. Den Port, Nummer 3000 und zuletzt, wer darauf zugreifen darf. In dem Fall hier
+Es geht ein neues Fenster auf wo man das Prokokoll eintragen kann, in dem Fall heißt es \textbf{Benutzerdefiniertes TCP}. Danach gibt man noch den Port, Nummer 3000 und zuletzt, wer darauf zugreifen darf, an. In dem Fall hier
 wurde zu Testzwecken die momentane IP eines privaten Computers benutzt. Später wird hier 0.0.0.0/0 stehen, was bedeutet, jedes Gerät, egal welche IP, darf hierauf zugreifen (Abbildung 1.15). 
 
-Innerhalb einer Minute sind alle Änderungen übernommen worden und der Server kann über Port 3000 aufgerufen werden und Funktionen können ausgeführt werden indem man folgenden linken
+Innerhalb einer Minute sind alle Änderungen übernommen worden und der Server kann über Port 3000 aufgerufen werden und Funktionen können ausgeführt werden, indem man folgenden Link
 in die Suchleiste eines Browser eingibt:
 \begin{lstlisting}[language=bash]
 http://[Oeffentlicher-IPv4-DNS-DER-INSTANZ].compute.amazonaws.com:[PORTNUMMER]/[FUNKTIONS_NAME]
@@ -404,8 +463,9 @@ Falls die Funktion einen Rückgabewert besitzt, erscheint der Rückgabewert im B
 \end{center}
 Einen letzten Schritt gibt es noch.
 Der Server läuft in einem SSH Fenster im Vordergrund und wird automatisch abgebrochen, wenn das Terminal beendet wird.
-Damit der Prozess weiter ausgeführt wird, muss er im Hintergrund durchgeführt werden. Um dies zu erreichen gibt es Programme
-wie \textbf{pm2}\footcite{pm2}. Folgende Befehle erklären die Installation und Benutzung von pm2:
+Damit der Prozess weiter ausgeführt wird, muss er im Hintergrund arbeiten.
+
+Um dies zu erreichen gibt es Programme wie \textbf{pm2}\footcite{pm2}. Folgende Befehle erklären die Installation und Benutzung von pm2:
 %\footnote{https://pm2.keymetrics.io/}
 \begin{lstlisting}[language=bash]
 #Installieren von pm2
@@ -418,7 +478,7 @@ sudo pm2 start www
 sudo pm2 list
 \end{lstlisting}
 Die Ausgabe in Abbildung 1.17 zeigt den Serverprozess in pm2 unter der OS - Prozess ID 4165 und pm2 ID 1 laufen. Er ist online und einige weitere Details zur Analyse und Fehlerbehandlung werden angezeigt.
-Gibt es ein Update oder einen Patch für den Server, muss man den Hintergrundprozess neu starten. Dies geht folgend:
+Gibt es ein Update oder einen Patch für den Server, muss man den Hintergrundprozess neu starten. Folgende Befehle erläutern den Ablauf:
 \begin{lstlisting}[language=bash]
 #Neustart von pm2 Prozess mit ID 1
 sudo pm2 restart 1

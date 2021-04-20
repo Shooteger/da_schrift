@@ -1,16 +1,18 @@
 \chapter{EMS Chatfunktion}
 \putz
-
 \section{EMS Chat}
-Bei EMS war zu beginn des Projektes eine integrierte Chatfunktion geplant. Ein Promoter sollte bei eventuellen Fragen zum Event, einen Administrator/Eventmanager um Hilfe bitten können. Ein Administrator sollte mit bestimmten
-Promotern gezielt einen Chat starten können, sowie auch an alle Promoter eines Events eine Sammelnachricht senden können. Promoter sollte nuntereinander aus Datenschutzrechtlichen gründen, vor allem aber auch
+Bei EMS war zu beginn des Projektes eine integrierte Chatfunktion geplant. Ein Promoter sollte bei eventuellen Fragen zum Event einen Administrator/Eventmanager um Hilfe bitten können.
+Ein Administrator sollte mit bestimmten Promotern gezielt einen Chat starten können, sowie auch an alle Promoter eines Events eine Sammelnachricht senden können.
+Promoter sollten untereinander aus datenschutzrechtlichen Gründen, vor allem aber auch
 aus Schutz vor Abwerbung von Promoter von anderen Eventmanagern in privaten Chatnachrichten, nicht chatten können.
 
 Es wurde über drei Sprints hinweg (SCRUM Vorgehensmodell, Kapitel 12.2) versucht einen eigenständigen Chat in der EMS Software zu integrieren. Dies gelang schlussendlich mit dem zuletzt versuchten Lösungsansatz nicht.
 
-Es hat erhebliche Probleme mit den \textbf{CORS Policys} auf Seiten des Backends gegeben. Im Frontend in Ionic/Angular war der Chat fertig implementiert. Der Chat basierte auf einer Lösung mit dem npm package \textbf{socket-io}\footcite{socket-io}.
+Es hat erhebliche Probleme mit den \textbf{CORS Policys} auf Seiten des Backends gegeben.
+Im Frontend in Ionic/Angular war der Chat fertig implementiert. Der Chat basierte auf einer Lösung mit dem npm package \textbf{socket-io}\footcite{socket-io}.
 
-Mehrer Ansätze zum Lösen des Fehlers, auch mit Einbezug externer Personen sowie des Betreuers, blieben erfolglos. Auch eine temporäre, sicherheitstechnisch undenkbare Methode, nämlich alle Aktivitäten zu erlauben, wie im untenstehenden Beispielcode beschrieben, führte zu keinem Erfolg.
+Mehrere Ansätze zum Lösen des Fehlers, auch mit Einbezug externer Personen sowie des Betreuers, blieben erfolglos.
+Auch eine temporäre, sicherheitstechnisch undenkbare Methode, nämlich alle Aktivitäten zu erlauben, wie im untenstehenden Beispielcode beschrieben, führte zu keinem Erfolg.
 
 \begin{lstlisting}[language=bash]
 #app ist die express instanz
@@ -25,27 +27,28 @@ app.all('/', function(req, res, next) {
 });
 \end{lstlisting}
 
-Stattdessen wurde die Funktion auf einen Patch nach dem eigentlichen Release verschoben und parallel mit der Entwicklung einer eigenständigen Chatapplikation, welche einen neuen Ansatz verfolgt begonnen. Stand zur Verfassung des Dokumentes ist diese eigenständige Version
-voll lauffähig und wird in die EMS Applikation im nachhinein integriert werden.
+Stattdessen wurde die Funktion auf einen Patch nach dem eigentlichen Release verschoben und parallel mit der Entwicklung einer eigenständigen Chatapplikation, welche einen neuen Ansatz verfolgt begonnen.
+Stand bei Verfassung des Dokumentes ist diese eigenständige Version voll lauffähig und wird in die EMS Applikation im Nachhinein integriert werden.
 
 In einem Gespräch innerhalb der Gruppe, wurde das Fazit bezüglich dieser User-Story gezogen, dass in Zukunft bei einer Story, welche nach zwei Mal verschieben noch immer nicht
-fertig wurde, einem internen Review unterzogen wird um alternativen für die Implementierung zu finden. Da ein Multimedia Chat von unserem momentanen Standpunkt aus gesehen zu viele
-Ressourcen, vor allem in Form von Zeit konsumieren würde, haben wir uns dazu entschieden, beim ersten Patch des Chats in das EMS System, nur Textnachrichten zu unterstützen.
+fertig wurde, einem internen Review unterzogen wird um Alternativen für die Implementierung zu finden. Da ein Multimedia Chat von unserem momentanen Standpunkt aus gesehen zu viele
+Ressourcen, vor allem in Form von Zeit konsumieren würde, haben wir uns dazu entschieden, nur Textnachrichten und keinen Austausch von Multimedia zu unterstützen.
 
 Da ein Administrator trotzdem Bilder und Videos an die
-Promoter schicken muss, wird eine AWS S3\footcite{aws-s3} Instanz aufgesetzt werden, wo die Dateien vorher von einem Administrator hochgeladen werden und dieser dann einen Link zum Download dieser Medien den Promotern schickt. Diese können auf
-den Link klicken und der Download eines Bildes oder Videos startet automatisch. Dies hat einige Vorteile.
+Promoter schicken muss, wird eine AWS S3\footcite{aws-s3} Instanz aufgesetzt werden, wo die Dateien vorher von einem Administrator hochgeladen werden und dieser dann einen Link zum Download dieser Medien den Promotern schickt.
+Diese können auf den Link klicken und der Download eines Bildes oder Videos startet automatisch. Dies hat einige Vorteile.
 
 Einerseits muss der Chat jedes Chatraumes in einer Datenbank gespeichert werden. Wenn man öfter das gleiche Video oder Bild
-an viele hunderte Promoter schicken muss, kann alleine das hochladen sehr lange dauern, das kommt auf die Bandbreite die einem zu Verfügung steht an. Andererseits wird die gleiche Information in dem Video, was viele Speicher benötigt,
-redundant in der Datenbank gespeichert. Dies kostet unter anderem Zeit, Rechenleistung fürs schreiben und lesen und natürlich Speicherplatz. Indem das ganze Konzept von Multimedia verworfen wird und die Lösung mit dem versenden von
-Links implementiert wird, werden immense Ressourcen gespart und in weiterer Folge auch kosten, bei gleichzeitig besser werdenden Performance des Systems.
+an viele hunderte Promoter schicken muss, kann alleine das Hochladen sehr lange dauern.
+Das kommt auf die Bandbreite die einem zu Verfügung steht an. Andererseits wird die gleiche Information in dem Video, was viele Speicher benötigt,
+redundant in der Datenbank gespeichert. Dies kostet unter anderem Zeit, Rechenleistung fürs Schreiben und Lesen und natürlich Speicherplatz. Indem das ganze Konzept von Multimedia verworfen wird und die Lösung mit dem Versenden von
+Links implementiert wird, werden immense Ressourcen gespart und in weiterer Folge auch Kosten bei gleichzeitig besser werdenden Performance des Systems.
 \subsection{Firebase Chatapp Aufsetzen}
 Um eine Chatapp\footcite{Chatapp-Beispiel} mithilfe des Firebase Modules zu erstellen, muss man zuerst ein Konto auf der Firebase Homepage erstellen\footcite{firebase-site}.
 Nachdem dies erledigt wurde wechselt man auf seine Firebase-Konsole und erstellt ein neues Projekt. Man kann das neue Projekt auch direkt mit einer in Besitz befindlichen Domain verknüpfen.
 
-Nach Erstellung eines neuen Projektes landet man auf der Übersichtsseite
-von diesem (Abbildung 3.1). Um die Stand-Alone Anwendung zu erstellen, wurde eine Reihe von Tutorials\footcite{firebase-yt-tut} behandelt und ein Kurs\footcite{firebase-tut1} auf der Webseite Udemy\footcite{udemy-course} privat gekauft.
+Nach Erstellung eines neuen Projektes landet man auf dessen Übersichtsseite (Abbildung 3.1).
+Um die Standalone Anwendung zu erstellen wurde eine Reihe von Tutorials\footcite{firebase-yt-tut} behandelt und ein Kurs\footcite{firebase-tut1} auf der Webseite Udemy\footcite{udemy-course} privat gekauft.
 Sämtliche Tutorials dienten als Hilfestellung und bauten teilweise auf veralteter Technologie auf. Das Angular Projekt des Chats baut auf der aktuell neuesten Stabilen Version von Angular 11 auf.
 \begin{center}
     \begin{figure}[H]
@@ -54,7 +57,7 @@ Sämtliche Tutorials dienten als Hilfestellung und bauten teilweise auf veraltet
         \caption{Datenbank erstellen}
     \end{figure}
 \end{center}
-Nachdem man auf der linken Seite auf \textbf{Realtime Database} geklickt hat, lädt die Hauptkomponente der Seite neu, nun klickt man auf Datenbank erstellen (Abb. 3.2).
+Nachdem man auf der linken Seite auf \textbf{Realtime Database} geklickt hat, lädt die Hauptkomponente der Seite neu. Nun klickt man auf \textbf{Datenbank erstellen} (Abbildung 3.2).
 \begin{center}
     \begin{figure}[H]
         \centering
@@ -62,7 +65,7 @@ Nachdem man auf der linken Seite auf \textbf{Realtime Database} geklickt hat, l�
         \caption{Datenbank erstellen}
     \end{figure}
 \end{center}
-Danach erscheint ein Pop-up, in welchem man den physichen Ort wo die Daten der Datenbank gespeichert werden festgelegt. Da die Software DSGVO konform sein muss, sollte ein Standort innerhalb der EU ausgewählt werden.
+Danach erscheint ein Pop-up, in welchem man den physichen Ort, wo die Daten der Datenbank gespeichert werden, festlegt. Da die Software DSGVO konform sein muss, sollte ein Standort innerhalb der EU ausgewählt werden.
 \begin{center}
     \begin{figure}[H]
         \centering
@@ -70,8 +73,9 @@ Danach erscheint ein Pop-up, in welchem man den physichen Ort wo die Daten der D
         \caption{Datenbank Standort}
     \end{figure}
 \end{center}
-Mit einem Klick auf \textbf{Weiter} gelangt man auf die zweite und letzte Seite des Pop-ups. Hier kann man nun auswählen ob die Datenbank direkt in Produktivbetrieb geht oder zuerst der Testmodus gestartet werden soll. Dies ist bei einer
-noch aktiven Entwicklung zu empfehlen wie auf den Hinweisen in Abbildung. 3.4 zu lesen ist.
+Mit einem Klick auf \textbf{Weiter} gelangt man auf die zweite und letzte Seite des Pop-ups.
+Hier kann man nun auswählen, ob die Datenbank direkt in Produktivbetrieb geht oder zuerst der Testmodus gestartet werden soll. Dies ist bei einer
+noch aktiven Entwicklung zu empfehlen wie auf den Hinweisen in Abbildung 3.4 zu lesen ist.
 \begin{center}
     \begin{figure}[H]
         \centering
@@ -125,18 +129,18 @@ Den Key und die URL müssen in einer Konstante im Code spezifiziert werden und d
         firebase.initializeApp(config);
     }
 \end{lstlisting}
-Das war der letzte Schritt bezüglich der Einstellungen Firebase in Angular, jetzt ist die Firebase Datenbank und das Angular Projekt fertig eingerichtet und es kann mit dem eigentlichen Entwickeln begonnen werden.
+Das war der letzte Schritt bezüglich der Einstellungen von Firebase in Angular. Jetzt ist die Firebase Datenbank und das Angular Projekt fertig eingerichtet und es kann mit dem eigentlichen Entwickeln begonnen werden.
 
-Im nachfolgenden Abschnitt werden nur die wichtigesten Codesnippets und Befehle der Firebase Chatapp gezeigt, da die Webapp später mit einem Patch in EMS inkludiert wird und dafür noch einige Anpassungen notwendig sind,
-wie zum Beispiel das der Benutzer keinen Usernamen angeben muss da er in EMS schon einen fixen hat. Dieser wird dann automatisch aus der Datenbank ausgelesen. Weiters wurde in EMS Ionic benutzt, welches für die 
+Im nachfolgenden Abschnitt werden nur die wichtigsten Codesnippets und Befehle der Firebase Chatapp gezeigt, da die Webapp später mit einem Patch in EMS inkludiert wird und dafür noch einige Anpassungen notwendig sind.
+Zum Beispiel muss der Benutzer in EMS keinen Usernamen angeben, da er einen schon einen fixen Namen hat. Dieser wird dann automatisch aus der Datenbank ausgelesen. Weiters wurde in EMS Ionic benutzt, welches für die 
 Kompatibilität auf den Mobilen Plattformen und das Design generell sorgt. In der Standalone Variante hier im Beispiel wurde nur Angular und HTML benutzt, daher sind Designs der Webapp nur temporär.
-
 \subsection{Firebase Chatapp Implementierung}
 Die Angular Webapp ist in vier Komponenten aufgeteilt. Im folgenden werden alle Komponenten in ihrer Grundfunktionalität beschrieben. Dies betrifft vor allem jeweils die Dateien mit den Endungen \textbf{*.component.ts}, da die 
 HTML Dateien im weiteren Verlauf des Projektes und auch für das Verständnis der Chatfunktion obsolet sind.
 
 Für die Darstellung der einzelnen Elemente der Standalone Webapplikation wurde Angular Materials\footcite{materials} wie in den Tutorials verwendet.
 Diese Klasse mit ihren Komponent\footcite{matierials-componenten} wird jedoch in EMS nicht benötigt, da hier Ionic für die Darstellung verwendet wird.
+
 Komponenten Namen:
 \begin{itemize}
 	\item addroom
@@ -144,26 +148,22 @@ Komponenten Namen:
 	\item chatroom
 	\item roomlist
 \end{itemize}
-
 \textbf{login}: Die Komponente login wird in EMS später nicht mehr benötigt. Hier musste der Benutzer seinen Namen, welchen er in der Chatapp benutzen wollte, angeben. In EMS wird der Benutzername eines Promoters automatisch
 auch in der Chatfunktion benutzt. Dieser kann nicht geändert werden, da auch alle Chats mit diesem Promoter verloren gehen würden.
 
 \textbf{addroom}: Die Funktionalität in dieser Komponente liegt darin, einen neuen Chatraum anzulegen. In EMS integriert, wird diese Funktion nur einem Administratoren zu
 Verfügung stehen. Ein Promoter wird automatisch immer einen einzigen Raum/Chat zu einem Administrator offen haben. Der Administrator kann später einen Raumnamen angeben und ein Event auswählen. Dann kann er zu diesem Raum Personen,
-welche dem Event zugeteilt sind, auswählen und zum chatten beginnen.
+welche dem Event zugeteilt sind, auswählen und zu chatten beginnen.
 
 Folgende Variablen sind in der Klasse von addroom angegeben:
-
 \begin{lstlisting}[language=bash]
     roomForm: FormGroup;
     username = '';
     roomname = '';
     ref = firebase.database().ref('rooms/');
 \end{lstlisting}
-
 Falls ein neuer Raum hinzugefügt wird, wird in der Firebase Datenbank überprüft, ob bereits ein Raum mit der gleichen Bezeichnung wie vom Benutzer angegeben existiert. Falls ja, wird eine entsprechende Fehlermeldung ausgegeben. Falls
 nicht, wird wie im nachstehenden Codesnippet zu sehen ist, ein neuer Raum erstellt und in die Firebase Datenbank eingefügt. Danach wird der Benutzer zu der Komponente \textbf{roomlist} geroutet.
-
 \begin{lstlisting}[language=bash]
     #Erstellen eines neuen Raumes und einfuegen in Firebase
     const newRoom = firebase.database().ref('rooms/').push();
@@ -172,9 +172,9 @@ nicht, wird wie im nachstehenden Codesnippet zu sehen ist, ein neuer Raum erstel
     #routing zurueck zur Chatraum Uebersicht
     this.router.navigate(['/roomlist']);
 \end{lstlisting}
+\textbf{roomlist}: Diese Komponente zeigt alle momentan verfügbaren Chaträume an. Die Daten werden im Konstruktor der roomlist Klasse geladen.
 
-\textbf{roomlist}: Diese Komponente zeigt alle momentan verfügbaren Chaträume an. Die Daten werden im Konstruktor der roomlist Klasse geladen.\newline
-Eine Funktion, \textbf{enterChatroom(string roomname)}, wird bei Auswahl eines Raumes ausgeführt. Es wird eine Konstante Namens \textbf{chat} erstellt. Diese Variable wird für den Zutritt zu einem Chatraum benötig, da sie 
+Eine Funktion, \textbf{enterChatroom(string roomname)}, wird bei Auswahl eines Raumes ausgeführt. Es wird eine Konstante namens \textbf{chat} erstellt. Diese Variable wird für den Zutritt zu einem Chatraum benötig, da sie 
 Infomationen wie Name und Datum des betretens des Raumes enthält. Weiters wird in dieser Funktion der neue Benutzer zu dem \textbf{roomusers} Dokument in der Firebase Datenbank hinzugefügt.
 
 \begin{lstlisting}[language=bash]
@@ -196,7 +196,7 @@ Infomationen wie Name und Datum des betretens des Raumes enthält. Weiters wird 
 
 Danach wird der Benutzer weiter zu der Komponente \textbf{chatroom} geroutet.
 
-\textbf{chatroom}: Zuletzt die wichtigeste Komponente. Hier ist der eigentliche Chat und die Funktionalität dessen implementiert. Beim Erstellen der Komponente und laden der Klasse wird zuerst eine Komponente zum konvertieren
+\textbf{chatroom}: Zuletzt die wichtigeste Komponente. Hier ist der eigentliche Chat und dessen Funktionalität implementiert. Beim Erstellen der Komponente und Laden der Klasse wird zuerst eine Komponente zum Konvertieren
 des Firebase responses definiert.
 
 \begin{lstlisting}[language=bash]
@@ -229,7 +229,7 @@ Die Variablen in der Chatroom-Klasse sehen folgendermaßen aus:
     chats = [];
 \end{lstlisting}
 
-Die Daten der Variablen werden im Konstruktor gesetzt, dieser geht über mehrer Zeilen, daher wird nur ein wichtiger Ausschnitt gezeigt.
+Die Daten der Variablen werden im Konstruktor gesetzt. Dieser geht über mehrer Zeilen, daher wird nur ein wichtiger Ausschnitt gezeigt.
 
 \begin{lstlisting}[language=bash]
     #Setzen des Arrays, welche alle Chatnachrichten beinhaltet mithilfe der snapshot Konstante
@@ -266,5 +266,4 @@ onFormSubmit(form: any) {
     });
  }
 \end{lstlisting}
-
 \newpage
